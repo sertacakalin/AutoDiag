@@ -36,6 +36,7 @@ DEFAULT_BASE = "paraphrase-multilingual-MiniLM-L12-v2"
 SEED = 42
 MAX_POS_PER_ANCHOR = 3   # anchor başına pozitif sayısı
 MAX_EXAMPLES = 2600      # CPU eğitim süresini sınırla
+HARD_NEG_PROB = 0.4      # ankorların oranı kadar hard-negative ekle (takası dengele)
 
 
 def _seed_all() -> None:
@@ -60,30 +61,72 @@ def colloquialize(rng: random.Random, text: str) -> str:
     return " ".join(tokens)
 
 
+def _tokens(text: str) -> set[str]:
+    """Ayırt edici içerik kelimeleri (uzunluk ≥ 4)."""
+    import re
+
+    low = re.sub(r"\s+", " ", text.lower()).strip()
+    return {t for t in low.split() if len(t) >= 4}
+
+
+def mine_hard_negative(rng, anchor_tokens, anchor_cat, pool, k=60):
+    """Anchor ile FARKLI kategoride, metinsel en benzer örneği bul (hard negative).
+
+    'Aynı ses farklı sistem' (motor yatağı ≠ amortisör) ayrımını öğretir.
+    """
+    candidates = rng.sample(pool, min(k, len(pool)))
+    best, best_ov = None, 0
+    for desc, cat, toks in candidates:
+        if cat == anchor_cat:
+            continue
+        ov = len(anchor_tokens & toks)
+        if ov > best_ov:
+            best, best_ov = desc, ov
+    return best if best_ov >= 1 else None
+
+
 def build_examples():
-    """Same-DTC pozitif çiftlerini (augment edilmiş anchor ile) üret."""
+    """Same-grup pozitif çiftleri + cross-kategori HARD NEGATIVE üçlüleri.
+
+    Gruplama: dtc_code varsa onunla, yoksa (mekanik/ses arızaları) kategoriyle.
+    """
     from sentence_transformers import InputExample
 
     rng = random.Random(SEED)
-    by_code: dict[str, list[str]] = defaultdict(list)
+    by_group: dict[str, list[str]] = defaultdict(list)
+    pool: list[tuple] = []  # (desc, category, tokenset) — negatif madenciliği için
     with open(DATASET_CSV, encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
-            code = (row.get("dtc_code") or "").strip()
             desc = (row.get("description") or "").strip()
-            if code and desc:
-                by_code[code].append(desc)
+            cat = (row.get("category") or "").strip()
+            if not desc:
+                continue
+            code = (row.get("dtc_code") or "").strip()
+            group = code or f"cat:{cat}"  # DTC yoksa kategoriye göre grupla
+            by_group[group].append(desc)
+            pool.append((desc, cat, _tokens(desc)))
 
+    desc_cat = {d: c for d, c, _ in pool}
     examples = []
-    for code, descs in by_code.items():
+    for group, descs in by_group.items():
         if len(descs) < 2:
             continue
         for i, anchor in enumerate(descs):
             others = [d for j, d in enumerate(descs) if j != i]
             rng.shuffle(others)
+            anchor_cat = desc_cat.get(anchor, "")
             for positive in others[:MAX_POS_PER_ANCHOR]:
                 # Anchor'ın yarısını argolaştır (terse), yarısını formal bırak.
                 a = colloquialize(rng, anchor) if rng.random() < 0.5 else anchor
-                examples.append(InputExample(texts=[a, positive]))
+                neg = (
+                    mine_hard_negative(rng, _tokens(anchor), anchor_cat, pool)
+                    if rng.random() < HARD_NEG_PROB
+                    else None
+                )
+                if neg:
+                    examples.append(InputExample(texts=[a, positive, neg]))
+                else:
+                    examples.append(InputExample(texts=[a, positive]))
 
     rng.shuffle(examples)
     return examples[:MAX_EXAMPLES]

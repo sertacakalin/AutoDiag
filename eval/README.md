@@ -192,6 +192,32 @@ belirgin artırır — Hit@1 **+%50**, MRR **+%32**. Kilit tasarım: yanıtları
 sorguya eklemek değil, **graf tutarlılığıyla adayları re-rank** etmek. Canlı uç:
 `POST /api/diagnose/interactive` (durumsuz çok-turlu). Grafik: `results_dialogue.png`.
 
+## Veri Zenginleştirme (🅰🅱🅲+) — `run_noise_eval.py`
+
+**Sorun:** "yatak sesi geliyor" gibi mekanik/ses sorgularında sistem yanlış
+alt-sistemi (amortisör/süspansiyon) öneriyordu. Kök neden: (1) korpusta bu
+arızalar yoktu, (2) embedding "aynı ses farklı sistem"i ayıramıyordu.
+
+**🅰 Kapsam:** `data/mechanical_faults.csv` (18 DTC'siz mekanik/ses arızası:
+yatak, rulman, kayış, vuruntu, triger...) eklendi → korpus 809 → **971**.
+**🅱 Gerçekçilik:** aşınma arızaları yüksek km'de (korelasyon), günlük-dil
+semptom kalıpları. **🅲+ Hard-negative:** her ankora cross-kategori metinsel
+benzer negatif (motor yatağı ≠ amortisör) ile contrastive eğitim.
+
+Ses-ayrım (top-1 doğru alt-sistem) doğruluğu:
+
+| Model | Top-1 kategori |
+|-------|:---:|
+| MiniLM-base | 0.60 |
+| TR-trmteb-adapte | 0.70 |
+| **TR-adapte-HN** | **0.90** |
+
+**Bulgu:** Hard-negative eğitim, ses-ayrımını **0.60 → 0.90** çıkarır.
+Doğrulanmış takas: kategori-ayrımı artarken DTC-seviyesi argo retrieval'da
+ölçülü düşüş (nDCG 0.53 → 0.36) — *ayırt edicilik / hassasiyet dengesi*,
+ayarlanabilir (HARD_NEG_PROB). Sistem artık "yatak sesi"ni doğru Motor'a
+yönlendirir. Grafik: `results_noise.png`.
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25

@@ -1,0 +1,19 @@
+dtc_code,category,title_tr,symptoms_tr,causes_tr,severity
+,Motor,Motor ana/biyel yatağı aşınması,Motordan derin metalik vuruntu; yağ basıncı düşük; devirle artan yatak sesi,Ana yatak veya biyel yatağı aşınmış; düşük yağ basıncı; yağ bakımı ihmali,Kritik
+,Motor,Triger zinciri gerginlik sesi,Soğukta motordan zincir takırtısı; rölantide tıkırtı; çalıştırmada ses,Triger zinciri gevşemiş; gergi (tensioner) zayıf; kızak aşınmış,Yüksek
+,Motor,Supap/hidrolik kaldıraç sesi,Üstten tik tik valf sesi; soğukta belirgin tıkırtı,Hidrolik kaldıraç boşalmış; supap ayarı bozuk; düşük yağ,Orta
+,Motor,Su pompası rulman sesi,Motordan ıslık/uğultu; kayış bölgesinden ses; devirle değişen,Su pompası rulmanı aşınmış; salgı yapıyor,Orta
+,Motor,Alternatör rulman sesi,Uğultu sesi devirle artıyor; kayış bölgesinden,Alternatör rulmanı aşınmış; kasnak arızalı,Orta
+,Motor,Gergi rulmanı / kayış sesi,Çalıştırmada gıcırtı/cıyaklama; nemde artan cızırtı,V kayışı yıpranmış; gergi rulmanı sıkışmış; kasnak hizasızlığı,Düşük
+,Motor,Turbo kanat/rulman sesi,Gaza basınca ıslık/siren sesi; güç dalgalanması,Turbo rulmanı aşınmış; kanat hasarı; kaçak,Yüksek
+,Motor,Egzoz manifold kaçağı sesi,Soğukta tıslama/üfleme sesi; ısınınca azalan,Manifold contası kaçırıyor; çatlak manifold; civata gevşek,Orta
+,Süspansiyon,Amortisör / rotil sesi,Kasisten geçerken tok darbe/küt sesi; salınım,Rotil boşluk yapmış; amortisör zayıf; takoz aşınmış,Orta
+,Süspansiyon,Salıncak burcu sesi,Kasiste gıcırtı/cızırtı; hafiften tıkırtı,Salıncak burcu aşınmış; kuru burç,Düşük
+,Süspansiyon,Z rotu (viraj demiri) sesi,Bozuk yolda tıkırtı; tek taraflı küt ses,Z rotu (link) boşalmış; burç aşınmış,Düşük
+,Fren,Fren balata aşınma sesi,Frene basınca metalik cıyaklama/cızırtı; sürtünme sesi,Balata bitmiş; aşınma sensörü temas ediyor; disk çizilmiş,Yüksek
+,Fren,Fren diski aşınması,Frende titreşim ve ses; pedalda zonklama,Disk aşınmış/çarpılmış; ısınma deformasyonu,Orta
+,Direksiyon,Rot başı / rot mili sesi,Manevrada gıcırtı/tıkırtı; bozuk yolda ses,Rot başı boşluk yapmış; rot mili aşınmış,Orta
+,Şanzıman,Aks / teker rulmanı sesi,Hızla artan uğultu/vınlama; dönüşte değişen ses,Teker (poyra) rulmanı aşınmış; ön yük bozuk,Orta
+,Şanzıman,Şanzıman rulman/dişli sesi,Boşta uğultu; vites takılınca değişen ses,Şanzıman rulmanı aşınmış; dişli yıpranmış; düşük yağ,Yüksek
+,Şanzıman,Debriyaj baskı/bilya sesi,Debriyaja basınca cıyaklama/sürtünme; bırakınca kesilen ses,Debriyaj bilyası aşınmış; baskı balatası; rulman kuru,Orta
+,Klima,Klima kompresör rulman sesi,Klima açınca uğultu/takırtı; kapanınca kesilen,Kompresör rulmanı/kavraması aşınmış; düşük gaz,Düşük

@@ -1,0 +1,15 @@
+{
+  "description": "Ses-ayrım test seti (🅲+ hard-negative değerlendirmesi). Aynı 'ses/gürültü' kelimeleri farklı alt-sistemlere ait — model doğru sistemi seçebilmeli. Alaka: top-1 sonucun kategorisi beklenen kategoriyle eşleşir mi.",
+  "queries": [
+    { "query": "motordan derin metalik vuruntu sesi", "category": "Motor" },
+    { "query": "çalıştırınca kayıştan cıyaklama sesi", "category": "Motor" },
+    { "query": "frene basınca metalik cıyaklama geliyor", "category": "Fren" },
+    { "query": "kasisten geçerken alttan tok darbe sesi", "category": "Süspansiyon" },
+    { "query": "tekerlekten hızla artan uğultu", "category": "Şanzıman" },
+    { "query": "vites takınca uğultu artıyor", "category": "Şanzıman" },
+    { "query": "klima açınca takırtı ve uğultu", "category": "Klima" },
+    { "query": "direksiyon çevirince gıcırtı sesi", "category": "Direksiyon" },
+    { "query": "manevrada rot başından tıkırtı", "category": "Direksiyon" },
+    { "query": "soğukta motordan zincir takırtısı", "category": "Motor" }
+  ]
+}

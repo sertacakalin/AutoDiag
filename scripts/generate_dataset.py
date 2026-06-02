@@ -28,6 +28,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REF_CSV = ROOT / "data" / "dtc_reference.csv"
+MECH_CSV = ROOT / "data" / "mechanical_faults.csv"  # DTC'siz mekanik/ses arızaları
 SEED_CSV = ROOT / "data" / "faults_seed.csv"
 OUT_GENERATED = ROOT / "data" / "faults_generated.csv"
 OUT_DATASET = ROOT / "data" / "faults_dataset.csv"
@@ -60,6 +61,11 @@ SENTENCE = [
     "{a_cap}, {b}. Şikayet {c} belirginleşiyor.",
     "{c_cap} {a}, beraberinde {b}.",
     "{a_cap} ve {b} şikayeti mevcut.",
+    # Daha günlük/sürücü dili kalıpları (gerçekçilik için).
+    "Sürekli {a}, bir de {b} oluyor.",
+    "{a_cap}. Son zamanlarda {b} de başladı.",
+    "Bir sorun var galiba: {a} ve {b}.",
+    "Aracı kullanırken {a}, ara sıra {b}.",
 ]
 
 # Çözüm eylem fiilleri (nedenden çözüme).
@@ -81,6 +87,13 @@ MILEAGE_RANGES = {
     "Yüksek": (60_000, 260_000),
     "Kritik": (80_000, 300_000),
 }
+
+# Aşınma kaynaklı arızalar yüksek km'de görülür (gerçekçi korelasyon, 🅱).
+WEAR_KEYWORDS = (
+    "yatak", "rulman", "zincir", "aşınma", "balata", "debriyaj", "kayış",
+    "disk", "triger", "burç", "rotil", "rot ", "supap",
+)
+WEAR_RANGE = (150_000, 320_000)
 
 
 def _lower_first(s: str) -> str:
@@ -130,18 +143,31 @@ def make_solution(rng: random.Random, causes: list[str]) -> str:
     )
 
 
-def make_mileage(rng: random.Random, severity: str) -> int:
-    """Önem derecesine uygun gerçekçi km değeri (binlik yuvarlama)."""
-    lo, hi = MILEAGE_RANGES.get(severity, (40_000, 200_000))
+def make_mileage(rng: random.Random, severity: str, title: str = "") -> int:
+    """Gerçekçi km değeri: aşınma arızaları yüksek km'de, yoksa önem derecesine göre."""
+    t = title.lower()
+    if any(k in t for k in WEAR_KEYWORDS):
+        lo, hi = WEAR_RANGE
+    else:
+        lo, hi = MILEAGE_RANGES.get(severity, (40_000, 200_000))
     return round(rng.randint(lo, hi), -3)
 
 
+def _read_entries() -> list[dict]:
+    """DTC referansı + mekanik/ses arızalarını birleşik oku."""
+    entries: list[dict] = []
+    for path in (REF_CSV, MECH_CSV):
+        if path.exists():
+            with open(path, encoding="utf-8") as fh:
+                entries.extend(csv.DictReader(fh))
+    return entries
+
+
 def generate(per_code: int) -> list[dict]:
-    """Referanstaki her DTC için `per_code` adet vaka üret."""
+    """Her arıza tanımı için `per_code` adet vaka üret (DTC + mekanik)."""
     rng = random.Random(SEED)
     rows: list[dict] = []
-    with open(REF_CSV, encoding="utf-8") as fh:
-        ref = list(csv.DictReader(fh))
+    ref = _read_entries()
 
     for entry in ref:
         symptoms = _split(entry["symptoms_tr"])
@@ -164,7 +190,7 @@ def generate(per_code: int) -> list[dict]:
                     "category": entry["category"].strip(),
                     "dtc_code": entry["dtc_code"].strip(),
                     "vehicle_model": rng.choice(FLEET),
-                    "mileage_km": make_mileage(rng, severity),
+                    "mileage_km": make_mileage(rng, severity, entry.get("title_tr", "")),
                     "solution": make_solution(rng, causes),
                 }
             )

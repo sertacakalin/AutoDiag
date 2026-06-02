@@ -123,8 +123,9 @@ npm run dev                                     # http://localhost:5173
 |-------|--------|
 | `data/faults_seed.csv` | 152 kürasyonlu çekirdek vaka (8 kategori × 19) |
 | `data/dtc_reference.csv` | 72 gerçek OBD-II DTC kodu (belirti/neden/önem) |
-| `data/faults_generated.csv` | Referanstan üretilmiş 657 vaka |
-| `data/faults_dataset.csv` | Birleşik korpus (809 vaka) — uygulamanın kullandığı |
+| `data/dtc_reference.csv` + `data/mechanical_faults.csv` | DTC kodları + DTC'siz mekanik/ses arızaları (yatak, rulman, kayış...) |
+| `data/faults_generated.csv` | Referanstan üretilmiş vakalar |
+| `data/faults_dataset.csv` | Birleşik korpus (**971 vaka**) — uygulamanın kullandığı |
 | `data/real/zenodo_faults.csv` | **Gerçek** veri: 99 vaka (Zenodo, CC-BY 4.0) — çapraz-dilli doğrulama |
 
 > Gerçek veri içe aktarımı: `python scripts/import_zenodo.py` (atıf:

@@ -36,9 +36,9 @@ OUT_PNG = os.path.join(EVAL_DIR, "results_models.png")
 # Karşılaştırılacak modeller: ad → model id / yerel yol.
 MODELS = {
     "MiniLM-base": "paraphrase-multilingual-MiniLM-L12-v2",
-    "MiniLM-adapte": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr"),
     "TR-trmteb": "trmteb/turkish-embedding-model",
     "TR-trmteb-adapte": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr-trmteb"),
+    "TR-adapte-HN": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr-hn"),
 }
 DENSE_W, SPARSE_W = 0.7, 0.3
 
