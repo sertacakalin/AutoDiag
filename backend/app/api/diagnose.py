@@ -9,7 +9,14 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, Request
 
 from app.api.deps import get_engine
-from app.schemas import DiagnoseRequest, DiagnoseResponse, GraphDiagnosis
+from app.schemas import (
+    DiagnoseRequest,
+    DiagnoseResponse,
+    GraphDiagnosis,
+    InteractiveDiagnoseRequest,
+    InteractiveDiagnoseResponse,
+)
+from app.services.dialogue import next_step
 from app.services.graph_rag import graph_rag_diagnose
 from app.services.memory_store import MemoryEngine
 from app.services.query_norm import expand_query
@@ -44,3 +51,21 @@ def diagnose(
         expanded_query=expanded if expanded != req.query else None,
         diagnoses=diagnoses,
     )
+
+
+@router.post("/diagnose/interactive", response_model=InteractiveDiagnoseResponse)
+def diagnose_interactive(
+    req: InteractiveDiagnoseRequest,
+    request: Request,
+    engine: MemoryEngine = Depends(get_engine),
+) -> InteractiveDiagnoseResponse:
+    """Diyaloglu teşhis: belirsizlikte netleştirici soru sor, değilse sonuçla."""
+    fault_graph = request.app.state.graph
+    step = next_step(req.query, req.confirmed, req.denied, engine, fault_graph, req.top_k)
+    return InteractiveDiagnoseResponse(
+        status=step.status,  # type: ignore[arg-type]
+        question=step.question,
+        symptom=step.symptom,
+        diagnoses=[GraphDiagnosis(**d) for d in step.diagnoses],
+    )
+

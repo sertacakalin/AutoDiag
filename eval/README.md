@@ -174,6 +174,24 @@ kazandırır. Literatürle uyumlu: graf, retrieval darboğaz olduğunda akıl
 yürütmeyi destekler. Canlı uç: `POST /api/diagnose` (yapısal neden-temelli
 teşhis). Grafik: `results_graphrag.png`.
 
+## Faz İ6 — Diyaloglu / aktif teşhis (`run_dialogue_eval.py`)
+
+Belirsizlikte (üst adaylar birden çok kategoriye yayılıyorsa) sistem, adayları
+en iyi AYIRAN bir semptomu bilgi grafiğinden seçip sorar; yanıt, adayları graf
+**tutarlılık re-rank'i** ile yeniden sıralar. Oracle simülasyonu (gerçek arızalı
+kullanıcı doğru yanıtlar) ile zorlu sorgularda ölçüldü:
+
+| Metrik | Diyalogsuz | Diyaloglu | Δ |
+|--------|:---:|:---:|:---:|
+| Hit@1 | 0.400 | **0.600** | **+%50** |
+| Hit@3 | 0.700 | 0.800 | +%14 |
+| MRR | 0.517 | **0.683** | **+%32** |
+
+**Bulgu:** Graf-güdümlü aktif netleştirme (ort. 2.4 soru) teşhis doğruluğunu
+belirgin artırır — Hit@1 **+%50**, MRR **+%32**. Kilit tasarım: yanıtları yalnız
+sorguya eklemek değil, **graf tutarlılığıyla adayları re-rank** etmek. Canlı uç:
+`POST /api/diagnose/interactive` (durumsuz çok-turlu). Grafik: `results_dialogue.png`.
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25

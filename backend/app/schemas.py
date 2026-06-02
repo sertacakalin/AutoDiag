@@ -130,6 +130,24 @@ class DiagnoseResponse(BaseModel):
     method: str = "graphrag"
 
 
+class InteractiveDiagnoseRequest(BaseModel):
+    """Diyaloglu teşhis isteği (durumsuz; biriken yanıtları taşır)."""
+
+    query: str = Field(min_length=3)
+    confirmed: list[str] = Field(default_factory=list, description="Onaylanan belirtiler.")
+    denied: list[str] = Field(default_factory=list, description="Reddedilen belirtiler.")
+    top_k: int = Field(default=5, ge=1, le=10)
+
+
+class InteractiveDiagnoseResponse(BaseModel):
+    """Diyalog adımı: ya netleştirici soru ya nihai teşhis."""
+
+    status: Literal["question", "final"]
+    question: str | None = None
+    symptom: str | None = None
+    diagnoses: list[GraphDiagnosis] = Field(default_factory=list)
+
+
 class HealthResponse(BaseModel):
     """Servis sağlık durumu."""
 

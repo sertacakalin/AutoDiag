@@ -36,7 +36,7 @@ flowchart TB
     end
 
     subgraph API["FastAPI"]
-        EP["/api/search · /api/diagnose · /api/faults · /api/feedback · /health"]
+        EP["/api/search · /api/diagnose · /api/diagnose/interactive<br/>/api/faults · /api/feedback · /health"]
     end
 
     subgraph PIPE["Arama hattı (retrieval pipeline)"]
@@ -183,7 +183,7 @@ autodiag/
 ├── backend/
 │   ├── app/
 │   │   ├── api/            search · faults · feedback · deps
-│   │   ├── services/       embedding · retrieval · memory_store · rerank · query_norm · rag · graph · graph_rag
+│   │   ├── services/       embedding · retrieval · memory_store · rerank · query_norm · rag · graph · graph_rag · dialogue
 │   │   ├── schemas.py      Pydantic v2 istek/yanıt modelleri
 │   │   ├── models.py       SQLAlchemy (prod pgvector yolu)
 │   │   └── main.py         FastAPI uygulaması + lifespan
