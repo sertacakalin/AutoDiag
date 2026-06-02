@@ -30,8 +30,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATASET_CSV = ROOT / "data" / "faults_dataset.csv"
-OUT_DIR = ROOT / "models" / "autodiag-embed-tr"
-BASE_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
+DEFAULT_OUT = ROOT / "models" / "autodiag-embed-tr"
+DEFAULT_BASE = "paraphrase-multilingual-MiniLM-L12-v2"
 
 SEED = 42
 MAX_POS_PER_ANCHOR = 3   # anchor başına pozitif sayısı
@@ -93,6 +93,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Embedding domain-adaptation.")
     parser.add_argument("--epochs", type=int, default=2)
     parser.add_argument("--batch", type=int, default=32)
+    parser.add_argument("--base-model", default=DEFAULT_BASE, help="Base model id/yol.")
+    parser.add_argument("--out", default=str(DEFAULT_OUT), help="Çıktı klasörü.")
     args = parser.parse_args()
 
     _seed_all()
@@ -102,9 +104,9 @@ def main() -> None:
 
     examples = build_examples()
     print(f"Eğitim çifti: {len(examples)} (kaynak: {DATASET_CSV.name})")
-    print(f"Base model: {BASE_MODEL}\n")
+    print(f"Base model: {args.base_model}\n")
 
-    model = SentenceTransformer(BASE_MODEL)
+    model = SentenceTransformer(args.base_model)
     loader = DataLoader(examples, shuffle=True, batch_size=args.batch)
     loss = losses.MultipleNegativesRankingLoss(model)
     warmup = int(len(loader) * args.epochs * 0.1)
@@ -117,9 +119,10 @@ def main() -> None:
         show_progress_bar=True,
     )
 
-    OUT_DIR.parent.mkdir(parents=True, exist_ok=True)
-    model.save(str(OUT_DIR))
-    print(f"\nUyarlanmış model kaydedildi: {OUT_DIR}")
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    model.save(str(out))
+    print(f"\nUyarlanmış model kaydedildi: {out}")
 
 
 if __name__ == "__main__":

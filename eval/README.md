@@ -91,11 +91,28 @@ Uygulamada kullanmak için: `backend/.env` → `EMBEDDING_MODEL=adapted`.
 
 > Grafik: `results_finetune.png` (base vs uyarlanmış, standart vs zorlu).
 
+## Faz İ1 — Türkçe-native embedding (`run_model_compare.py`)
+
+Çok dilli MiniLM ile Türkçe-native modeller aynı held-out setlerde karşılaştırıldı.
+**Türkçe-özel model net üstün; domain-adaptation üstüne istifleniyor.**
+
+| Model | Standart Dense nDCG@5 | Zorlu Dense nDCG@5 | Zorlu Hibrit+QN nDCG@5 |
+|-------|----------------------|--------------------|------------------------|
+| MiniLM-base (çok dilli) | 0.647 | 0.065 | 0.268 |
+| MiniLM-adapte | 0.657 | 0.182 | 0.319 |
+| TR-trmteb (Türkçe-native) | 0.793 | 0.138 | 0.338 |
+| **TR-trmteb-adapte** | **0.810** | **0.432** | **0.496** |
+
+En iyi config (Türkçe-native + domain-adaptation), zorlu Dense'te base'e göre
+**+%565 (6.6 kat)**, Hibrit+QN'de **+%85**. Grafik: `results_models.png`.
+Uygulamada: `EMBEDDING_MODEL=adapted` (en iyi mevcut adapte modeli otomatik seçer).
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25
 2. Cross-encoder rerank: zorlu sette MRR +%32
 3. Domain gap ÖLÇÜLDÜ (argo sorgularda çöküş)
 4. Sorgu genişletme (QN): gap'i çıkarımda kapatır, nDCG +%111
-5. Domain-adaptation: gap'i eğitimde kapatır, dense nDCG +%179
-6. QN + adaptation **istiflenir** → en iyi (MRR 0.32 → 0.54, +%70)
+5. Domain-adaptation (MiniLM): gap'i eğitimde kapatır, dense nDCG +%179
+6. **Türkçe-native + domain-adaptation (Faz İ1):** en iyi model; zorlu Dense
+   nDCG base'e göre **+%565**. Türkçe-özel temsil + alan uyarlaması istiflenir.

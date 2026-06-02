@@ -35,11 +35,14 @@ def _get_model() -> "SentenceTransformer":
 
     model_name = get_settings().EMBEDDING_MODEL or MODEL_NAME
     if model_name == "adapted":
+        # En iyi mevcut domain-adapte model: Türkçe-native+adapte > MiniLM-adapte.
         # backend/app/services/embedding.py → parents[3] = autodiag kökü
-        adapted = Path(__file__).resolve().parents[3] / "models" / "autodiag-embed-tr"
-        if adapted.exists():
-            print(f"[embedding] domain-adapte model kullanılıyor: {adapted.name}")
-            return SentenceTransformer(str(adapted))
+        models_dir = Path(__file__).resolve().parents[3] / "models"
+        for cand in ("autodiag-embed-tr-trmteb", "autodiag-embed-tr"):
+            path = models_dir / cand
+            if path.exists():
+                print(f"[embedding] domain-adapte model kullanılıyor: {cand}")
+                return SentenceTransformer(str(path))
         print("[embedding] 'adapted' istendi ama model yok; base modele düşülüyor.")
         model_name = MODEL_NAME
     return SentenceTransformer(model_name)
