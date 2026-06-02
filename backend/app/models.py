@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from uuid import UUID, uuid4
 
 from pgvector.sqlalchemy import Vector
-from sqlalchemy import Boolean, ForeignKey, Integer, String, Text, func
+from sqlalchemy import Boolean, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import (
     DeclarativeBase,
     Mapped,

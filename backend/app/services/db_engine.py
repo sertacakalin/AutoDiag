@@ -9,7 +9,6 @@ cross-encoder rerank, MemoryEngine ile aynı şekilde uygulanır.
 from __future__ import annotations
 
 from sqlalchemy import func, select
-from sqlalchemy.orm import Session
 
 from app.models import Fault, FaultEmbedding
 from app.services.memory_store import FaultRecord, Hit

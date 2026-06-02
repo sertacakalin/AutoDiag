@@ -31,6 +31,12 @@ def _to_hit_schema(hit: Hit) -> SearchHit:
 @router.post("/search", response_model=SearchResponse)
 def search(req: SearchRequest, engine: MemoryEngine = Depends(get_engine)) -> SearchResponse:
     """Geçmiş vakalarda hibrit arama yap; isteğe bağlı teşhis önerisi üret."""
+    import time as _time
+
+    from app.observability import RETRIEVAL_LATENCY, SEARCHES
+
+    SEARCHES.inc()
+    _t0 = _time.perf_counter()
     hits = engine.search(
         query=req.query,
         top_k=req.top_k,
@@ -39,6 +45,7 @@ def search(req: SearchRequest, engine: MemoryEngine = Depends(get_engine)) -> Se
         rerank=req.rerank,
         expand=req.expand_query,
     )
+    RETRIEVAL_LATENCY.observe(_time.perf_counter() - _t0)
     reranked = req.rerank and any(h.rerank_score is not None for h in hits)
 
     expanded: str | None = None

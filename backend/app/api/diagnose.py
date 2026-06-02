@@ -31,6 +31,9 @@ def diagnose(
     engine: MemoryEngine = Depends(get_engine),
 ) -> DiagnoseResponse:
     """Retrieval + graf füzyonuyla yapısal teşhis üret."""
+    from app.observability import DIAGNOSES
+
+    DIAGNOSES.inc()
     fault_graph = request.app.state.graph
     result = graph_rag_diagnose(req.query, engine, fault_graph, top_k=req.top_k)
 

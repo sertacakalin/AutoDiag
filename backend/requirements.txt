@@ -26,6 +26,9 @@ scikit-learn==1.6.0
 matplotlib==3.10.0
 
 # HTTP istemci (LLM çağrısı için)
+prometheus-client>=0.20.0
+
+# HTTP istemci (LLM çağrısı için)
 httpx==0.28.1
 
 # Embedding domain-adaptation (fine-tune; scripts/finetune_embedding.py)

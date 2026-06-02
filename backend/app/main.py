@@ -15,9 +15,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api import diagnose, faults, feedback, search
 from app.config import get_settings
+from app.observability import metrics_endpoint, metrics_middleware, setup_logging
 from app.schemas import HealthResponse
 from app.services.graph import FaultGraph
 from app.services.memory_store import MemoryEngine
+
+setup_logging()
 
 # Korpus seçimi: ölçeklenmiş veri kümesi varsa onu, yoksa çekirdek seed'i kullan.
 _DATA_DIR = Path(__file__).resolve().parents[2] / "data"
@@ -80,10 +83,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.middleware("http")(metrics_middleware)
 app.include_router(search.router)
 app.include_router(faults.router)
 app.include_router(feedback.router)
 app.include_router(diagnose.router)
+
+
+@app.get("/metrics", include_in_schema=False)
+def metrics():
+    """Prometheus scrape ucu."""
+    return metrics_endpoint()
 
 
 @app.get("/health", response_model=HealthResponse, tags=["meta"])

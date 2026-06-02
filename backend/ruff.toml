@@ -1,0 +1,10 @@
+# Ruff yapılandırması (lint + import sıralama)
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E741"]  # bazı tek-harf değişkenler (i, j, x) kabul
+
+[lint.per-file-ignores]
+"tests/*" = ["E501"]
