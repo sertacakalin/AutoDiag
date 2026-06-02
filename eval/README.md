@@ -125,6 +125,29 @@ alaka ölçütü aynı Zenodo kategorisi.
 seçimi göreve (tek-dilli TR vs çapraz-dilli) bağlı. Grafik: `results_crosslingual.png`.
 Veri içe aktarımı: `scripts/import_zenodo.py` (atıf: `data/real/ATTRIBUTION.md`).
 
+## Faz İ3 — RAG kalite değerlendirmesi (`run_rag_eval.py`)
+
+RAGAS-esinli metrikler, **LLM yargıç olmadan**, embedding-tabanlı proxy'lerle
+(donanımda çalışır, deterministik). Ölçülen: extractive öneri üreticisi.
+
+| Metrik | Standart | Zorlu |
+|--------|:---:|:---:|
+| **Faithfulness** (groundedness) | **1.000** | **1.000** |
+| Faithfulness (kontrol/sahte) | 0.575 | 0.614 |
+| Answer Relevancy | 0.365 | 0.308 |
+| Context Precision@5 | 0.844 | 0.336 |
+| Context Recall@5 | 0.604 | 0.550 |
+
+**Bulgular:** (1) Extractive RAG **tam faithful** (1.0) — öneri yalnız getirilen
+vakalardan türetildiği için halüsinasyon yok. (2) Kontrol (rastgele vakalardan
+kurulmuş sahte öneri) 0.57'ye düşer → **+0.425 ayrım**, metriğin halüsinasyonu
+gerçekten ayırt ettiğini kanıtlar. (3) Context precision standart sette güçlü
+(0.84), zorlu sette retrieval zorluğuyla düşer. Grafik: `results_rag.png`.
+
+> Not: LLM anahtarı verilirse (b) yolu — gerçek LLM RAG + tam RAGAS — mümkün.
+> Bu kurulum extractive RAG'ın güvenli/dürüst tasarımını (sıfır halüsinasyon)
+> nicel olarak doğrular.
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25
