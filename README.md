@@ -36,7 +36,7 @@ flowchart TB
     end
 
     subgraph API["FastAPI"]
-        EP["/api/search · /api/faults · /api/feedback · /health"]
+        EP["/api/search · /api/diagnose · /api/faults · /api/feedback · /health"]
     end
 
     subgraph PIPE["Arama hattı (retrieval pipeline)"]
@@ -46,14 +46,22 @@ flowchart TB
         RAG["4· Teşhis önerisi<br/>rag.py · LLM / extractive"]
     end
 
+    subgraph GRAPH["GraphRAG (yapısal akıl yürütme)"]
+        KG["graph.py · Bilgi Grafiği<br/>semptom → DTC → neden"]
+        GR["graph_rag.py · adaptif füzyon<br/>retrieval + graf (RRF)"]
+    end
+
     subgraph DATA["Bilgi tabanı"]
         MEM["MemoryEngine<br/>(CSV, demo)"]
         PG[("PostgreSQL + pgvector<br/>(prod)")]
-        EMB["embedding.py<br/>MiniLM (base | adapted)"]
+        EMB["embedding.py<br/>MiniLM | Türkçe-adapte"]
     end
 
     FE -->|HTTP/JSON| EP
     EP --> QN --> R1 --> R2 --> RAG --> EP
+    EP -. /api/diagnose .-> GR
+    GR --> R1
+    GR --> KG
     R1 -. vektör/sparse .-> MEM
     R1 -. üretimde .-> PG
     R1 --> EMB
@@ -175,7 +183,7 @@ autodiag/
 ├── backend/
 │   ├── app/
 │   │   ├── api/            search · faults · feedback · deps
-│   │   ├── services/       embedding · retrieval · memory_store · rerank · query_norm · rag
+│   │   ├── services/       embedding · retrieval · memory_store · rerank · query_norm · rag · graph · graph_rag
 │   │   ├── schemas.py      Pydantic v2 istek/yanıt modelleri
 │   │   ├── models.py       SQLAlchemy (prod pgvector yolu)
 │   │   └── main.py         FastAPI uygulaması + lifespan

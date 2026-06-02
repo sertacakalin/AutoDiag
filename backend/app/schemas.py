@@ -104,6 +104,32 @@ class FeedbackAck(BaseModel):
     total: int = Field(description="Toplam geri bildirim sayısı.")
 
 
+class GraphDiagnosis(BaseModel):
+    """GraphRAG füzyonundan bir yapısal teşhis adayı."""
+
+    dtc_code: str
+    title: str = ""
+    category: str = ""
+    severity: str = ""
+    causes: list[str] = Field(default_factory=list)
+
+
+class DiagnoseRequest(BaseModel):
+    """GraphRAG teşhis isteği."""
+
+    query: str = Field(min_length=3)
+    top_k: int = Field(default=5, ge=1, le=10)
+
+
+class DiagnoseResponse(BaseModel):
+    """GraphRAG yanıtı: retrieval + bilgi grafiği füzyonu."""
+
+    query: str
+    expanded_query: str | None = None
+    diagnoses: list[GraphDiagnosis]
+    method: str = "graphrag"
+
+
 class HealthResponse(BaseModel):
     """Servis sağlık durumu."""
 

@@ -39,3 +39,4 @@ data/real/*.png
 
 # Üretilen çıktılar
 eval/results.png
+data/fault_graph.graphml

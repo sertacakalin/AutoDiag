@@ -13,9 +13,10 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import faults, feedback, search
+from app.api import diagnose, faults, feedback, search
 from app.config import get_settings
 from app.schemas import HealthResponse
+from app.services.graph import FaultGraph
 from app.services.memory_store import MemoryEngine
 
 # Korpus seçimi: ölçeklenmiş veri kümesi varsa onu, yoksa çekirdek seed'i kullan.
@@ -23,6 +24,7 @@ _DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 DATASET_CSV = _DATA_DIR / "faults_dataset.csv"
 SEED_CSV = _DATA_DIR / "faults_seed.csv"
 CORPUS_CSV = DATASET_CSV if DATASET_CSV.exists() else SEED_CSV
+DTC_REF_CSV = _DATA_DIR / "dtc_reference.csv"
 
 # Tarayıcıdan erişim için izinli kökenler (Vite dev sunucuları).
 ALLOWED_ORIGINS = [
@@ -45,6 +47,13 @@ async def lifespan(app: FastAPI):
         app.state.engine = MemoryEngine([])
         print(f"[main] UYARI: korpus CSV bulunamadı: {CORPUS_CSV}")
     app.state.feedback = []
+    # Bilgi grafiği (GraphRAG için) — DTC referansından kurulur.
+    if DTC_REF_CSV.exists():
+        app.state.graph = FaultGraph.from_dtc_reference(DTC_REF_CSV)
+        print(f"[main] bilgi grafiği yüklendi: {app.state.graph.stats()}")
+    else:
+        app.state.graph = FaultGraph(__import__("networkx").MultiDiGraph())
+        print(f"[main] UYARI: DTC referansı yok, boş graf: {DTC_REF_CSV}")
     yield
     # Kapanışta özel temizlik gerekmiyor (bellek-içi).
 
@@ -67,6 +76,7 @@ app.add_middleware(
 app.include_router(search.router)
 app.include_router(faults.router)
 app.include_router(feedback.router)
+app.include_router(diagnose.router)
 
 
 @app.get("/health", response_model=HealthResponse, tags=["meta"])
