@@ -117,6 +117,10 @@ npm run dev                                     # http://localhost:5173
 | `data/dtc_reference.csv` | 72 gerçek OBD-II DTC kodu (belirti/neden/önem) |
 | `data/faults_generated.csv` | Referanstan üretilmiş 657 vaka |
 | `data/faults_dataset.csv` | Birleşik korpus (809 vaka) — uygulamanın kullandığı |
+| `data/real/zenodo_faults.csv` | **Gerçek** veri: 99 vaka (Zenodo, CC-BY 4.0) — çapraz-dilli doğrulama |
+
+> Gerçek veri içe aktarımı: `python scripts/import_zenodo.py` (atıf:
+> `data/real/ATTRIBUTION.md`).
 
 Veriyi yeniden üret (deterministik, seed=42):
 
@@ -191,8 +195,10 @@ autodiag/
   Gerçek serviste gerçek atölye kayıtlarıyla beslenmelidir.
 - **Sistem teşhis koymaz.** Yalnız benzer geçmiş vakaları bulup özetler; sorumluluk
   teknisyendedir.
-- **Değerlendirme sentetik sorgularla.** Göreli katkılar (ablation, QN,
-  domain-adaptation) kanıtlandı; gerçek-dünya doğrulaması gelecek iştir.
+- **Değerlendirme ağırlıklı sentetik.** Göreli katkılar (ablation, QN,
+  domain-adaptation) kanıtlandı; ek olarak bağımsız gerçek veride (Zenodo CC-BY)
+  çapraz-dilli doğrulama yapıldı (Faz İ2). Geniş ölçekli Türkçe gerçek-veri
+  doğrulaması gelecek iştir.
 - **LLM opsiyonel.** Anahtar yoksa RAG, vakalardan extractive özet üretir
   (uydurma yapmaz).
 - **Prod DB yolu** (`models.py`, pgvector) kodlanmış ancak canlı bağlanması bulut

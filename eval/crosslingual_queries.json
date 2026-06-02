@@ -1,0 +1,16 @@
+{
+  "description": "Çapraz-dilli test seti (Faz İ2). Türkçe sorgular → İngilizce gerçek Zenodo vakaları. Alaka ölçütü: aynı Zenodo source_category. Amaç: gerçek-veri doğrulaması + çapraz-dilli retrieval (TR sorgu ↔ EN kayıt) yeteneğini ölçmek.",
+  "k": 5,
+  "queries": [
+    { "query": "abs lambası yanıyor ve fren pedalı titriyor", "category": "ABS System" },
+    { "query": "motor aşırı ısınıyor sıcaklık göstergesi yükseliyor soğutma sorunu", "category": "Cooling System" },
+    { "query": "klima soğutmuyor ılık hava üflüyor", "category": "Air Conditioning System" },
+    { "query": "vites geçişlerinde sertlik ve gecikme var", "category": "Transmission" },
+    { "query": "akü şarj olmuyor farlar kısılıyor elektrik arızası", "category": "Electrical System" },
+    { "query": "egzoz emisyon arızası ve motor arıza lambası", "category": "Emissions System" },
+    { "query": "direksiyon zor dönüyor ağırlaştı", "category": "Steering" },
+    { "query": "lastik aşınması ve tekerlekte titreşim", "category": "Wheels & Tires" },
+    { "query": "motor tekliyor güç kaybı ateşleme sorunu", "category": "Engine Components" },
+    { "query": "yakıt sistemi sorunu motor zor çalışıyor benzin gelmiyor", "category": "Fuel System" }
+  ]
+}

@@ -107,6 +107,24 @@ En iyi config (Türkçe-native + domain-adaptation), zorlu Dense'te base'e göre
 **+%565 (6.6 kat)**, Hibrit+QN'de **+%85**. Grafik: `results_models.png`.
 Uygulamada: `EMBEDDING_MODEL=adapted` (en iyi mevcut adapte modeli otomatik seçer).
 
+## Faz İ2 — Gerçek veri + çapraz-dilli retrieval (`run_crosslingual_eval.py`)
+
+Sistem, bağımsız kaynaklı **gerçek** veride (Zenodo Automotive Faults, CC-BY 4.0,
+99 İngilizce kayıt) doğrulandı. Türkçe sorgular → İngilizce gerçek vakalar;
+alaka ölçütü aynı Zenodo kategorisi.
+
+| Yöntem / Model | P@3 | MRR | nDCG@5 |
+|----------------|-----|-----|--------|
+| BM25 (lexical) | 0.133 | 0.198 | 0.121 |
+| Dense: MiniLM-base (çok dilli) | **0.367** | 0.548 | 0.342 |
+| Dense: TR-trmteb-adapte | 0.300 | **0.581** | **0.346** |
+
+**Bulgular:** (1) Sistem gerçek veride çalışır — sentetik damga kalkar.
+(2) BM25 çapraz-dilde **çöker** (TR↔EN kelime örtüşmesi yok); semantik embedding
+şart. (3) Çok dilli model P@3'te, Türkçe-adapte model MRR/nDCG'de önde — model
+seçimi göreve (tek-dilli TR vs çapraz-dilli) bağlı. Grafik: `results_crosslingual.png`.
+Veri içe aktarımı: `scripts/import_zenodo.py` (atıf: `data/real/ATTRIBUTION.md`).
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25

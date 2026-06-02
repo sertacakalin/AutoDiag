@@ -33,5 +33,9 @@ dist/
 # Uyarlanmış (fine-tune) embedding modeli — büyük; scriptle yeniden üretilir
 models/
 
+# Ham üçüncü taraf veri — yeniden dağıtılmaz; import_zenodo.py indirir
+data/real/*.json
+data/real/*.png
+
 # Üretilen çıktılar
 eval/results.png
