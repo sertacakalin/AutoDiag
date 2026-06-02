@@ -218,6 +218,27 @@ Doğrulanmış takas: kategori-ayrımı artarken DTC-seviyesi argo retrieval'da
 ayarlanabilir (HARD_NEG_PROB). Sistem artık "yatak sesi"ni doğru Motor'a
 yönlendirir. Grafik: `results_noise.png`.
 
+## İstatistiksel rigor (S6) — `run_significance.py`
+
+İddialar bootstrap güven aralığı (%95) + eşli permütasyon testiyle temellendirildi
+(10.000 iterasyon):
+
+| Karşılaştırma | Fark (nDCG@5) | %95 GA | p | Sonuç |
+|---------------|:---:|:---:|:---:|:---:|
+| Standart: Hibrit − BM25 | +0.043 | [−0.006, +0.093] | 0.086 | anlamlı **değil** |
+| Zorlu: Hibrit+Rerank − Hibrit | +0.117 | [+0.007, +0.247] | 0.023 | **ANLAMLI** |
+
+**Bulgu:** Rerank kazancı istatistiksel olarak anlamlı; standart sette hibridin
+BM25'e üstünlüğü n=24'te anlamlı değil (daha çok veri gerekir — dürüst sınır).
+
+## Hiperparametre arama (S7) — `run_hparam_search.py`
+
+Hibrit ağırlığı (dense_w) **doğrulama** setinde (gold) tarandı, **held-out**
+(hard) sette raporlandı (sızıntısız). Sonuç: doğrulamada en iyi dense_w≈0.8
+(nDCG 0.749), mevcut varsayılan **0.7 neredeyse optimal** (0.748). Held-out
+zorlu sorgular daha çok sparse ağırlıktan faydalanıyor → query-adaptif ağırlık
+gelecek iş. Grafik: `results_hparam.png`.
+
 ## Sonuç zinciri (tez anlatısı)
 
 1. Bileşen ablation: Hibrit > Dense > BM25
