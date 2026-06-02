@@ -1,0 +1,49 @@
+# AutoDiag — tam yığın (PostgreSQL+pgvector · backend · frontend)
+# Çalıştırma:  docker compose up --build
+# Arayüz: http://localhost:8080  ·  API: http://localhost:8000/docs
+
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: autodiag
+      POSTGRES_PASSWORD: autodiag
+      POSTGRES_DB: autodiag
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U autodiag"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://autodiag:autodiag@db:5432/autodiag
+      # Varsayılan: base çok dilli model (384d). Türkçe-adapte için:
+      #   models/ dizinini volume bağla + EMBED_DIM=768 + EMBEDDING_MODEL=adapted
+      EMBED_DIM: "384"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data:ro
+      # - ./models:/app/models:ro   # Türkçe-adapte modeli kullanmak için aç
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  pgdata:

@@ -1,11 +1,13 @@
 """Uygulama ayarları — ortam değişkenlerinden okunur (pydantic-settings)."""
 
+import os
 from functools import lru_cache
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# Embedding vektör boyutu — modelle (paraphrase-multilingual-MiniLM-L12-v2) uyumlu olmalı.
-EMBED_DIM = 384
+# Embedding vektör boyutu — aktif modelle uyumlu olmalı (DB Vector kolonu için).
+# Varsayılan 384 (base MiniLM); Türkçe-adapte model için EMBED_DIM=768 verilir.
+EMBED_DIM = int(os.getenv("EMBED_DIM", "384"))
 
 
 class Settings(BaseSettings):

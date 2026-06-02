@@ -37,10 +37,17 @@ ALLOWED_ORIGINS = [
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Açılışta motoru kur, geri bildirim deposunu hazırla."""
-    if CORPUS_CSV.exists():
+    # Üretim yolu: DB erişilebilir ve doluysa pgvector DbEngine; değilse MemoryEngine.
+    from app.services.db_engine import try_build_db_engine
+
+    db_engine = try_build_db_engine()
+    if db_engine is not None:
+        app.state.engine = db_engine
+        print(f"[main] DbEngine (pgvector) aktif — {db_engine.count} kayıt.")
+    elif CORPUS_CSV.exists():
         app.state.engine = MemoryEngine.from_csv(CORPUS_CSV)
         print(
-            f"[main] {app.state.engine.count} kayıt yüklendi "
+            f"[main] MemoryEngine — {app.state.engine.count} kayıt "
             f"({CORPUS_CSV.name}, mod: {app.state.engine.mode})."
         )
     else:

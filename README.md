@@ -87,7 +87,16 @@ rerank (top-k) → RAG öneri → yanıt. Geri bildirim ileride re-ranking sinya
 
 ## Kurulum ve çalıştırma
 
-### 1) Backend
+### 0) Docker (tam yığın — önerilen)
+
+```bash
+docker compose up --build
+# Arayüz: http://localhost:8080  ·  API: http://localhost:8000/docs
+```
+PostgreSQL+pgvector + backend (açılışta otomatik ingest) + frontend birlikte kalkar.
+Türkçe-adapte modeli için: compose'da `models/` volume'ünü aç + `EMBED_DIM=768`.
+
+### 1) Backend (yerel)
 
 ```bash
 cd backend
@@ -210,5 +219,6 @@ autodiag/
   doğrulaması gelecek iştir.
 - **LLM opsiyonel.** Anahtar yoksa RAG, vakalardan extractive özet üretir
   (uydurma yapmaz).
-- **Prod DB yolu** (`models.py`, pgvector) kodlanmış ancak canlı bağlanması bulut
-  Postgres bağlantısı bekliyor; demo bellek-içi motorla çalışır.
+- **Prod DB yolu canlı:** PostgreSQL + pgvector (HNSW indeks) ile `DbEngine`
+  çalışır durumda (`docker compose up` ya da DATABASE_URL verilerek). DATABASE_URL
+  yoksa otomatik olarak bellek-içi motora düşer (taşınabilir demo).
