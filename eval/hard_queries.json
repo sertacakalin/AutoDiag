@@ -1,0 +1,16 @@
+{
+  "description": "Zorlu (paraphrase/argo) test seti. Günlük, düşük kelime-örtüşmeli ifadeler; alaka DTC koduyla tanımlı. Amaç: lexical (BM25) vs semantik (dense/hibrit/rerank) dayanıklılığını ölçmek.",
+  "k": 5,
+  "queries": [
+    { "query": "araba duruyor gibi oluyor zıp zıp titriyor sarı lamba yandı", "dtc_codes": ["P0300"] },
+    { "query": "ibre kırmızıya tırmanıyor motor aşırı kızıyor kaputtan buhar", "dtc_codes": ["P0217"] },
+    { "query": "egzoz muayenesinden kaldım sürekli motor ışığı yanıyor", "dtc_codes": ["P0420"] },
+    { "query": "gaza basınca devir fırlıyor ama araç hızlanmıyor ileri gitmiyor", "dtc_codes": ["P0730"] },
+    { "query": "direksiyon bazen taş gibi oluyor sonra kendine geliyor", "dtc_codes": ["C1513"] },
+    { "query": "kontak akü işareti yanıyor farlar kısılıp parlıyor", "dtc_codes": ["P0620"] },
+    { "query": "klimadan ılık hava üflüyor hiç soğutmuyor", "dtc_codes": ["P0645", "P0532"] },
+    { "query": "rölantide kendini bırakıyor sanki benzin gelmiyor stop ediyor", "dtc_codes": ["P0171"] },
+    { "query": "fren basınca tekerlekten tıkırtı ve abs uyarısı geliyor", "dtc_codes": ["C0035", "C0040"] },
+    { "query": "rampada kalkarken motor boğuluyor sarsılıyor", "dtc_codes": ["P0401"] }
+  ]
+}

@@ -1,0 +1,810 @@
+description,category,dtc_code,vehicle_model,mileage_km,solution
+Hızlanırken motor titriyor ve gaz tepkisi azaldı,Motor,P0300,Renault Megane,142000,Bujiler ve ateşleme bobini değiştirildi
+"Gaz verince araç sarsılıyor, ivmelenmede güç kaybı var",Motor,P0300,Fiat Egea,98000,Buji ve buji kabloları yenilendi
+İvmelenirken motorda titreşim ve tekleme hissediliyor,Motor,P0301,Volkswagen Passat,121000,1. silindir bobini değiştirildi
+"Rölantide motor tekliyor, çalışırken zaman zaman sarsıntı oluyor",Motor,P0302,Ford Focus,87000,2. silindir bujisi ve enjektörü temizlendi
+"Sabahları araç zor çalışıyor, marsa uzun basmak gerekiyor",Motor,,Toyota Corolla,156000,Yakıt pompası ve filtresi değiştirildi
+"Soğukta motor geç ateşliyor, ilk çalıştırma uzun sürüyor",Motor,,Opel Astra,134000,Kızdırma bujileri yenilendi
+Araç stop ettikten sonra tekrar zor çalışıyor,Motor,P0171,Hyundai i20,76000,"Hava akış sensörü temizlendi, fakir karışım düzeldi"
+"Motor arıza lambası yandı, yakıt tüketimi arttı",Motor,P0171,Renault Clio,103000,"MAF sensörü değiştirildi, vakum kaçağı giderildi"
+Egzozdan siyah duman geliyor ve yakıt sarfiyatı yükseldi,Motor,P0172,Peugeot 308,91000,"Enjektörler temizlendi, lambda sensörü değiştirildi"
+"Rölanti devri dengesiz, motor düzensiz çalışıyor",Motor,P0505,Skoda Octavia,112000,Rölanti kontrol valfi (gaz kelebeği) temizlendi
+"Motor hararet yapıyor, sıcaklık göstergesi kırmızıya çıkıyor",Motor,P0217,Fiat Doblo,167000,Termostat ve devirdaim pompası değiştirildi
+"Trafikte beklerken hararet yükseliyor, fan geç devreye giriyor",Motor,,Dacia Duster,88000,Radyatör fan müşürü değiştirildi
+Soğutma suyu eksiliyor ve motor ısınıyor,Motor,,Honda Civic,129000,"Radyatör peteğindeki sızıntı giderildi, hortum değişti"
+"Motordan tıkırtı sesi geliyor, özellikle soğukken belirgin",Motor,,BMW 320i,145000,Hidrolik supap kaldırıcıları değiştirildi
+"Yağ uyarı lambası yanıp sönüyor, motordan metalik ses var",Motor,P06DD,Mercedes C180,158000,Yağ pompası ve yağ basınç sensörü yenilendi
+"Motor yağı çabuk eksiliyor, egzozdan mavi duman çıkıyor",Motor,,Volkswagen Golf,178000,Supap keçeleri ve segmanlar yenilendi
+"Triger sesi geliyor, motordan ritmik takırtı duyuluyor",Motor,,Citroen C3,119000,Triger kayışı ve gergi rulmanı değiştirildi
+"Turbo gücünü kaybetti, hızlanma çok zayıf",Motor,P0234,Nissan Qashqai,132000,Turbo aktüatörü ve kaçak yapan intercooler hortumu değişti
+Çalışınca motordan ıslık gibi emme sesi geliyor,Motor,P0299,Renault Megane,96000,"Turbo düşük basınç hatası, hava kaçağı onarıldı"
+Fren yaparken direksiyon ve pedal titriyor,Fren,,Ford Focus,92000,"Ön fren diskleri torna edildi, balatalar değişti"
+Yüksek hızda fren basınca araçta titreşim oluyor,Fren,,Toyota Corolla,108000,Eğrilmiş ön diskler değiştirildi
+Frene basınca volan zıplıyor ve sarsıntı geliyor,Fren,,Opel Astra,124000,Ön disk ve balata takımı yenilendi
+"Fren yaparken ciyaklama, metalik gıcırtı sesi geliyor",Fren,,Fiat Egea,67000,Aşınmış ön balatalar değiştirildi
+Yavaşlarken arka frenden gıcırtı duyuluyor,Fren,,Hyundai i20,84000,"Arka balatalar değişti, kampana temizlendi"
+"Fren pedalı sertleşti, basmak için çok kuvvet gerekiyor",Fren,,Renault Clio,113000,Fren servo (hidrovac) ve vakum hortumu değiştirildi
+Fren pedalı yumuşadı ve dibe kadar gidiyor,Fren,,Peugeot 308,139000,"Fren hidroliği yenilendi, hava alındı, ana merkez değişti"
+"Fren pedalında boşluk var, fren tutması gecikiyor",Fren,,Dacia Duster,101000,"Fren hattı havası alındı, kaliper bakımı yapıldı"
+ABS uyarı lambası yandı ve fren mesafesi uzadı,Fren,C0035,Volkswagen Passat,147000,Sol ön ABS tekerlek hız sensörü değiştirildi
+Gösterge panelinde ABS ve fren ikazı birlikte yanıyor,Fren,C0040,Skoda Octavia,122000,Sağ ön ABS sensörü ve kablosu yenilendi
+Frene basınca araç bir tarafa çekiyor,Fren,,Honda Civic,95000,Sıkışan ön kaliper revize edildi
+"El freni çekmiyor, yokuşta araç kayıyor",Fren,,Citroen C3,131000,El freni teli ayarlandı ve arka balatalar değişti
+Frenler ısınıyor ve yanık kokusu geliyor,Fren,,Fiat Doblo,152000,Sıkışan kaliper pistonu değiştirildi
+"Yokuş inerken fren tutmuyor, performans düşük",Fren,,Nissan Qashqai,118000,Fren diskleri ve balataları komple yenilendi
+"Fren lambası sürekli yanıyor, hidrolik seviyesi düşük",Fren,,BMW 320i,87000,"Fren hidroliği kaçağı giderildi, seviye tamamlandı"
+Bozuk yolda ön taraftan takırtı sesi geliyor,Süspansiyon,,Renault Megane,134000,Ön rotbaşları ve z rot kollar değiştirildi
+Engebeli yolda ön düzenden tıkırtı ve gürültü var,Süspansiyon,,Fiat Egea,109000,Salıncak burçları ve rotil değişti
+Hız kasisinden geçerken alttan kütleme sesi geliyor,Süspansiyon,,Ford Focus,121000,Amortisör takozları ve rotbaşı yenilendi
+"Araç yolda sağa sola yalpalıyor, sürüş konforu bozuldu",Süspansiyon,,Opel Astra,143000,Dört amortisör birden değiştirildi
+Viraja girince araç fazla yatıyor ve sallanıyor,Süspansiyon,,Toyota Corolla,156000,Ön ve arka denge çubuğu burçları değişti
+"Direksiyon boşta geziyor, yolda araç dengesiz",Süspansiyon,,Hyundai i20,88000,"Rotbaşı ve rotil değişti, rot ayarı yapıldı"
+Lastikler düzensiz ve tek taraftan aşınıyor,Süspansiyon,,Volkswagen Golf,97000,"Ön düzen ayarı (rot balans) yapıldı, salıncak değişti"
+"Direksiyon titriyor, belli hızda volan oynuyor",Süspansiyon,,Peugeot 308,112000,Tekerlek balans ayarı ve rot balans yapıldı
+"Aracın arkası çökük duruyor, dolu yükte daha da iniyor",Süspansiyon,,Dacia Duster,128000,Arka helezon yaylar değiştirildi
+Yavaş hızda bile araç aşırı zıplıyor,Süspansiyon,,Renault Clio,105000,Ön amortisörler değiştirildi
+Hızlanırken arkadan gıcırtı ve yaylanma sesi geliyor,Süspansiyon,,Skoda Octavia,117000,Arka amortisör ve takozlar yenilendi
+"Yol tutuşu bozuldu, araç çukurlarda sektiriyor",Süspansiyon,,Honda Civic,141000,Amortisör ve denge çubuğu rotili değişti
+Direksiyondan tok darbe sesi geliyor kasislerde,Süspansiyon,,Citroen C3,99000,Kolon rulmanı (strut bearing) değiştirildi
+"Ön tekerden gıcırtı, manevrada belirginleşiyor",Süspansiyon,,Nissan Qashqai,126000,"Salıncak rotili gresi yenilendi, burç değişti"
+Frenle birlikte ön süspansiyon sesi artıyor,Süspansiyon,,Fiat Doblo,137000,Amortisör takozu ve rotbaşı değiştirildi
+"Aracın önü inip kalkıyor, süzülme hissi var",Süspansiyon,,BMW 320i,149000,Ön amortisörler ve yaylar yenilendi
+Otomatik şanzıman vites geçişlerinde sertçe vuruyor,Şanzıman,P0700,Volkswagen Passat,138000,"Şanzıman yağı ve filtresi değişti, yazılım güncellendi"
+Vites değişirken araç zıplıyor ve darbe hissediliyor,Şanzıman,P0700,Mercedes C180,142000,"ATF yağı yenilendi, mekatronik revize edildi"
+"Otomatik vites geç atıyor, geçişler sarsıntılı",Şanzıman,P0730,BMW 320i,127000,"Şanzıman adaptasyonu sıfırlandı, yağ değişti"
+"Manuel viteste debriyaj kaçırıyor, devir yükseliyor güç gitmiyor",Şanzıman,,Fiat Egea,134000,Debriyaj baskı balata seti değiştirildi
+"Vitese takarken zorlanıyor, geri vites zor giriyor",Şanzıman,,Renault Megane,119000,Debriyaj merkezi ve hidrolik hattı yenilendi
+"Debriyaja basınca ses geliyor, pedal ağırlaştı",Şanzıman,,Ford Focus,108000,Debriyaj rulmanı (bilya) değiştirildi
+Şanzımandan yağ sızıyor ve uğultu sesi geliyor,Şanzıman,,Opel Astra,151000,"Şanzıman keçesi değişti, yağ tamamlandı"
+Hızlanırken şanzımandan uğultu artıyor,Şanzıman,,Toyota Corolla,163000,Şanzıman rulmanları yenilendi
+DSG şanzıman düşük hızda titreşim yapıyor,Şanzıman,P17BF,Skoda Octavia,124000,DSG mekatronik ve debriyaj paketi değişti
+"CVT şanzıman yüksek devirde kalıyor, hızlanma gecikiyor",Şanzıman,,Honda Civic,96000,"CVT yağı değişti, kayış kontrol edildi"
+Boşa alınca araç ileri doğru sürünüyor,Şanzıman,,Hyundai i20,88000,Vites mekanizması ayarı yapıldı
+Park konumunda araç yerinde durmuyor,Şanzıman,P0705,Nissan Qashqai,113000,Vites konum sensörü değiştirildi
+Geri viteste güçlü titreşim ve ses var,Şanzıman,,Peugeot 308,129000,Şanzıman takozu ve aktarma mili körüğü değişti
+"Şanzıman arıza lambası yandı, vites kademeleri kayboldu",Şanzıman,P0730,Citroen C3,141000,"Mekatronik ünitesi yenilendi, yazılım yüklendi"
+"Araç çalışmıyor, marş dönmüyor sadece tık sesi geliyor",Elektrik,,Renault Clio,78000,"Akü değiştirildi, kutup başları temizlendi"
+"Sabah akü bitmiş oluyor, sürekli takviye gerekiyor",Elektrik,,Fiat Egea,64000,"Şarj kaçağı bulundu, arıza yapan röle değişti"
+"Akü şarj uyarısı yandı, far ışıkları zayıfladı",Elektrik,P0562,Volkswagen Golf,132000,Alternatör (şarj dinamosu) değiştirildi
+"Gösterge panelinde akü lambası yanıyor, voltaj düşük",Elektrik,P0620,Opel Astra,119000,Alternatör konjektörü (regülatör) yenilendi
+"Sağ ön far çalışmıyor, ampul yanmıyor",Elektrik,,Ford Focus,91000,Far ampulü ve duy soketi değiştirildi
+"Stop lambaları yanmıyor, fren ışığı çalışmıyor",Elektrik,,Hyundai i20,73000,Fren lamba müşürü değiştirildi
+"Sinyaller hızlı yanıp sönüyor, biri çalışmıyor",Elektrik,,Toyota Corolla,102000,Arka sinyal ampulü ve flaşör değişti
+"Sol ön cam açılıp kapanmıyor, motor sesi gelmiyor",Elektrik,,Peugeot 308,114000,Cam kaldırma motoru değiştirildi
+Merkezi kilit bazen çalışıyor bazen çalışmıyor,Elektrik,,Skoda Octavia,126000,Kapı kilit aktüatörü ve kumanda pili değişti
+"Silecekler çalışmıyor, sileceği açınca sigorta atıyor",Elektrik,,Dacia Duster,88000,"Silecek motoru değiştirildi, sigorta yenilendi"
+"Gösterge paneli kapanıp açılıyor, ibreler atıyor",Elektrik,,Renault Megane,137000,Gösterge soketi ve gövde şasi kablosu onarıldı
+Yağ ve sıcaklık göstergeleri yanlış değer veriyor,Elektrik,,Fiat Doblo,144000,Sensör toprak hattı (şasi) yenilendi
+Multimedya ekranı kendi kendine yeniden başlıyor,Elektrik,,Honda Civic,69000,"Yazılım güncellendi, besleme kablosu sıkıldı"
+"Klima ve radyo çalışmıyor, sigorta sürekli atıyor",Elektrik,,Citroen C3,108000,Kısa devre yapan kablo demeti onarıldı
+Geri vitese alınca park sensörü ötmüyor,Elektrik,,Nissan Qashqai,95000,Arka park sensörü ve kablosu değiştirildi
+"Far otomatik açılmıyor, ışık sensörü tepkisiz",Elektrik,,BMW 320i,121000,Yağmur/ışık sensörü değiştirildi
+"Klima açıkken soğutmuyor, sadece ılık hava üflüyor",Klima,,Fiat Egea,84000,"Klima gazı dolduruldu, kaçak yapan o-ring değişti"
+"Klimadan soğuk hava gelmiyor, kompresör devreye girmiyor",Klima,,Renault Clio,97000,Klima kompresörü ve kavraması değiştirildi
+Klima bir süre sonra soğutmayı bırakıyor,Klima,,Ford Focus,111000,"Klima gaz kaçağı bulundu, kondenser değişti"
+Klima açılınca içeriye küf ve rutubet kokusu doluyor,Klima,,Toyota Corolla,128000,"Polen filtresi değişti, evaporatör dezenfekte edildi"
+"Ön cam buğulanıyor, klima nemi alamıyor",Klima,,Opel Astra,134000,"Polen filtresi yenilendi, klima gazı tamamlandı"
+"Klima fanı çalışmıyor, hiçbir kademede hava gelmiyor",Klima,,Hyundai i20,76000,Kalorifer fan motoru ve direnci değiştirildi
+Klima açılınca takırtı sesi geliyor,Klima,,Volkswagen Golf,119000,Kompresör kavrama rulmanı değiştirildi
+"Klima sadece yüksek kademede üflüyor, düşükte çalışmıyor",Klima,,Peugeot 308,103000,Fan rezistansı (kademe direnci) değiştirildi
+"Kalorifer ısıtmıyor, soğuk hava üflüyor",Klima,,Skoda Octavia,142000,"Termostat değişti, kalorifer peteği temizlendi"
+Kalorifer peteğinden antifriz kokusu ve buğu geliyor,Klima,,Dacia Duster,131000,Kalorifer radyatörü (peteği) değiştirildi
+Klima kontrol paneli tuşları çalışmıyor,Klima,,Honda Civic,88000,Klima kontrol ünitesi değiştirildi
+Otomatik klima sıcaklığı ayarı tutmuyor,Klima,,BMW 320i,124000,Kabin sıcaklık sensörü değiştirildi
+Klima çalışırken araçtan yakıt tüketimi çok artıyor,Klima,,Citroen C3,96000,"Kompresör arızası giderildi, kavrama değişti"
+Egzozdan yüksek gürültü ve patlama sesi geliyor,Egzoz,,Fiat Doblo,158000,Delinmiş egzoz susturucusu değiştirildi
+Araç hızlanırken egzoz sesi anormal yükseliyor,Egzoz,,Renault Megane,146000,Egzoz orta kısmı ve flexi boru yenilendi
+"Altdan egzoz çıngırtısı, rölantide titreşim sesi var",Egzoz,,Ford Focus,133000,Egzoz askı lastikleri ve flex boru değişti
+"Motor arıza lambası yandı, katalizör verimi düşük uyarısı",Egzoz,P0420,Volkswagen Passat,152000,Katalitik konvertör değiştirildi
+"Egzoz emisyon arızası, ikinci lambda sensörü hatası",Egzoz,P0430,Toyota Corolla,141000,2. sıra katalizör ve lambda sensörü değişti
+"Lambda sensörü arızası, yakıt karışımı bozuldu",Egzoz,P0136,Opel Astra,127000,Çıkış lambda (oksijen) sensörü değiştirildi
+Egzozdan beyaz duman çıkıyor ve su damlıyor,Egzoz,,Hyundai i20,118000,Silindir kapak contası değiştirildi
+Egzozdan yanık yağ kokusu ve mavi duman geliyor,Egzoz,,BMW 320i,164000,Turbo keçesi ve supap lastikleri yenilendi
+"Dizel araçta DPF dolu uyarısı yandı, güç düştü",Egzoz,P2002,Dacia Duster,137000,DPF (partikül filtresi) temizlendi ve rejenerasyon yapıldı
+"Egzozdan is geliyor, DPF rejenerasyonu tamamlanmıyor",Egzoz,P244B,Peugeot 308,149000,"DPF basınç sensörü değişti, zorlamalı rejenerasyon yapıldı"
+"EGR valfi arızası, motor arıza lambası yandı",Egzoz,P0401,Renault Clio,129000,EGR valfi temizlendi ve değiştirildi
+Egzoz manifoldundan üfleme sesi ve gaz kaçağı var,Egzoz,,Skoda Octavia,121000,Manifold contası değiştirildi
+"Direksiyon ağırlaştı, manevrada zor dönüyor",Direksiyon,,Fiat Egea,112000,"Hidrolik direksiyon yağı değişti, pompa revize edildi"
+Park ederken direksiyon çok sert dönüyor,Direksiyon,,Renault Megane,124000,Elektrikli direksiyon motoru (EPS) değiştirildi
+"Düşük hızda volan zor çevriliyor, güç desteği yok",Direksiyon,C1513,Ford Focus,138000,Direksiyon kutusu ve hidrolik hattı yenilendi
+Direksiyon çevirince vınlama ve uğultu sesi geliyor,Direksiyon,,Opel Astra,119000,Hidrolik direksiyon pompası değiştirildi
+Volanı sonuna kadar kırınca tıkırtı sesi geliyor,Direksiyon,,Toyota Corolla,131000,Aks körüğü ve mafsalı yenilendi
+"Direksiyonda boşluk var, düz giderken oynatmak gerekiyor",Direksiyon,,Hyundai i20,96000,Direksiyon mili rotili ve kutusu ayarlandı
+"Yüksek hızda direksiyon titriyor, eller uyuşuyor",Direksiyon,,Volkswagen Golf,107000,Lastik balansı ve rot ayarı yapıldı
+"Direksiyon ortada durmuyor, araç sürekli sağa çekiyor",Direksiyon,,Peugeot 308,114000,"Rot ayarı yapıldı, rotbaşı değiştirildi"
+"Direksiyon arıza lambası yandı, güç desteği kayboluyor",Direksiyon,C1531,Skoda Octavia,128000,EPS direksiyon torku sensörü değiştirildi
+"Volan kilitleniyor, kontak açılınca açılması gecikiyor",Direksiyon,,Dacia Duster,102000,Direksiyon kilit (ELV) modülü değiştirildi
+"Direksiyon hidrolik yağı sızıyor, seviye düşüyor",Direksiyon,,Honda Civic,141000,Hidrolik hortum ve pompa keçesi yenilendi
+Manevrada direksiyondan titreşim ve sertlik geliyor,Direksiyon,,Citroen C3,117000,Direksiyon kutusu (kremayer) değiştirildi
+Otoparkta direksiyon kırınca ön taraftan ses geliyor,Direksiyon,,Nissan Qashqai,109000,Aks ve direksiyon mafsalı değişti
+"Direksiyon simidinde titreşim, airbag lambası da yanıyor",Direksiyon,,BMW 320i,133000,Direksiyon airbag spiral kablosu (clock spring) değişti
+Fren basınca pedaldan zımpara gibi sürtünme sesi geliyor,Fren,,Renault Megane,116000,Tamamen aşınmış balatalar ve diskler değiştirildi
+Aracı yavaşlatınca ön taraftan metal sürtme sesi var,Fren,,Toyota Corolla,134000,"Ön balatalar bitmiş, disk ve balata değişti"
+Fren pedalı titreşimli ve durma mesafesi arttı,Fren,,Skoda Octavia,128000,Çarpılan ön diskler yenilendi
+"Arka fren tutmuyor, el freni de zayıf çekiyor",Fren,,Dacia Duster,142000,"Arka kampana, balata ve el freni teli değişti"
+Otomatik viteste kalkışta gecikme ve sarsıntı oluyor,Şanzıman,P0700,Mercedes C180,151000,"Şanzıman yağı ve filtresi değişti, adaptasyon yapıldı"
+"Vites geçişlerinde araç ileri atılıyor, darbe geliyor",Şanzıman,P0730,BMW 320i,139000,"Mekatronik ünite revize edildi, ATF yenilendi"
+"Debriyaja basınca araç ileri seğirtiyor, ayırmıyor",Şanzıman,,Volkswagen Golf,122000,Debriyaj merkezi ve yardımcı silindir değişti
+"Yokuşta debriyaj kaçırıyor, yanık balata kokusu var",Şanzıman,,Fiat Egea,131000,Debriyaj seti (baskı-balata-bilya) yenilendi
+Aktarma milinden hızlanırken takırtı geliyor,Şanzıman,,Nissan Qashqai,144000,Aktarma mili haçı (istavroz) ve körük değişti
+Bozuk yolda arkadan gümbürtü ve takırtı duyuluyor,Süspansiyon,,Opel Astra,138000,Arka amortisör ve denge çubuğu burcu değişti
+Direksiyonu kırınca ön tekerden gıcırtı geliyor,Süspansiyon,,Hyundai i20,104000,Rotil ve salıncak burcu yenilendi
+"Araç sürekli sağa yatık duruyor, bir yay çökmüş",Süspansiyon,,Renault Clio,119000,Sağ ön helezon yay değiştirildi
+Marş basınca röleden tıkırtı geliyor ama araç çalışmıyor,Elektrik,,Ford Focus,113000,Marş motoru otomatiği (selenoid) değiştirildi
+Far içi buğulanıyor ve ampuller sık sık yanıyor,Elektrik,,Peugeot 308,97000,"Far kapağı conta değişti, nem giderildi, ampul yenilendi"
+"Korna çalmıyor, direksiyondan basınca ses gelmiyor",Elektrik,,Citroen C3,88000,Korna ve spiral kablo bağlantısı onarıldı
+Direksiyon kendiliğinden bir tarafa kayıyor düz yolda,Direksiyon,,Toyota Corolla,121000,Rot ayarı ve rotbaşı değişimi yapıldı
+Volan çevirince hidrolikten köpürme ve ses geliyor,Direksiyon,,Fiat Doblo,148000,"Hidrolik yağ değişti, hava alındı, hortum yenilendi"
+Elektrikli direksiyon zaman zaman kilitleniyor,Direksiyon,C1531,Volkswagen Golf,126000,"EPS kontrol ünitesi yazılımı güncellendi, sensör değişti"
+Park manevrasında direksiyondan zorlanma ve ses var,Direksiyon,,Hyundai i20,99000,Direksiyon kremayeri ve mafsalı değiştirildi
+"Direksiyon simidi ortalı değil, tekerlekler düz değil",Direksiyon,,Renault Megane,108000,"Ön düzen ayarı yapıldı, rot kolu değişti"
+"Klima gazı kaçıyor, birkaç haftada soğutma bitiyor",Klima,,Opel Astra,117000,"Kondenser değişti, sistem vakumlanıp gaz dolduruldu"
+"Klimadan üfleme zayıf, fan sesi cılız geliyor",Klima,,Skoda Octavia,132000,Kalorifer fan motoru ve polen filtresi değişti
+"Klima çalışırken su damlatıyor, ayak tarafı ıslanıyor",Klima,,Honda Civic,94000,Tıkalı klima tahliye hortumu temizlendi
+Klima kompresörü çalışınca kayış cıyaklıyor,Klima,,Dacia Duster,121000,V kayışı ve gergi rulmanı değiştirildi
+Soğuk havada cam buğusu uzun süre dağılmıyor,Klima,,Citroen C3,105000,"Klima gazı tamamlandı, polen filtresi değişti"
+Klima düğmesi yanıyor ama soğuk hava gelmiyor,Klima,,Nissan Qashqai,113000,Basınç sensörü ve klima gazı yenilendi
+"Egzozdan derin homurtu, hızlanınca ses kabalaşıyor",Egzoz,,Renault Clio,138000,Çürüyen orta egzoz ve susturucu değişti
+Rölantide egzozdan titreşimli vızıltı geliyor,Egzoz,,Hyundai i20,124000,Egzoz askı takozları ve flex boru yenilendi
+"Katalizör tıkalı, araç yüksek devire çıkamıyor",Egzoz,P0420,Ford Focus,147000,Tıkanan katalitik konvertör değiştirildi
+"Lambda sensörü hatası, rölanti dengesiz çalışıyor",Egzoz,P0134,Toyota Corolla,133000,Giriş lambda (oksijen) sensörü değiştirildi
+"Dizelde egzozdan yoğun is, DPF tıkanma uyarısı var",Egzoz,P2002,Peugeot 308,151000,"DPF temizlendi, fark basınç sensörü değişti"
+EGR arızası nedeniyle motor gücü düşük ve duman var,Egzoz,P0401,Volkswagen Passat,142000,EGR valfi ve soğutucusu değiştirildi
+Egzoz manifold contasından üfürme sesi geliyor soğukta,Egzoz,,Fiat Egea,119000,Manifold contası ve cıvataları yenilendi
+Arıza lambası ve motorda titreme şikayeti mevcut.,Motor,P0300,Toyota Corolla,124000,Ateşleme bobini kontrol edilip değiştirildi.
+"Arıza lambası, motorda titreme. Şikayet düşük devirde belirginleşiyor.",Motor,P0300,Renault Clio,68000,Buji kalibre edildi; düşük kompresyon kalibre edildi.
+Motorda titreme ve arıza lambası şikayeti mevcut.,Motor,P0300,Citroen C3,170000,"Arıza Ateşleme bobini kaynaklıydı, değiştirildi. Sonrasında düşük kompresyon kontrol edildi."
+Müşteri uzun yol sürüşünde arıza lambası ve gaz tepkisinde düşüş olduğunu belirtti.,Motor,P0300,Volkswagen Golf,116000,Enjektör onarıldı.
+Müşteri düşük devirde gaz tepkisinde düşüş ve arıza lambası olduğunu belirtti.,Motor,P0300,Renault Clio,251000,Düşük kompresyon onarıldı.
+"Klima açıkken arıza lambası, beraberinde gaz tepkisinde düşüş.",Motor,P0300,Peugeot 301,211000,Ateşleme bobini değiştirildi.
+Hızlanırken motorda titreme; ayrıca gaz tepkisinde düşüş.,Motor,P0300,Volkswagen Passat,160000,"Arıza Enjektör kaynaklıydı, yenilendi. Sonrasında ateşleme bobini kontrol edildi."
+Müşteri klima açıkken gaz tepkisinde düşüş ve motorda titreme olduğunu belirtti.,Motor,P0300,Fiat Egea,220000,Ateşleme bobini yenilendi; enjektör onarıldı.
+Gaz tepkisinde düşüş ve arıza lambası şikayeti mevcut.,Motor,P0300,Citroen C3,118000,Enjektör değiştirildi; buji temizlendi.
+Hızlanırken 1. silindirde sarsıntı; ayrıca rölantide tekleme.,Motor,P0301,Nissan Qashqai,122000,1. silindir bujisi/bobini kontrol edilip değiştirildi ve sistem testi yapıldı.
+Rölantide rölantide tekleme; ayrıca 1. silindirde sarsıntı.,Motor,P0301,Citroen C3,181000,Enjektör arızası temizlendi ve sistem testi yapıldı.
+Araç hızlanırken rölantide tekleme ve 1. silindirde sarsıntı.,Motor,P0301,Volkswagen Passat,80000,1. silindir bujisi/bobini onarıldı.
+Araç fren yaparken 1. silindirde sarsıntı ve rölantide tekleme.,Motor,P0301,Volkswagen Passat,181000,Enjektör arızası temizlendi.
+Rölantide tekleme ve 1. silindirde sarsıntı şikayeti mevcut.,Motor,P0301,Toyota Corolla,171000,"Arıza 1. silindir bujisi/bobini kaynaklıydı, kontrol edilip değiştirildi. Sonrasında enjektör arızası kontrol edildi."
+Uzun yol sürüşünde rölantide tekleme; ayrıca 1. silindirde sarsıntı.,Motor,P0301,Citroen C3,179000,1. silindir bujisi/bobini değiştirildi ve sistem testi yapıldı.
+Araç şehir içi trafikte 1. silindirde sarsıntı ve rölantide tekleme.,Motor,P0301,Hyundai i20,189000,1. silindir bujisi/bobini değiştirildi ve sistem testi yapıldı.
+"Rölantide tekleme, 1. silindirde sarsıntı. Şikayet klima açıkken belirginleşiyor.",Motor,P0301,Citroen C3,83000,Enjektör arızası kalibre edildi; 1. silindir bujisi/bobini kontrol edilip değiştirildi.
+"1. silindirde sarsıntı, rölantide tekleme. Şikayet fren yaparken belirginleşiyor.",Motor,P0301,Volkswagen Passat,105000,"Arıza 1. silindir bujisi/bobini kaynaklıydı, değiştirildi. Sonrasında enjektör arızası kontrol edildi."
+Araç soğuk havada ilk çalıştırmada rölantide tekleme ve 2. silindirde sarsıntı.,Motor,P0302,Renault Clio,100000,"Arıza 2. silindir bujisi/bobini kaynaklıydı, değiştirildi. Sonrasında enjektör arızası kontrol edildi."
+"Rölantide tekleme, 2. silindirde sarsıntı. Şikayet klima açıkken belirginleşiyor.",Motor,P0302,Opel Astra,181000,2. silindir bujisi/bobini onarıldı; enjektör arızası onarıldı.
+Rölantide tekleme ve 2. silindirde sarsıntı şikayeti mevcut.,Motor,P0302,Honda Civic,133000,Enjektör arızası kontrol edilip değiştirildi ve sistem testi yapıldı.
+Şehir içi trafikte 2. silindirde sarsıntı; ayrıca rölantide tekleme.,Motor,P0302,Opel Astra,181000,Enjektör arızası yenilendi ve sistem testi yapıldı.
+"2. silindirde sarsıntı, rölantide tekleme. Şikayet hızlanırken belirginleşiyor.",Motor,P0302,Citroen C3,66000,2. silindir bujisi/bobini yenilendi.
+Vites değiştirirken 2. silindirde sarsıntı; ayrıca rölantide tekleme.,Motor,P0302,Dacia Duster,55000,2. silindir bujisi/bobini onarıldı.
+2. silindirde sarsıntı ve rölantide tekleme şikayeti mevcut.,Motor,P0302,Citroen C3,168000,"Arıza 2. silindir bujisi/bobini kaynaklıydı, yenilendi. Sonrasında enjektör arızası kontrol edildi."
+"Soğuk havada ilk çalıştırmada 2. silindirde sarsıntı, beraberinde rölantide tekleme.",Motor,P0302,Fiat Egea,89000,2. silindir bujisi/bobini onarıldı; enjektör arızası değiştirildi.
+Araç düşük devirde rölantide tekleme ve 2. silindirde sarsıntı.,Motor,P0302,Honda Civic,193000,Enjektör arızası kontrol edilip değiştirildi; 2. silindir bujisi/bobini kontrol edilip değiştirildi.
+"3. silindirde sarsıntı, rölantide tekleme. Şikayet yokuş çıkarken belirginleşiyor.",Motor,P0303,Volkswagen Golf,119000,Enjektör arızası değiştirildi.
+Fren yaparken rölantide tekleme; ayrıca 3. silindirde sarsıntı.,Motor,P0303,Fiat Doblo,110000,3. silindir bujisi/bobini yenilendi.
+"Vites değiştirirken 3. silindirde sarsıntı, beraberinde rölantide tekleme.",Motor,P0303,BMW 320i,179000,3. silindir bujisi/bobini yenilendi.
+"Rampada kalkışta rölantide tekleme, beraberinde 3. silindirde sarsıntı.",Motor,P0303,Volkswagen Golf,111000,"Arıza Enjektör arızası kaynaklıydı, yenilendi. Sonrasında 3. silindir bujisi/bobini kontrol edildi."
+Araç yokuş çıkarken 3. silindirde sarsıntı ve rölantide tekleme.,Motor,P0303,Fiat Egea,151000,Enjektör arızası temizlendi.
+"3. silindirde sarsıntı, rölantide tekleme. Şikayet rampada kalkışta belirginleşiyor.",Motor,P0303,Citroen C3,152000,3. silindir bujisi/bobini kontrol edilip değiştirildi.
+"Düşük devirde rölantide tekleme, beraberinde 3. silindirde sarsıntı.",Motor,P0303,Volkswagen Golf,153000,"Arıza 3. silindir bujisi/bobini kaynaklıydı, temizlendi. Sonrasında enjektör arızası kontrol edildi."
+Klima açıkken 3. silindirde sarsıntı; ayrıca rölantide tekleme.,Motor,P0303,Volkswagen Passat,133000,Enjektör arızası yenilendi; 3. silindir bujisi/bobini yenilendi.
+3. silindirde sarsıntı ve rölantide tekleme şikayeti mevcut.,Motor,P0303,Mercedes C180,148000,3. silindir bujisi/bobini kontrol edilip değiştirildi; enjektör arızası değiştirildi.
+Vites değiştirirken 4. silindirde sarsıntı; ayrıca rölantide tekleme.,Motor,P0304,Opel Astra,161000,Enjektör arızası yenilendi; 4. silindir bujisi/bobini değiştirildi.
+Müşteri uzun yol sürüşünde rölantide tekleme ve 4. silindirde sarsıntı olduğunu belirtti.,Motor,P0304,Fiat Egea,113000,"Arıza Enjektör arızası kaynaklıydı, değiştirildi. Sonrasında 4. silindir bujisi/bobini kontrol edildi."
+Müşteri düşük devirde 4. silindirde sarsıntı ve rölantide tekleme olduğunu belirtti.,Motor,P0304,Renault Clio,68000,"Arıza Enjektör arızası kaynaklıydı, onarıldı. Sonrasında 4. silindir bujisi/bobini kontrol edildi."
+Düşük devirde rölantide tekleme; ayrıca 4. silindirde sarsıntı.,Motor,P0304,Toyota Corolla,52000,Enjektör arızası temizlendi; 4. silindir bujisi/bobini onarıldı.
+Müşteri düşük devirde rölantide tekleme ve 4. silindirde sarsıntı olduğunu belirtti.,Motor,P0304,Volkswagen Passat,119000,"Arıza Enjektör arızası kaynaklıydı, onarıldı. Sonrasında 4. silindir bujisi/bobini kontrol edildi."
+"4. silindirde sarsıntı, rölantide tekleme. Şikayet şehir içi trafikte belirginleşiyor.",Motor,P0304,Dacia Duster,86000,Enjektör arızası temizlendi.
+"Düşük devirde rölantide tekleme, beraberinde 4. silindirde sarsıntı.",Motor,P0304,Mercedes C180,162000,Enjektör arızası kalibre edildi; 4. silindir bujisi/bobini onarıldı.
+"Yokuş çıkarken rölantide tekleme, beraberinde 4. silindirde sarsıntı.",Motor,P0304,Audi A3,128000,"Arıza 4. silindir bujisi/bobini kaynaklıydı, yenilendi. Sonrasında enjektör arızası kontrol edildi."
+Soğuk havada ilk çalıştırmada rölantide tekleme; ayrıca 4. silindirde sarsıntı.,Motor,P0304,Renault Symbol,59000,Enjektör arızası kontrol edilip değiştirildi; 4. silindir bujisi/bobini kontrol edilip değiştirildi.
+Motor ısındıktan sonra rölantide stop; ayrıca emiş hava kaçağı.,Motor,P0171,Volkswagen Golf,41000,Hava kaçağı yenilendi; MAF kirli kontrol edilip değiştirildi.
+"Soğuk havada ilk çalıştırmada emiş hava kaçağı, beraberinde rölantide stop.",Motor,P0171,Hyundai i20,72000,Enjektör tıkalı kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Vites değiştirirken emiş hava kaçağı, beraberinde rölantide stop.",Motor,P0171,Fiat Doblo,152000,Enjektör tıkalı onarıldı ve sistem testi yapıldı.
+"Güç kaybı, rölantide stop. Şikayet fren yaparken belirginleşiyor.",Motor,P0171,Hyundai i20,112000,"Arıza Enjektör tıkalı kaynaklıydı, yenilendi. Sonrasında hava kaçağı kontrol edildi."
+Araç fren yaparken rölantide stop ve emiş hava kaçağı.,Motor,P0171,Volkswagen Golf,80000,MAF kirli kontrol edilip değiştirildi; enjektör tıkalı yenilendi.
+Müşteri motor ısındıktan sonra güç kaybı ve rölantide stop olduğunu belirtti.,Motor,P0171,Citroen C3,162000,Enjektör tıkalı onarıldı; hava kaçağı onarıldı.
+"Emiş hava kaçağı, güç kaybı. Şikayet düşük devirde belirginleşiyor.",Motor,P0171,Renault Symbol,42000,Yakıt basıncı düşük onarıldı ve sistem testi yapıldı.
+Vites değiştirirken emiş hava kaçağı; ayrıca güç kaybı.,Motor,P0171,Toyota Corolla,154000,Enjektör tıkalı temizlendi ve sistem testi yapıldı.
+Rampada kalkışta emiş hava kaçağı; ayrıca rölantide stop.,Motor,P0171,Skoda Octavia,73000,Hava kaçağı değiştirildi.
+Vites değiştirirken yakıt kokusu; ayrıca siyah egzoz dumanı.,Motor,P0172,Renault Clio,108000,MAF arızalı onarıldı; yakıt basıncı yüksek temizlendi.
+"Yakıt kokusu, yüksek tüketim. Şikayet yokuş çıkarken belirginleşiyor.",Motor,P0172,Toyota Corolla,61000,MAF arızalı temizlendi.
+Araç klima açıkken yüksek tüketim ve siyah egzoz dumanı.,Motor,P0172,Renault Megane,105000,Enjektör sızdırması yenilendi; yakıt basıncı yüksek yenilendi.
+Düşük devirde yakıt kokusu; ayrıca siyah egzoz dumanı.,Motor,P0172,Skoda Octavia,107000,MAF arızalı yenilendi.
+"Yokuş çıkarken siyah egzoz dumanı, beraberinde yüksek tüketim.",Motor,P0172,Dacia Duster,144000,Yakıt basıncı yüksek kalibre edildi.
+Yüksek tüketim ve siyah egzoz dumanı şikayeti mevcut.,Motor,P0172,BMW 320i,197000,"Arıza Enjektör sızdırması kaynaklıydı, kalibre edildi. Sonrasında yakıt basıncı yüksek kontrol edildi."
+"Hızlanırken yüksek tüketim, beraberinde yakıt kokusu.",Motor,P0172,Mercedes C180,43000,MAF arızalı onarıldı.
+Rampada kalkışta yüksek tüketim; ayrıca yakıt kokusu.,Motor,P0172,Honda Civic,86000,Yakıt basıncı yüksek onarıldı ve sistem testi yapıldı.
+Uzun yol sürüşünde yüksek tüketim; ayrıca yakıt kokusu.,Motor,P0172,Fiat Egea,113000,MAF arızalı kalibre edildi ve sistem testi yapıldı.
+"Ivmelenmede tutukluk, düzensiz rölanti. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Motor,P0101,Mercedes C180,88000,"Arıza Emiş kaçağı kaynaklıydı, temizlendi. Sonrasında MAF sensörü kirli/arızalı kontrol edildi."
+Araç fren yaparken ivmelenmede tutukluk ve düzensiz rölanti.,Motor,P0101,Fiat Doblo,90000,MAF sensörü kirli/arızalı onarıldı ve sistem testi yapıldı.
+Düzensiz rölanti ve ivmelenmede tutukluk şikayeti mevcut.,Motor,P0101,Renault Symbol,157000,"Arıza MAF sensörü kirli/arızalı kaynaklıydı, yenilendi. Sonrasında emiş kaçağı kontrol edildi."
+"Klima açıkken düzensiz rölanti, beraberinde ivmelenmede tutukluk.",Motor,P0101,Peugeot 301,164000,"Arıza Emiş kaçağı kaynaklıydı, temizlendi. Sonrasında MAF sensörü kirli/arızalı kontrol edildi."
+Müşteri yokuş çıkarken ivmelenmede tutukluk ve düzensiz rölanti olduğunu belirtti.,Motor,P0101,Hyundai i20,72000,MAF sensörü kirli/arızalı kontrol edilip değiştirildi.
+"Rampada kalkışta ivmelenmede tutukluk, beraberinde düzensiz rölanti.",Motor,P0101,Fiat Doblo,196000,Emiş kaçağı temizlendi; MAF sensörü kirli/arızalı yenilendi.
+Araç yokuş çıkarken ivmelenmede tutukluk ve düzensiz rölanti.,Motor,P0101,Citroen C3,73000,Emiş kaçağı kalibre edildi.
+Araç hızlanırken düzensiz rölanti ve ivmelenmede tutukluk.,Motor,P0101,Nissan Qashqai,115000,Emiş kaçağı temizlendi ve sistem testi yapıldı.
+Araç vites değiştirirken düzensiz rölanti ve ivmelenmede tutukluk.,Motor,P0101,Fiat Egea,145000,Emiş kaçağı yenilendi.
+Araç şehir içi trafikte düzensiz çalışma ve güç kaybı.,Motor,P0106,Citroen C3,149000,MAP sensörü onarıldı ve sistem testi yapıldı.
+"Düşük devirde düzensiz çalışma, beraberinde güç kaybı.",Motor,P0106,Renault Clio,200000,MAP sensörü temizlendi; vakum hortumu kaçağı kontrol edilip değiştirildi.
+Şehir içi trafikte güç kaybı; ayrıca düzensiz çalışma.,Motor,P0106,Citroen C3,60000,MAP sensörü onarıldı ve sistem testi yapıldı.
+Soğuk havada ilk çalıştırmada düzensiz çalışma; ayrıca güç kaybı.,Motor,P0106,BMW 320i,114000,Vakum hortumu kaçağı temizlendi; MAP sensörü kontrol edilip değiştirildi.
+"Hızlanırken güç kaybı, beraberinde düzensiz çalışma.",Motor,P0106,Hyundai i20,79000,Vakum hortumu kaçağı değiştirildi.
+Araç vites değiştirirken düzensiz çalışma ve güç kaybı.,Motor,P0106,Skoda Octavia,120000,Vakum hortumu kaçağı onarıldı ve sistem testi yapıldı.
+Müşteri rampada kalkışta güç kaybı ve düzensiz çalışma olduğunu belirtti.,Motor,P0106,Audi A3,106000,MAP sensörü kontrol edilip değiştirildi; vakum hortumu kaçağı kalibre edildi.
+Araç düşük devirde güç kaybı ve düzensiz çalışma.,Motor,P0106,Ford Focus,163000,Vakum hortumu kaçağı kalibre edildi; MAP sensörü onarıldı.
+Müşteri vites değiştirirken düzensiz çalışma ve güç kaybı olduğunu belirtti.,Motor,P0106,Honda Civic,127000,Vakum hortumu kaçağı temizlendi; MAP sensörü onarıldı.
+"Kalorifer geç ısıtıyor, motor geç ısınıyor. Şikayet klima açıkken belirginleşiyor.",Motor,P0128,Citroen C3,25000,"Arıza Soğutma sıvısı sıcaklık sensörü kaynaklıydı, temizlendi. Sonrasında termostat açık kalmış kontrol edildi."
+Araç fren yaparken motor geç ısınıyor ve kalorifer geç ısıtıyor.,Motor,P0128,Citroen C3,81000,Soğutma sıvısı sıcaklık sensörü kalibre edildi; termostat açık kalmış temizlendi.
+Soğuk havada ilk çalıştırmada kalorifer geç ısıtıyor; ayrıca motor geç ısınıyor.,Motor,P0128,Toyota Corolla,92000,Termostat açık kalmış kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Klima açıkken motor geç ısınıyor, beraberinde kalorifer geç ısıtıyor.",Motor,P0128,Hyundai i20,113000,Termostat açık kalmış kalibre edildi.
+"Motor geç ısınıyor, kalorifer geç ısıtıyor. Şikayet hızlanırken belirginleşiyor.",Motor,P0128,Volkswagen Passat,105000,"Arıza Termostat açık kalmış kaynaklıydı, kalibre edildi. Sonrasında soğutma sıvısı sıcaklık sensörü kontrol edildi."
+"Kalorifer geç ısıtıyor, motor geç ısınıyor. Şikayet vites değiştirirken belirginleşiyor.",Motor,P0128,Hyundai i20,80000,Termostat açık kalmış kalibre edildi; soğutma sıvısı sıcaklık sensörü kalibre edildi.
+"Motor geç ısınıyor, kalorifer geç ısıtıyor. Şikayet yokuş çıkarken belirginleşiyor.",Motor,P0128,Mercedes C180,123000,"Arıza Soğutma sıvısı sıcaklık sensörü kaynaklıydı, kontrol edilip değiştirildi. Sonrasında termostat açık kalmış kontrol edildi."
+"Vites değiştirirken kalorifer geç ısıtıyor, beraberinde motor geç ısınıyor.",Motor,P0128,Renault Symbol,65000,Soğutma sıvısı sıcaklık sensörü temizlendi ve sistem testi yapıldı.
+"Motor geç ısınıyor, kalorifer geç ısıtıyor. Şikayet şehir içi trafikte belirginleşiyor.",Motor,P0128,Renault Clio,62000,Soğutma sıvısı sıcaklık sensörü kontrol edilip değiştirildi ve sistem testi yapıldı.
+Soğuk havada ilk çalıştırmada hararet; ayrıca buhar.,Motor,P0217,Fiat Doblo,235000,Termostat değiştirildi ve sistem testi yapıldı.
+Rampada kalkışta buhar; ayrıca hararet.,Motor,P0217,Honda Civic,252000,Su pompası temizlendi ve sistem testi yapıldı.
+Araç klima açıkken güç kesintisi ve buhar.,Motor,P0217,Mercedes C180,257000,Fan arızası kalibre edildi ve sistem testi yapıldı.
+Güç kesintisi ve hararet şikayeti mevcut.,Motor,P0217,BMW 320i,140000,Soğutma sıvısı eksik kontrol edilip değiştirildi.
+Hararet ve buhar şikayeti mevcut.,Motor,P0217,BMW 320i,88000,Soğutma sıvısı eksik temizlendi.
+Rölantide buhar; ayrıca güç kesintisi.,Motor,P0217,Fiat Doblo,188000,Su pompası değiştirildi; soğutma sıvısı eksik kalibre edildi.
+"Vites değiştirirken buhar, beraberinde hararet.",Motor,P0217,Volkswagen Golf,141000,"Arıza Fan arızası kaynaklıydı, onarıldı. Sonrasında termostat kontrol edildi."
+Müşteri vites değiştirirken güç kesintisi ve hararet olduğunu belirtti.,Motor,P0217,Citroen C3,121000,"Arıza Soğutma sıvısı eksik kaynaklıydı, kalibre edildi. Sonrasında su pompası kontrol edildi."
+Müşteri rampada kalkışta güç kesintisi ve buhar olduğunu belirtti.,Motor,P0217,Skoda Octavia,159000,Su pompası değiştirildi ve sistem testi yapıldı.
+Müşteri düşük devirde güç kaybı ve tıkırtı olduğunu belirtti.,Motor,P0016,BMW 320i,66000,"Arıza Krank/eksantrik sensörü kaynaklıydı, değiştirildi. Sonrasında VVT kontrol edildi."
+Tıkırtı ve zor çalışma şikayeti mevcut.,Motor,P0016,Renault Symbol,135000,Triger zinciri esnemiş kontrol edilip değiştirildi; VVT yenilendi.
+Tıkırtı ve güç kaybı şikayeti mevcut.,Motor,P0016,Volkswagen Golf,225000,"Arıza Triger zinciri esnemiş kaynaklıydı, onarıldı. Sonrasında krank/eksantrik sensörü kontrol edildi."
+Rampada kalkışta tıkırtı; ayrıca güç kaybı.,Motor,P0016,Fiat Egea,137000,VVT yenilendi; krank/eksantrik sensörü yenilendi.
+"Fren yaparken tıkırtı, beraberinde güç kaybı.",Motor,P0016,Toyota Corolla,103000,"Arıza VVT kaynaklıydı, kontrol edilip değiştirildi. Sonrasında krank/eksantrik sensörü kontrol edildi."
+Hızlanırken zor çalışma; ayrıca güç kaybı.,Motor,P0016,Hyundai i20,237000,"Arıza Krank/eksantrik sensörü kaynaklıydı, değiştirildi. Sonrasında VVT kontrol edildi."
+Araç fren yaparken zor çalışma ve güç kaybı.,Motor,P0016,Skoda Octavia,157000,Krank/eksantrik sensörü kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç vites değiştirirken zor çalışma ve tıkırtı.,Motor,P0016,Audi A3,207000,VVT kontrol edilip değiştirildi.
+"Tıkırtı, güç kaybı. Şikayet klima açıkken belirginleşiyor.",Motor,P0016,Volkswagen Passat,97000,"Arıza Triger zinciri esnemiş kaynaklıydı, onarıldı. Sonrasında krank/eksantrik sensörü kontrol edildi."
+Fren yaparken vuruntu; ayrıca NOx artışı.,Egzoz,P0401,Dacia Duster,159000,EGR borusu kurum onarıldı; vakum sorunu kontrol edilip değiştirildi.
+"Vuruntu, rölantide titreme. Şikayet düşük devirde belirginleşiyor.",Egzoz,P0401,Toyota Corolla,49000,Vakum sorunu onarıldı; EGR borusu kurum onarıldı.
+Vuruntu ve rölantide titreme şikayeti mevcut.,Egzoz,P0401,Peugeot 301,183000,Vakum sorunu onarıldı.
+Araç vites değiştirirken vuruntu ve NOx artışı.,Egzoz,P0401,Opel Astra,197000,"Arıza EGR valfi tıkalı kaynaklıydı, yenilendi. Sonrasında vakum sorunu kontrol edildi."
+"Hızlanırken NOx artışı, beraberinde vuruntu.",Egzoz,P0401,Opel Astra,194000,"Arıza EGR valfi tıkalı kaynaklıydı, yenilendi. Sonrasında vakum sorunu kontrol edildi."
+Rölantide vuruntu; ayrıca rölantide titreme.,Egzoz,P0401,Citroen C3,106000,EGR valfi tıkalı yenilendi.
+Müşteri düşük devirde rölantide titreme ve vuruntu olduğunu belirtti.,Egzoz,P0401,Renault Megane,86000,EGR borusu kurum kontrol edilip değiştirildi; EGR valfi tıkalı onarıldı.
+Araç rampada kalkışta NOx artışı ve vuruntu.,Egzoz,P0401,Renault Symbol,158000,EGR borusu kurum kalibre edildi ve sistem testi yapıldı.
+NOx artışı ve vuruntu şikayeti mevcut.,Egzoz,P0401,Fiat Doblo,119000,EGR borusu kurum onarıldı.
+Düzensiz çalışma ve rölantide stop şikayeti mevcut.,Egzoz,P0402,Skoda Octavia,59000,EGR valfi açık takılı değiştirildi; DPFE sensörü yenilendi.
+"Motor ısındıktan sonra düzensiz çalışma, beraberinde rölantide stop.",Egzoz,P0402,Fiat Doblo,117000,DPFE sensörü kontrol edilip değiştirildi.
+Vites değiştirirken rölantide stop; ayrıca düzensiz çalışma.,Egzoz,P0402,Honda Civic,129000,DPFE sensörü kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç hızlanırken düzensiz çalışma ve rölantide stop.,Egzoz,P0402,Fiat Egea,153000,EGR valfi açık takılı kalibre edildi; DPFE sensörü değiştirildi.
+Müşteri motor ısındıktan sonra düzensiz çalışma ve rölantide stop olduğunu belirtti.,Egzoz,P0402,Honda Civic,53000,"Arıza DPFE sensörü kaynaklıydı, değiştirildi. Sonrasında EGR valfi açık takılı kontrol edildi."
+"Rölantide stop, düzensiz çalışma. Şikayet klima açıkken belirginleşiyor.",Egzoz,P0402,Hyundai i20,68000,DPFE sensörü temizlendi.
+"Fren yaparken rölantide stop, beraberinde düzensiz çalışma.",Egzoz,P0402,Audi A3,186000,EGR valfi açık takılı yenilendi.
+Araç uzun yol sürüşünde düzensiz çalışma ve rölantide stop.,Egzoz,P0402,Ford Focus,78000,DPFE sensörü kontrol edilip değiştirildi; EGR valfi açık takılı kontrol edilip değiştirildi.
+"Rampada kalkışta rölantide stop, beraberinde düzensiz çalışma.",Egzoz,P0402,Opel Astra,139000,"Arıza DPFE sensörü kaynaklıydı, yenilendi. Sonrasında EGR valfi açık takılı kontrol edildi."
+"Düşük devirde emisyon yüksek, beraberinde arıza lambası.",Egzoz,P0420,Fiat Egea,54000,Katalizör yıpranmış kontrol edilip değiştirildi.
+"Emisyon yüksek, arıza lambası. Şikayet klima açıkken belirginleşiyor.",Egzoz,P0420,Renault Symbol,199000,"Arıza O2 sensörü kaynaklıydı, yenilendi. Sonrasında egzoz kaçağı kontrol edildi."
+Araç motor ısındıktan sonra arıza lambası ve emisyon yüksek.,Egzoz,P0420,BMW 320i,195000,O2 sensörü yenilendi.
+Müşteri şehir içi trafikte arıza lambası ve emisyon yüksek olduğunu belirtti.,Egzoz,P0420,Opel Astra,76000,"Arıza O2 sensörü kaynaklıydı, değiştirildi. Sonrasında egzoz kaçağı kontrol edildi."
+Rölantide emisyon yüksek; ayrıca arıza lambası.,Egzoz,P0420,Dacia Duster,180000,"Arıza Egzoz kaçağı kaynaklıydı, değiştirildi. Sonrasında katalizör yıpranmış kontrol edildi."
+"Arıza lambası, emisyon yüksek. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Egzoz,P0420,Fiat Egea,122000,Egzoz kaçağı kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Emisyon yüksek, arıza lambası. Şikayet hızlanırken belirginleşiyor.",Egzoz,P0420,Renault Megane,125000,"Arıza Katalizör yıpranmış kaynaklıydı, değiştirildi. Sonrasında O2 sensörü kontrol edildi."
+"Motor ısındıktan sonra arıza lambası, beraberinde emisyon yüksek.",Egzoz,P0420,Dacia Duster,177000,"Arıza Katalizör yıpranmış kaynaklıydı, kontrol edilip değiştirildi. Sonrasında O2 sensörü kontrol edildi."
+Araç rölantide arıza lambası ve emisyon yüksek.,Egzoz,P0420,Fiat Doblo,70000,"Arıza Egzoz kaçağı kaynaklıydı, temizlendi. Sonrasında katalizör yıpranmış kontrol edildi."
+Hızlanırken arıza lambası; ayrıca emisyon yüksek.,Egzoz,P0430,Toyota Corolla,92000,Katalizör yıpranmış yenilendi.
+"Düşük devirde emisyon yüksek, beraberinde arıza lambası.",Egzoz,P0430,Skoda Octavia,188000,"Arıza Egzoz kaçağı kaynaklıydı, yenilendi. Sonrasında O2 sensörü kontrol edildi."
+Arıza lambası ve emisyon yüksek şikayeti mevcut.,Egzoz,P0430,BMW 320i,112000,"Arıza Egzoz kaçağı kaynaklıydı, kalibre edildi. Sonrasında katalizör yıpranmış kontrol edildi."
+Araç vites değiştirirken emisyon yüksek ve arıza lambası.,Egzoz,P0430,Renault Clio,137000,O2 sensörü kalibre edildi.
+"Arıza lambası, emisyon yüksek. Şikayet düşük devirde belirginleşiyor.",Egzoz,P0430,Fiat Doblo,80000,Katalizör yıpranmış temizlendi.
+Soğuk havada ilk çalıştırmada arıza lambası; ayrıca emisyon yüksek.,Egzoz,P0430,Skoda Octavia,155000,"Arıza Egzoz kaçağı kaynaklıydı, temizlendi. Sonrasında katalizör yıpranmış kontrol edildi."
+Emisyon yüksek ve arıza lambası şikayeti mevcut.,Egzoz,P0430,Audi A3,54000,Egzoz kaçağı temizlendi.
+"Hızlanırken arıza lambası, beraberinde emisyon yüksek.",Egzoz,P0430,Volkswagen Golf,132000,O2 sensörü kalibre edildi; egzoz kaçağı kontrol edilip değiştirildi.
+"Arıza lambası, emisyon yüksek. Şikayet fren yaparken belirginleşiyor.",Egzoz,P0430,Mercedes C180,74000,Egzoz kaçağı kalibre edildi ve sistem testi yapıldı.
+Yokuş çıkarken yüksek tüketim; ayrıca düzensiz çalışma.,Egzoz,P0134,Opel Astra,130000,Kablo kopuk yenilendi; oksijen sensörü arızalı yenilendi.
+"Hızlanırken yüksek tüketim, beraberinde düzensiz çalışma.",Egzoz,P0134,Citroen C3,178000,Oksijen sensörü arızalı kalibre edildi; kablo kopuk onarıldı.
+Yüksek tüketim ve düzensiz çalışma şikayeti mevcut.,Egzoz,P0134,Audi A3,83000,Egzoz kaçağı onarıldı.
+Müşteri düşük devirde yüksek tüketim ve düzensiz çalışma olduğunu belirtti.,Egzoz,P0134,Skoda Octavia,101000,"Arıza Egzoz kaçağı kaynaklıydı, onarıldı. Sonrasında oksijen sensörü arızalı kontrol edildi."
+Müşteri vites değiştirirken düzensiz çalışma ve yüksek tüketim olduğunu belirtti.,Egzoz,P0134,Dacia Duster,172000,Egzoz kaçağı yenilendi; kablo kopuk kalibre edildi.
+Araç fren yaparken düzensiz çalışma ve yüksek tüketim.,Egzoz,P0134,Fiat Doblo,73000,Kablo kopuk temizlendi; oksijen sensörü arızalı onarıldı.
+Hızlanırken yüksek tüketim; ayrıca düzensiz çalışma.,Egzoz,P0134,Skoda Octavia,132000,Oksijen sensörü arızalı onarıldı.
+Araç motor ısındıktan sonra düzensiz çalışma ve yüksek tüketim.,Egzoz,P0134,Peugeot 301,99000,Oksijen sensörü arızalı kontrol edilip değiştirildi.
+Araç rölantide düzensiz çalışma ve yüksek tüketim.,Egzoz,P0134,BMW 320i,164000,Egzoz kaçağı onarıldı ve sistem testi yapıldı.
+Müşteri soğuk havada ilk çalıştırmada arıza lambası ve emisyon testi başarısız olduğunu belirtti.,Egzoz,P0136,Opel Astra,129000,Arka O2 sensörü temizlendi.
+Soğuk havada ilk çalıştırmada emisyon testi başarısız; ayrıca arıza lambası.,Egzoz,P0136,Honda Civic,104000,Isıtıcı devresi onarıldı.
+Rampada kalkışta arıza lambası; ayrıca emisyon testi başarısız.,Egzoz,P0136,BMW 320i,76000,Arka O2 sensörü kalibre edildi; ısıtıcı devresi onarıldı.
+Müşteri fren yaparken arıza lambası ve emisyon testi başarısız olduğunu belirtti.,Egzoz,P0136,Fiat Egea,89000,Arka O2 sensörü değiştirildi ve sistem testi yapıldı.
+Emisyon testi başarısız ve arıza lambası şikayeti mevcut.,Egzoz,P0136,Renault Megane,67000,Arka O2 sensörü kontrol edilip değiştirildi; ısıtıcı devresi kontrol edilip değiştirildi.
+Araç rölantide arıza lambası ve emisyon testi başarısız.,Egzoz,P0136,Peugeot 301,92000,Isıtıcı devresi kontrol edilip değiştirildi ve sistem testi yapıldı.
+Arıza lambası ve emisyon testi başarısız şikayeti mevcut.,Egzoz,P0136,Skoda Octavia,25000,Isıtıcı devresi yenilendi.
+"Emisyon testi başarısız, arıza lambası. Şikayet fren yaparken belirginleşiyor.",Egzoz,P0136,Citroen C3,82000,Isıtıcı devresi temizlendi; arka O2 sensörü temizlendi.
+Araç yokuş çıkarken arıza lambası ve emisyon testi başarısız.,Egzoz,P0136,Peugeot 301,77000,Isıtıcı devresi temizlendi ve sistem testi yapıldı.
+Soğukta gecikmeli kapalı çevrim ve soğukta gecikmeli kapalı çevrim şikayeti mevcut.,Egzoz,P0141,Renault Symbol,68000,Kablo kontrol edilip değiştirildi.
+"Soğukta gecikmeli kapalı çevrim, soğukta gecikmeli kapalı çevrim. Şikayet hızlanırken belirginleşiyor.",Egzoz,P0141,Audi A3,128000,"Arıza O2 sensörü ısıtıcı kaynaklıydı, değiştirildi. Sonrasında sigorta kontrol edildi."
+Müşteri yokuş çıkarken soğukta gecikmeli kapalı çevrim ve soğukta gecikmeli kapalı çevrim olduğunu belirtti.,Egzoz,P0141,Skoda Octavia,99000,Kablo kontrol edilip değiştirildi; sigorta onarıldı.
+"Soğukta gecikmeli kapalı çevrim, soğukta gecikmeli kapalı çevrim. Şikayet uzun yol sürüşünde belirginleşiyor.",Egzoz,P0141,Renault Clio,115000,"Arıza Sigorta kaynaklıydı, kontrol edilip değiştirildi. Sonrasında kablo kontrol edildi."
+"Soğukta gecikmeli kapalı çevrim, soğukta gecikmeli kapalı çevrim. Şikayet klima açıkken belirginleşiyor.",Egzoz,P0141,Peugeot 301,87000,Kablo yenilendi.
+Soğuk havada ilk çalıştırmada soğukta gecikmeli kapalı çevrim; ayrıca soğukta gecikmeli kapalı çevrim.,Egzoz,P0141,Fiat Egea,51000,"Arıza Kablo kaynaklıydı, onarıldı. Sonrasında sigorta kontrol edildi."
+"Soğuk havada ilk çalıştırmada soğukta gecikmeli kapalı çevrim, beraberinde soğukta gecikmeli kapalı çevrim.",Egzoz,P0141,Volkswagen Golf,109000,"Arıza Sigorta kaynaklıydı, onarıldı. Sonrasında kablo kontrol edildi."
+Düşük devirde soğukta gecikmeli kapalı çevrim; ayrıca soğukta gecikmeli kapalı çevrim.,Egzoz,P0141,Fiat Doblo,68000,"Arıza Sigorta kaynaklıydı, yenilendi. Sonrasında kablo kontrol edildi."
+"Soğukta gecikmeli kapalı çevrim, soğukta gecikmeli kapalı çevrim. Şikayet rölantide belirginleşiyor.",Egzoz,P0141,Fiat Doblo,71000,"Arıza Kablo kaynaklıydı, temizlendi. Sonrasında O2 sensörü ısıtıcı kontrol edildi."
+Müşteri düşük devirde arıza lambası ve yakıt kokusu olduğunu belirtti.,Egzoz,P0455,Renault Symbol,46000,Yakıt kapağı gevşek onarıldı.
+Müşteri klima açıkken arıza lambası ve yakıt kokusu olduğunu belirtti.,Egzoz,P0455,Peugeot 301,113000,"Arıza Yakıt kapağı gevşek kaynaklıydı, yenilendi. Sonrasında EVAP hortumu kontrol edildi."
+Fren yaparken yakıt kokusu; ayrıca arıza lambası.,Egzoz,P0455,Volkswagen Passat,46000,Yakıt kapağı gevşek değiştirildi ve sistem testi yapıldı.
+Fren yaparken arıza lambası; ayrıca yakıt kokusu.,Egzoz,P0455,Audi A3,136000,"Arıza Yakıt kapağı gevşek kaynaklıydı, onarıldı. Sonrasında purge valfi kontrol edildi."
+"Motor ısındıktan sonra arıza lambası, beraberinde yakıt kokusu.",Egzoz,P0455,Fiat Egea,36000,EVAP hortumu onarıldı ve sistem testi yapıldı.
+Arıza lambası ve yakıt kokusu şikayeti mevcut.,Egzoz,P0455,Nissan Qashqai,44000,Yakıt kapağı gevşek değiştirildi.
+Rölantide yakıt kokusu; ayrıca arıza lambası.,Egzoz,P0455,Mercedes C180,113000,"Arıza Yakıt kapağı gevşek kaynaklıydı, değiştirildi. Sonrasında EVAP hortumu kontrol edildi."
+Yakıt kokusu ve arıza lambası şikayeti mevcut.,Egzoz,P0455,BMW 320i,101000,Purge valfi kalibre edildi; yakıt kapağı gevşek kalibre edildi.
+"Klima açıkken yakıt kokusu, beraberinde arıza lambası.",Egzoz,P0455,Audi A3,64000,Purge valfi değiştirildi.
+"Emisyon, arıza lambası. Şikayet düşük devirde belirginleşiyor.",Egzoz,P0442,Audi A3,104000,"Arıza EVAP hortum çatlağı kaynaklıydı, kontrol edilip değiştirildi. Sonrasında yakıt kapağı contası kontrol edildi."
+"Emisyon, arıza lambası. Şikayet klima açıkken belirginleşiyor.",Egzoz,P0442,BMW 320i,79000,EVAP hortum çatlağı onarıldı; yakıt kapağı contası onarıldı.
+Müşteri şehir içi trafikte emisyon ve arıza lambası olduğunu belirtti.,Egzoz,P0442,Audi A3,39000,"Arıza Yakıt kapağı contası kaynaklıydı, onarıldı. Sonrasında EVAP hortum çatlağı kontrol edildi."
+Uzun yol sürüşünde emisyon; ayrıca arıza lambası.,Egzoz,P0442,Skoda Octavia,36000,Yakıt kapağı contası yenilendi; EVAP hortum çatlağı değiştirildi.
+"Motor ısındıktan sonra arıza lambası, beraberinde emisyon.",Egzoz,P0442,Honda Civic,53000,"Arıza EVAP hortum çatlağı kaynaklıydı, yenilendi. Sonrasında yakıt kapağı contası kontrol edildi."
+Müşteri vites değiştirirken emisyon ve arıza lambası olduğunu belirtti.,Egzoz,P0442,Renault Symbol,23000,EVAP hortum çatlağı yenilendi ve sistem testi yapıldı.
+Müşteri soğuk havada ilk çalıştırmada emisyon ve arıza lambası olduğunu belirtti.,Egzoz,P0442,Renault Symbol,98000,Yakıt kapağı contası değiştirildi.
+Müşteri rampada kalkışta arıza lambası ve emisyon olduğunu belirtti.,Egzoz,P0442,Dacia Duster,68000,EVAP hortum çatlağı kalibre edildi.
+Müşteri fren yaparken arıza lambası ve emisyon olduğunu belirtti.,Egzoz,P0442,Fiat Egea,71000,Yakıt kapağı contası yenilendi.
+Müşteri motor ısındıktan sonra soğukta arıza lambası ve soğukta arıza lambası olduğunu belirtti.,Egzoz,P0411,Mercedes C180,93000,Valf kalibre edildi; hava pompası kalibre edildi.
+"Motor ısındıktan sonra soğukta arıza lambası, beraberinde soğukta arıza lambası.",Egzoz,P0411,Renault Clio,26000,"Arıza Hava pompası kaynaklıydı, onarıldı. Sonrasında hortum tıkanıklığı kontrol edildi."
+Vites değiştirirken soğukta arıza lambası; ayrıca soğukta arıza lambası.,Egzoz,P0411,Audi A3,137000,"Arıza Hortum tıkanıklığı kaynaklıydı, kalibre edildi. Sonrasında hava pompası kontrol edildi."
+"Soğukta arıza lambası, soğukta arıza lambası. Şikayet rölantide belirginleşiyor.",Egzoz,P0411,Audi A3,117000,Valf kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Soğukta arıza lambası, soğukta arıza lambası. Şikayet yokuş çıkarken belirginleşiyor.",Egzoz,P0411,Renault Megane,68000,Valf kalibre edildi ve sistem testi yapıldı.
+Soğukta arıza lambası ve soğukta arıza lambası şikayeti mevcut.,Egzoz,P0411,Renault Megane,98000,Valf kontrol edilip değiştirildi; hortum tıkanıklığı değiştirildi.
+"Soğukta arıza lambası, soğukta arıza lambası. Şikayet düşük devirde belirginleşiyor.",Egzoz,P0411,Ford Focus,89000,Hortum tıkanıklığı kontrol edilip değiştirildi; valf yenilendi.
+"Soğuk havada ilk çalıştırmada soğukta arıza lambası, beraberinde soğukta arıza lambası.",Egzoz,P0411,Volkswagen Passat,45000,"Arıza Hava pompası kaynaklıydı, onarıldı. Sonrasında valf kontrol edildi."
+"Soğukta arıza lambası, soğukta arıza lambası. Şikayet şehir içi trafikte belirginleşiyor.",Egzoz,P0411,Fiat Doblo,122000,Hortum tıkanıklığı kontrol edilip değiştirildi.
+"Arıza lambası, vites geçiş sorunları. Şikayet klima açıkken belirginleşiyor.",Şanzıman,P0700,Fiat Doblo,159000,Alt sistem DTC kalibre edildi ve sistem testi yapıldı.
+"Vites geçiş sorunları, arıza lambası. Şikayet düşük devirde belirginleşiyor.",Şanzıman,P0700,Opel Astra,125000,Alt sistem DTC temizlendi; sensör/solenoid temizlendi.
+"Arıza lambası, vites geçiş sorunları. Şikayet uzun yol sürüşünde belirginleşiyor.",Şanzıman,P0700,Peugeot 301,207000,"Arıza Sensör/solenoid kaynaklıydı, değiştirildi. Sonrasında alt sistem DTC kontrol edildi."
+Uzun yol sürüşünde vites geçiş sorunları; ayrıca arıza lambası.,Şanzıman,P0700,BMW 320i,71000,"Arıza Alt sistem DTC kaynaklıydı, onarıldı. Sonrasında TCM hatası kontrol edildi."
+Şehir içi trafikte vites geçiş sorunları; ayrıca arıza lambası.,Şanzıman,P0700,Citroen C3,131000,Sensör/solenoid değiştirildi; alt sistem DTC kalibre edildi.
+Arıza lambası ve vites geçiş sorunları şikayeti mevcut.,Şanzıman,P0700,Fiat Doblo,119000,Sensör/solenoid değiştirildi.
+Vites geçiş sorunları ve arıza lambası şikayeti mevcut.,Şanzıman,P0700,Volkswagen Golf,61000,Sensör/solenoid kontrol edilip değiştirildi ve sistem testi yapıldı.
+Müşteri yokuş çıkarken vites geçiş sorunları ve arıza lambası olduğunu belirtti.,Şanzıman,P0700,BMW 320i,229000,TCM hatası kalibre edildi; sensör/solenoid kontrol edilip değiştirildi.
+Motor ısındıktan sonra arıza lambası; ayrıca vites geçiş sorunları.,Şanzıman,P0700,Renault Clio,164000,"Arıza Alt sistem DTC kaynaklıydı, değiştirildi. Sonrasında TCM hatası kontrol edildi."
+Müşteri uzun yol sürüşünde hız göstergesi sapması ve düzensiz vites olduğunu belirtti.,Şanzıman,P0715,Skoda Octavia,182000,TCM kalibre edildi; kablo onarıldı.
+Müşteri hızlanırken hız göstergesi sapması ve düzensiz vites olduğunu belirtti.,Şanzıman,P0715,Ford Focus,160000,TCM değiştirildi; kablo kontrol edilip değiştirildi.
+Hız göstergesi sapması ve düzensiz vites şikayeti mevcut.,Şanzıman,P0715,Opel Astra,86000,TCM kalibre edildi ve sistem testi yapıldı.
+Araç klima açıkken düzensiz vites ve hız göstergesi sapması.,Şanzıman,P0715,Ford Focus,77000,Kablo değiştirildi; TCM temizlendi.
+Müşteri vites değiştirirken hız göstergesi sapması ve düzensiz vites olduğunu belirtti.,Şanzıman,P0715,Mercedes C180,119000,"Arıza TCM kaynaklıydı, kontrol edilip değiştirildi. Sonrasında giriş hız sensörü kontrol edildi."
+"Hız göstergesi sapması, düzensiz vites. Şikayet rölantide belirginleşiyor.",Şanzıman,P0715,Fiat Doblo,122000,"Arıza TCM kaynaklıydı, temizlendi. Sonrasında giriş hız sensörü kontrol edildi."
+"Düzensiz vites, hız göstergesi sapması. Şikayet rölantide belirginleşiyor.",Şanzıman,P0715,Volkswagen Golf,159000,TCM kontrol edilip değiştirildi ve sistem testi yapıldı.
+Düzensiz vites ve hız göstergesi sapması şikayeti mevcut.,Şanzıman,P0715,Peugeot 301,60000,TCM kalibre edildi.
+Müşteri rölantide düzensiz vites ve hız göstergesi sapması olduğunu belirtti.,Şanzıman,P0715,Fiat Doblo,156000,Giriş hız sensörü değiştirildi ve sistem testi yapıldı.
+Vites değiştirirken hız hatası; ayrıca vites geçişlerinde gecikme.,Şanzıman,P0720,Fiat Doblo,149000,Kablo bağlantısı kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç yokuş çıkarken vites geçişlerinde gecikme ve hız hatası.,Şanzıman,P0720,Opel Astra,192000,Çıkış hız sensörü temizlendi ve sistem testi yapıldı.
+"Vites geçişlerinde gecikme, hız hatası. Şikayet hızlanırken belirginleşiyor.",Şanzıman,P0720,Renault Clio,115000,Kablo bağlantısı kontrol edilip değiştirildi; çıkış hız sensörü kontrol edilip değiştirildi.
+"Hız hatası, vites geçişlerinde gecikme. Şikayet motor ısındıktan sonra belirginleşiyor.",Şanzıman,P0720,Dacia Duster,138000,"Arıza Çıkış hız sensörü kaynaklıydı, değiştirildi. Sonrasında kablo bağlantısı kontrol edildi."
+Rampada kalkışta hız hatası; ayrıca vites geçişlerinde gecikme.,Şanzıman,P0720,Renault Megane,46000,Kablo bağlantısı kalibre edildi ve sistem testi yapıldı.
+Müşteri vites değiştirirken vites geçişlerinde gecikme ve hız hatası olduğunu belirtti.,Şanzıman,P0720,Volkswagen Golf,112000,Çıkış hız sensörü kontrol edilip değiştirildi.
+Araç şehir içi trafikte vites geçişlerinde gecikme ve hız hatası.,Şanzıman,P0720,Volkswagen Passat,196000,Çıkış hız sensörü yenilendi.
+Vites değiştirirken vites geçişlerinde gecikme; ayrıca hız hatası.,Şanzıman,P0720,Citroen C3,97000,"Arıza Çıkış hız sensörü kaynaklıydı, yenilendi. Sonrasında kablo bağlantısı kontrol edildi."
+Müşteri şehir içi trafikte hız hatası ve vites geçişlerinde gecikme olduğunu belirtti.,Şanzıman,P0720,Volkswagen Golf,177000,"Arıza Çıkış hız sensörü kaynaklıydı, temizlendi. Sonrasında kablo bağlantısı kontrol edildi."
+"Vites kayması, ani devir yükselmesi. Şikayet fren yaparken belirginleşiyor.",Şanzıman,P0730,Renault Clio,150000,"Arıza Düşük yağ kaynaklıydı, kontrol edilip değiştirildi. Sonrasında solenoid kontrol edildi."
+"Ani devir yükselmesi, vites kayması. Şikayet yokuş çıkarken belirginleşiyor.",Şanzıman,P0730,Ford Focus,258000,Düşük yağ yenilendi; solenoid temizlendi.
+"Soğuk havada ilk çalıştırmada vites kayması, beraberinde ani devir yükselmesi.",Şanzıman,P0730,Honda Civic,169000,Düşük yağ yenilendi ve sistem testi yapıldı.
+Araç klima açıkken vites kayması ve ani devir yükselmesi.,Şanzıman,P0730,Skoda Octavia,157000,Şanzıman mekanik aşınma temizlendi.
+"Şehir içi trafikte vites kayması, beraberinde ani devir yükselmesi.",Şanzıman,P0730,Citroen C3,117000,"Arıza Solenoid kaynaklıydı, temizlendi. Sonrasında şanzıman mekanik aşınma kontrol edildi."
+Araç rampada kalkışta vites kayması ve ani devir yükselmesi.,Şanzıman,P0730,Renault Symbol,124000,Düşük yağ yenilendi ve sistem testi yapıldı.
+"Ani devir yükselmesi, vites kayması. Şikayet motor ısındıktan sonra belirginleşiyor.",Şanzıman,P0730,Citroen C3,230000,"Arıza Solenoid kaynaklıydı, temizlendi. Sonrasında düşük yağ kontrol edildi."
+Ani devir yükselmesi ve vites kayması şikayeti mevcut.,Şanzıman,P0730,Renault Symbol,260000,"Arıza Solenoid kaynaklıydı, temizlendi. Sonrasında şanzıman mekanik aşınma kontrol edildi."
+Rampada kalkışta vites kayması; ayrıca ani devir yükselmesi.,Şanzıman,P0730,Renault Megane,128000,"Arıza Düşük yağ kaynaklıydı, yenilendi. Sonrasında solenoid kontrol edildi."
+"Motor ısındıktan sonra yüksek devir, beraberinde titreşim.",Şanzıman,P0741,Hyundai i20,171000,"Arıza Düşük yağ kaynaklıydı, onarıldı. Sonrasında tork konvertör kontrol edildi."
+Vites değiştirirken ısınma; ayrıca yüksek devir.,Şanzıman,P0741,Peugeot 301,84000,Lock-up solenoidi kalibre edildi; tork konvertör kontrol edilip değiştirildi.
+Titreşim ve ısınma şikayeti mevcut.,Şanzıman,P0741,Renault Clio,42000,Tork konvertör değiştirildi; lock-up solenoidi kontrol edilip değiştirildi.
+"Şehir içi trafikte titreşim, beraberinde ısınma.",Şanzıman,P0741,Skoda Octavia,138000,Lock-up solenoidi değiştirildi ve sistem testi yapıldı.
+Araç soğuk havada ilk çalıştırmada ısınma ve yüksek devir.,Şanzıman,P0741,Fiat Doblo,112000,Düşük yağ kalibre edildi.
+Araç rölantide ısınma ve yüksek devir.,Şanzıman,P0741,Volkswagen Passat,177000,Lock-up solenoidi kalibre edildi; düşük yağ kalibre edildi.
+"Yüksek devir, ısınma. Şikayet yokuş çıkarken belirginleşiyor.",Şanzıman,P0741,Fiat Egea,138000,Tork konvertör kontrol edilip değiştirildi; düşük yağ yenilendi.
+Yüksek devir ve titreşim şikayeti mevcut.,Şanzıman,P0741,Renault Clio,65000,Tork konvertör kalibre edildi ve sistem testi yapıldı.
+Rampada kalkışta titreşim; ayrıca ısınma.,Şanzıman,P0741,Fiat Egea,171000,Tork konvertör kalibre edildi.
+"Rampada kalkışta sert/gecikmeli vites, beraberinde viteste kalma.",Şanzıman,P0750,Renault Symbol,111000,"Arıza A solenoidi arızalı kaynaklıydı, kalibre edildi. Sonrasında kablo kontrol edildi."
+Araç uzun yol sürüşünde sert/gecikmeli vites ve viteste kalma.,Şanzıman,P0750,Opel Astra,194000,A solenoidi arızalı temizlendi.
+"Klima açıkken sert/gecikmeli vites, beraberinde viteste kalma.",Şanzıman,P0750,Mercedes C180,141000,Kablo kalibre edildi.
+"Viteste kalma, sert/gecikmeli vites. Şikayet hızlanırken belirginleşiyor.",Şanzıman,P0750,Hyundai i20,60000,"Arıza Hidrolik basınç kaynaklıydı, değiştirildi. Sonrasında kablo kontrol edildi."
+Vites değiştirirken viteste kalma; ayrıca sert/gecikmeli vites.,Şanzıman,P0750,Peugeot 301,185000,Hidrolik basınç kontrol edilip değiştirildi; kablo kalibre edildi.
+Müşteri düşük devirde viteste kalma ve sert/gecikmeli vites olduğunu belirtti.,Şanzıman,P0750,Hyundai i20,59000,A solenoidi arızalı onarıldı; hidrolik basınç kontrol edilip değiştirildi.
+Müşteri uzun yol sürüşünde sert/gecikmeli vites ve viteste kalma olduğunu belirtti.,Şanzıman,P0750,Volkswagen Passat,64000,A solenoidi arızalı temizlendi ve sistem testi yapıldı.
+Hızlanırken sert/gecikmeli vites; ayrıca viteste kalma.,Şanzıman,P0750,Honda Civic,158000,Kablo değiştirildi.
+"Düşük devirde viteste kalma, beraberinde sert/gecikmeli vites.",Şanzıman,P0750,Mercedes C180,141000,A solenoidi arızalı onarıldı ve sistem testi yapıldı.
+"Sert/gecikmeli vites, viteste kalma. Şikayet klima açıkken belirginleşiyor.",Şanzıman,P0755,Ford Focus,76000,"Arıza Hidrolik basınç kaynaklıydı, onarıldı. Sonrasında kablo kontrol edildi."
+Müşteri motor ısındıktan sonra sert/gecikmeli vites ve viteste kalma olduğunu belirtti.,Şanzıman,P0755,Honda Civic,119000,"Arıza Hidrolik basınç kaynaklıydı, temizlendi. Sonrasında b solenoidi arızalı kontrol edildi."
+Araç vites değiştirirken viteste kalma ve sert/gecikmeli vites.,Şanzıman,P0755,Volkswagen Golf,120000,"Arıza B solenoidi arızalı kaynaklıydı, kalibre edildi. Sonrasında hidrolik basınç kontrol edildi."
+"Viteste kalma, sert/gecikmeli vites. Şikayet uzun yol sürüşünde belirginleşiyor.",Şanzıman,P0755,Audi A3,76000,Hidrolik basınç onarıldı; kablo temizlendi.
+Müşteri uzun yol sürüşünde sert/gecikmeli vites ve viteste kalma olduğunu belirtti.,Şanzıman,P0755,Renault Symbol,191000,B solenoidi arızalı temizlendi ve sistem testi yapıldı.
+Düşük devirde viteste kalma; ayrıca sert/gecikmeli vites.,Şanzıman,P0755,Nissan Qashqai,183000,B solenoidi arızalı kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç rampada kalkışta viteste kalma ve sert/gecikmeli vites.,Şanzıman,P0755,Honda Civic,171000,B solenoidi arızalı temizlendi; hidrolik basınç kontrol edilip değiştirildi.
+Araç motor ısındıktan sonra sert/gecikmeli vites ve viteste kalma.,Şanzıman,P0755,Skoda Octavia,197000,Hidrolik basınç kalibre edildi ve sistem testi yapıldı.
+Hızlanırken viteste kalma; ayrıca sert/gecikmeli vites.,Şanzıman,P0755,Peugeot 301,84000,Kablo temizlendi ve sistem testi yapıldı.
+Müşteri hızlanırken vites kayması ve geç kavrama olduğunu belirtti.,Şanzıman,P0868,Hyundai i20,194000,"Arıza Pompa kaynaklıydı, onarıldı. Sonrasında filtre tıkalı kontrol edildi."
+"Vites kayması, geç kavrama. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Şanzıman,P0868,Volkswagen Passat,137000,Filtre tıkalı kontrol edilip değiştirildi.
+"Geç kavrama, vites kayması. Şikayet uzun yol sürüşünde belirginleşiyor.",Şanzıman,P0868,Opel Astra,197000,Filtre tıkalı değiştirildi ve sistem testi yapıldı.
+Müşteri hızlanırken geç kavrama ve vites kayması olduğunu belirtti.,Şanzıman,P0868,Renault Clio,246000,"Arıza Yağ seviyesi düşük kaynaklıydı, kontrol edilip değiştirildi. Sonrasında filtre tıkalı kontrol edildi."
+Fren yaparken vites kayması; ayrıca geç kavrama.,Şanzıman,P0868,Citroen C3,102000,Iç kaçak onarıldı ve sistem testi yapıldı.
+Geç kavrama ve vites kayması şikayeti mevcut.,Şanzıman,P0868,Honda Civic,164000,Yağ seviyesi düşük onarıldı; iç kaçak kalibre edildi.
+Vites kayması ve geç kavrama şikayeti mevcut.,Şanzıman,P0868,Fiat Egea,211000,Yağ seviyesi düşük temizlendi; iç kaçak temizlendi.
+"Geç kavrama, vites kayması. Şikayet düşük devirde belirginleşiyor.",Şanzıman,P0868,Audi A3,163000,"Arıza Yağ seviyesi düşük kaynaklıydı, onarıldı. Sonrasında pompa kontrol edildi."
+"Düşük devirde vites kayması, beraberinde geç kavrama.",Şanzıman,P0868,Fiat Egea,236000,Pompa yenilendi.
+Şanzıman hararet uyarısı ve güç kaybı şikayeti mevcut.,Şanzıman,P0218,Volkswagen Golf,194000,Soğutucu tıkalı kalibre edildi; ağır kullanım onarıldı.
+Güç kaybı ve şanzıman hararet uyarısı şikayeti mevcut.,Şanzıman,P0218,Citroen C3,242000,Ağır kullanım onarıldı; düşük/eski yağ temizlendi.
+"Şanzıman hararet uyarısı, güç kaybı. Şikayet uzun yol sürüşünde belirginleşiyor.",Şanzıman,P0218,Audi A3,74000,Soğutucu tıkalı yenilendi ve sistem testi yapıldı.
+"Güç kaybı, şanzıman hararet uyarısı. Şikayet rampada kalkışta belirginleşiyor.",Şanzıman,P0218,Renault Symbol,104000,Düşük/eski yağ temizlendi; ağır kullanım değiştirildi.
+Müşteri fren yaparken güç kaybı ve şanzıman hararet uyarısı olduğunu belirtti.,Şanzıman,P0218,Ford Focus,180000,Ağır kullanım kalibre edildi.
+Araç fren yaparken güç kaybı ve şanzıman hararet uyarısı.,Şanzıman,P0218,Skoda Octavia,203000,Düşük/eski yağ kontrol edilip değiştirildi.
+"Şanzıman hararet uyarısı, güç kaybı. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Şanzıman,P0218,Toyota Corolla,151000,Düşük/eski yağ yenilendi.
+"Rölantide güç kaybı, beraberinde şanzıman hararet uyarısı.",Şanzıman,P0218,Volkswagen Golf,114000,"Arıza Düşük/eski yağ kaynaklıydı, kalibre edildi. Sonrasında ağır kullanım kontrol edildi."
+Müşteri rampada kalkışta şanzıman hararet uyarısı ve güç kaybı olduğunu belirtti.,Şanzıman,P0218,BMW 320i,210000,Soğutucu tıkalı onarıldı; düşük/eski yağ değiştirildi.
+Rampada kalkışta koku; ayrıca devir yükseliyor hız artmıyor.,Şanzıman,P0894,Hyundai i20,98000,Düşük basınç onarıldı ve sistem testi yapıldı.
+"Koku, devir yükseliyor hız artmıyor. Şikayet motor ısındıktan sonra belirginleşiyor.",Şanzıman,P0894,Fiat Egea,226000,"Arıza Kavrama balataları aşınmış kaynaklıydı, kontrol edilip değiştirildi. Sonrasında düşük basınç kontrol edildi."
+"Uzun yol sürüşünde koku, beraberinde devir yükseliyor hız artmıyor.",Şanzıman,P0894,Renault Megane,252000,"Arıza Kavrama balataları aşınmış kaynaklıydı, değiştirildi. Sonrasında düşük basınç kontrol edildi."
+Motor ısındıktan sonra koku; ayrıca devir yükseliyor hız artmıyor.,Şanzıman,P0894,Renault Symbol,130000,"Arıza Düşük basınç kaynaklıydı, kalibre edildi. Sonrasında kavrama balataları aşınmış kontrol edildi."
+Devir yükseliyor hız artmıyor ve koku şikayeti mevcut.,Şanzıman,P0894,Renault Clio,72000,Kavrama balataları aşınmış değiştirildi.
+"Koku, devir yükseliyor hız artmıyor. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Şanzıman,P0894,Opel Astra,241000,Kavrama balataları aşınmış temizlendi; düşük basınç değiştirildi.
+Müşteri hızlanırken koku ve devir yükseliyor hız artmıyor olduğunu belirtti.,Şanzıman,P0894,Ford Focus,74000,Düşük basınç onarıldı; kavrama balataları aşınmış kontrol edilip değiştirildi.
+Soğuk havada ilk çalıştırmada devir yükseliyor hız artmıyor; ayrıca koku.,Şanzıman,P0894,Renault Symbol,80000,Kavrama balataları aşınmış değiştirildi ve sistem testi yapıldı.
+Koku ve devir yükseliyor hız artmıyor şikayeti mevcut.,Şanzıman,P0894,Volkswagen Golf,185000,Kavrama balataları aşınmış değiştirildi ve sistem testi yapıldı.
+Müşteri uzun yol sürüşünde hızlanmada zorlanma ve sarsıntı olduğunu belirtti.,Şanzıman,P0894,BMW 320i,96000,Valf gövdesi değiştirildi; kavrama paketi kalibre edildi.
+Müşteri vites değiştirirken hızlanmada zorlanma ve sarsıntı olduğunu belirtti.,Şanzıman,P0894,Opel Astra,225000,Kavrama paketi yenilendi ve sistem testi yapıldı.
+"Hızlanırken hızlanmada zorlanma, beraberinde sarsıntı.",Şanzıman,P0894,Dacia Duster,152000,Valf gövdesi yenilendi; kavrama paketi temizlendi.
+"Fren yaparken hızlanmada zorlanma, beraberinde sarsıntı.",Şanzıman,P0894,Audi A3,249000,"Arıza Valf gövdesi kaynaklıydı, yenilendi. Sonrasında kavrama paketi kontrol edildi."
+Hızlanmada zorlanma ve sarsıntı şikayeti mevcut.,Şanzıman,P0894,Renault Clio,123000,Valf gövdesi yenilendi.
+"Hızlanmada zorlanma, sarsıntı. Şikayet düşük devirde belirginleşiyor.",Şanzıman,P0894,Peugeot 301,203000,Kavrama paketi değiştirildi.
+Yokuş çıkarken hızlanmada zorlanma; ayrıca sarsıntı.,Şanzıman,P0894,Renault Clio,76000,Valf gövdesi onarıldı ve sistem testi yapıldı.
+"Klima açıkken sarsıntı, beraberinde hızlanmada zorlanma.",Şanzıman,P0894,Citroen C3,221000,Kavrama paketi temizlendi.
+Müşteri fren yaparken hızlanmada zorlanma ve sarsıntı olduğunu belirtti.,Şanzıman,P0894,Dacia Duster,214000,Kavrama paketi kontrol edilip değiştirildi ve sistem testi yapıldı.
+"ABS lambası, hız sapması. Şikayet hızlanırken belirginleşiyor.",Fren,C0035,Volkswagen Passat,159000,"Arıza Tonjant halkası kaynaklıydı, kontrol edilip değiştirildi. Sonrasında tekerlek hız sensörü kontrol edildi."
+Araç hızlanırken hız sapması ve ABS lambası.,Fren,C0035,Volkswagen Golf,43000,"Arıza Tekerlek hız sensörü kaynaklıydı, kalibre edildi. Sonrasında kablo kontrol edildi."
+Müşteri rölantide hız sapması ve ABS devre dışı olduğunu belirtti.,Fren,C0035,Volkswagen Golf,110000,Tonjant halkası temizlendi.
+ABS devre dışı ve ABS lambası şikayeti mevcut.,Fren,C0035,Nissan Qashqai,60000,"Arıza Kablo kaynaklıydı, değiştirildi. Sonrasında tonjant halkası kontrol edildi."
+Uzun yol sürüşünde hız sapması; ayrıca ABS lambası.,Fren,C0035,Toyota Corolla,67000,Tonjant halkası kontrol edilip değiştirildi; tekerlek hız sensörü kalibre edildi.
+Soğuk havada ilk çalıştırmada ABS lambası; ayrıca hız sapması.,Fren,C0035,Renault Clio,164000,Kablo yenilendi; tonjant halkası değiştirildi.
+Müşteri şehir içi trafikte hız sapması ve ABS devre dışı olduğunu belirtti.,Fren,C0035,Hyundai i20,149000,"Arıza Tonjant halkası kaynaklıydı, değiştirildi. Sonrasında kablo kontrol edildi."
+"Şehir içi trafikte ABS lambası, beraberinde hız sapması.",Fren,C0035,Renault Clio,145000,"Arıza Tekerlek hız sensörü kaynaklıydı, temizlendi. Sonrasında kablo kontrol edildi."
+Müşteri soğuk havada ilk çalıştırmada ABS lambası ve ABS devre dışı olduğunu belirtti.,Fren,C0035,Opel Astra,116000,Tonjant halkası onarıldı; kablo temizlendi.
+"Rampada kalkışta ESP uyarısı, beraberinde ABS lambası.",Fren,C0040,Hyundai i20,79000,Tekerlek hız sensörü yenilendi.
+Araç uzun yol sürüşünde ESP uyarısı ve ABS lambası.,Fren,C0040,Dacia Duster,121000,Tekerlek hız sensörü onarıldı; ABS halkası onarıldı.
+Müşteri rampada kalkışta ABS lambası ve ESP uyarısı olduğunu belirtti.,Fren,C0040,Fiat Egea,52000,"Arıza Tekerlek hız sensörü kaynaklıydı, onarıldı. Sonrasında konnektör kontrol edildi."
+Fren yaparken ABS lambası; ayrıca ESP uyarısı.,Fren,C0040,Dacia Duster,60000,ABS halkası kontrol edilip değiştirildi ve sistem testi yapıldı.
+Müşteri yokuş çıkarken ABS lambası ve ESP uyarısı olduğunu belirtti.,Fren,C0040,Dacia Duster,126000,"Arıza Konnektör kaynaklıydı, yenilendi. Sonrasında ABS halkası kontrol edildi."
+Araç düşük devirde ABS lambası ve ESP uyarısı.,Fren,C0040,Volkswagen Golf,68000,Tekerlek hız sensörü temizlendi ve sistem testi yapıldı.
+"ABS lambası, ESP uyarısı. Şikayet şehir içi trafikte belirginleşiyor.",Fren,C0040,BMW 320i,161000,Konnektör yenilendi.
+Müşteri şehir içi trafikte ESP uyarısı ve ABS lambası olduğunu belirtti.,Fren,C0040,Volkswagen Golf,64000,"Arıza ABS halkası kaynaklıydı, onarıldı. Sonrasında tekerlek hız sensörü kontrol edildi."
+Yokuş çıkarken ABS lambası; ayrıca ESP uyarısı.,Fren,C0040,Renault Megane,146000,Konnektör onarıldı.
+Araç rölantide ABS/ESP lambası ve ABS/ESP lambası.,Fren,C0045,Renault Megane,56000,Hız sensörü onarıldı; rotor halkası temizlendi.
+ABS/ESP lambası ve ABS/ESP lambası şikayeti mevcut.,Fren,C0045,Fiat Egea,193000,Rotor halkası değiştirildi.
+Vites değiştirirken ABS/ESP lambası; ayrıca ABS/ESP lambası.,Fren,C0045,Fiat Egea,127000,Hız sensörü değiştirildi ve sistem testi yapıldı.
+"ABS/ESP lambası, ABS/ESP lambası. Şikayet düşük devirde belirginleşiyor.",Fren,C0045,Dacia Duster,170000,Hız sensörü yenilendi ve sistem testi yapıldı.
+Şehir içi trafikte ABS/ESP lambası; ayrıca ABS/ESP lambası.,Fren,C0045,Toyota Corolla,113000,Kablaj kalibre edildi.
+Düşük devirde ABS/ESP lambası; ayrıca ABS/ESP lambası.,Fren,C0045,BMW 320i,171000,Kablaj değiştirildi.
+Motor ısındıktan sonra ABS/ESP lambası; ayrıca ABS/ESP lambası.,Fren,C0045,Honda Civic,92000,Rotor halkası onarıldı.
+"ABS/ESP lambası, ABS/ESP lambası. Şikayet uzun yol sürüşünde belirginleşiyor.",Fren,C0045,Citroen C3,167000,Kablaj temizlendi ve sistem testi yapıldı.
+Müşteri soğuk havada ilk çalıştırmada ABS/ESP lambası ve ABS/ESP lambası olduğunu belirtti.,Fren,C0045,Audi A3,97000,Hız sensörü onarıldı.
+"Uzun yol sürüşünde ABS/ESP lambası, beraberinde ABS/ESP lambası.",Fren,C0050,Hyundai i20,82000,Hız sensörü temizlendi; rotor halkası kalibre edildi.
+Araç rampada kalkışta ABS/ESP lambası ve ABS/ESP lambası.,Fren,C0050,Hyundai i20,191000,Kablaj yenilendi; rotor halkası yenilendi.
+Müşteri düşük devirde ABS/ESP lambası ve ABS/ESP lambası olduğunu belirtti.,Fren,C0050,Peugeot 301,195000,Hız sensörü kalibre edildi; kablaj yenilendi.
+"Vites değiştirirken ABS/ESP lambası, beraberinde ABS/ESP lambası.",Fren,C0050,BMW 320i,86000,Kablaj değiştirildi.
+Düşük devirde ABS/ESP lambası; ayrıca ABS/ESP lambası.,Fren,C0050,Renault Megane,178000,"Arıza Kablaj kaynaklıydı, kalibre edildi. Sonrasında hız sensörü kontrol edildi."
+Müşteri rölantide ABS/ESP lambası ve ABS/ESP lambası olduğunu belirtti.,Fren,C0050,Ford Focus,125000,Hız sensörü kalibre edildi; rotor halkası kontrol edilip değiştirildi.
+Araç rölantide ABS/ESP lambası ve ABS/ESP lambası.,Fren,C0050,Fiat Doblo,136000,Hız sensörü kalibre edildi ve sistem testi yapıldı.
+Müşteri uzun yol sürüşünde ABS/ESP lambası ve ABS/ESP lambası olduğunu belirtti.,Fren,C0050,Mercedes C180,76000,Hız sensörü kontrol edilip değiştirildi ve sistem testi yapıldı.
+ABS/ESP lambası ve ABS/ESP lambası şikayeti mevcut.,Fren,C0050,Citroen C3,134000,Hız sensörü temizlendi ve sistem testi yapıldı.
+Pedal sertliği ve ABS çalışmıyor şikayeti mevcut.,Fren,C0110,Renault Megane,244000,Modül yenilendi.
+"Klima açıkken pedal sertliği, beraberinde ABS çalışmıyor.",Fren,C0110,Volkswagen Passat,190000,ABS pompa motoru yenilendi.
+Araç klima açıkken pedal sertliği ve ABS çalışmıyor.,Fren,C0110,Mercedes C180,177000,ABS pompa motoru yenilendi; röle kontrol edilip değiştirildi.
+Araç yokuş çıkarken ABS çalışmıyor ve pedal sertliği.,Fren,C0110,Renault Megane,73000,Röle yenilendi ve sistem testi yapıldı.
+"Uzun yol sürüşünde pedal sertliği, beraberinde ABS çalışmıyor.",Fren,C0110,Dacia Duster,87000,Röle onarıldı; ABS pompa motoru değiştirildi.
+Müşteri soğuk havada ilk çalıştırmada ABS çalışmıyor ve pedal sertliği olduğunu belirtti.,Fren,C0110,Toyota Corolla,87000,ABS pompa motoru onarıldı; röle yenilendi.
+"Uzun yol sürüşünde ABS çalışmıyor, beraberinde pedal sertliği.",Fren,C0110,Audi A3,187000,Modül kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç soğuk havada ilk çalıştırmada pedal sertliği ve ABS çalışmıyor.,Fren,C0110,Mercedes C180,114000,"Arıza ABS pompa motoru kaynaklıydı, kontrol edilip değiştirildi. Sonrasında röle kontrol edildi."
+Araç hızlanırken pedal sertliği ve ABS çalışmıyor.,Fren,C0110,Dacia Duster,210000,Modül değiştirildi; röle temizlendi.
+"ABS arıza lambası, ABS arıza lambası. Şikayet soğuk havada ilk çalıştırmada belirginleşiyor.",Fren,C0121,Fiat Egea,137000,Besleme değiştirildi; ABS modülü değiştirildi.
+Şehir içi trafikte ABS arıza lambası; ayrıca ABS arıza lambası.,Fren,C0121,BMW 320i,81000,"Arıza ABS modülü kaynaklıydı, onarıldı. Sonrasında valf rölesi kontrol edildi."
+ABS arıza lambası ve ABS arıza lambası şikayeti mevcut.,Fren,C0121,Toyota Corolla,84000,Besleme temizlendi; ABS modülü onarıldı.
+Uzun yol sürüşünde ABS arıza lambası; ayrıca ABS arıza lambası.,Fren,C0121,Skoda Octavia,72000,ABS modülü temizlendi ve sistem testi yapıldı.
+"Yokuş çıkarken ABS arıza lambası, beraberinde ABS arıza lambası.",Fren,C0121,Renault Clio,100000,Besleme kontrol edilip değiştirildi.
+"ABS arıza lambası, ABS arıza lambası. Şikayet fren yaparken belirginleşiyor.",Fren,C0121,Nissan Qashqai,120000,Besleme kalibre edildi ve sistem testi yapıldı.
+"Vites değiştirirken ABS arıza lambası, beraberinde ABS arıza lambası.",Fren,C0121,Hyundai i20,185000,ABS modülü kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Fren yaparken ABS arıza lambası, beraberinde ABS arıza lambası.",Fren,C0121,Fiat Doblo,210000,Besleme onarıldı.
+Rölantide ABS arıza lambası; ayrıca ABS arıza lambası.,Fren,C0121,Opel Astra,93000,Valf rölesi kontrol edilip değiştirildi.
+ABS/ESP devre dışı ve ABS/ESP devre dışı şikayeti mevcut.,Fren,C0200,Volkswagen Golf,196000,Modül değiştirildi.
+"ABS/ESP devre dışı, ABS/ESP devre dışı. Şikayet fren yaparken belirginleşiyor.",Fren,C0200,Citroen C3,125000,Modül kontrol edilip değiştirildi.
+"Düşük devirde ABS/ESP devre dışı, beraberinde ABS/ESP devre dışı.",Fren,C0200,Honda Civic,69000,Modül kalibre edildi; sensör grubu kalibre edildi.
+Araç düşük devirde ABS/ESP devre dışı ve ABS/ESP devre dışı.,Fren,C0200,Volkswagen Passat,188000,"Arıza Sensör grubu kaynaklıydı, onarıldı. Sonrasında modül kontrol edildi."
+"Vites değiştirirken ABS/ESP devre dışı, beraberinde ABS/ESP devre dışı.",Fren,C0200,Audi A3,164000,"Arıza Sensör grubu kaynaklıydı, onarıldı. Sonrasında kablaj kontrol edildi."
+Araç motor ısındıktan sonra ABS/ESP devre dışı ve ABS/ESP devre dışı.,Fren,C0200,Dacia Duster,127000,Kablaj kontrol edilip değiştirildi.
+Müşteri yokuş çıkarken ABS/ESP devre dışı ve ABS/ESP devre dışı olduğunu belirtti.,Fren,C0200,Renault Megane,129000,"Arıza Modül kaynaklıydı, onarıldı. Sonrasında kablaj kontrol edildi."
+Araç klima açıkken ABS/ESP devre dışı ve ABS/ESP devre dışı.,Fren,C0200,Hyundai i20,75000,"Arıza Modül kaynaklıydı, temizlendi. Sonrasında kablaj kontrol edildi."
+"Motor ısındıktan sonra ABS/ESP devre dışı, beraberinde ABS/ESP devre dışı.",Fren,C0200,Fiat Egea,89000,Modül kontrol edilip değiştirildi ve sistem testi yapıldı.
+Fren yaparken fren destek kaybı; ayrıca ABS lambası.,Fren,C0265,Fiat Egea,142000,Pompa motoru sürücü yenilendi.
+Araç şehir içi trafikte ABS lambası ve fren destek kaybı.,Fren,C0265,Skoda Octavia,73000,"Arıza Pompa motoru sürücü kaynaklıydı, temizlendi. Sonrasında EBCM kontrol edildi."
+Araç klima açıkken fren destek kaybı ve ABS lambası.,Fren,C0265,Hyundai i20,158000,Pompa motoru sürücü onarıldı; EBCM kalibre edildi.
+Müşteri rölantide fren destek kaybı ve ABS lambası olduğunu belirtti.,Fren,C0265,Fiat Egea,135000,EBCM yenilendi.
+Klima açıkken ABS lambası; ayrıca fren destek kaybı.,Fren,C0265,Opel Astra,131000,Pompa motoru sürücü onarıldı.
+Müşteri şehir içi trafikte ABS lambası ve fren destek kaybı olduğunu belirtti.,Fren,C0265,Audi A3,140000,Pompa motoru sürücü temizlendi ve sistem testi yapıldı.
+Müşteri vites değiştirirken fren destek kaybı ve ABS lambası olduğunu belirtti.,Fren,C0265,Fiat Doblo,223000,Pompa motoru sürücü kalibre edildi.
+Fren destek kaybı ve ABS lambası şikayeti mevcut.,Fren,C0265,Volkswagen Passat,186000,"Arıza EBCM kaynaklıydı, kontrol edilip değiştirildi. Sonrasında pompa motoru sürücü kontrol edildi."
+"Rölantide fren destek kaybı, beraberinde ABS lambası.",Fren,C0265,Hyundai i20,75000,Pompa motoru sürücü kontrol edilip değiştirildi; EBCM değiştirildi.
+"ABS müdahale etmiyor, ABS müdahale etmiyor. Şikayet klima açıkken belirginleşiyor.",Fren,C1095,BMW 320i,128000,Modül kontrol edilip değiştirildi ve sistem testi yapıldı.
+ABS müdahale etmiyor ve ABS müdahale etmiyor şikayeti mevcut.,Fren,C1095,Nissan Qashqai,110000,Modül kontrol edilip değiştirildi ve sistem testi yapıldı.
+Müşteri fren yaparken ABS müdahale etmiyor ve ABS müdahale etmiyor olduğunu belirtti.,Fren,C1095,Ford Focus,232000,Hidrolik pompa onarıldı.
+Müşteri rampada kalkışta ABS müdahale etmiyor ve ABS müdahale etmiyor olduğunu belirtti.,Fren,C1095,Citroen C3,260000,Hidrolik pompa yenilendi.
+"ABS müdahale etmiyor, ABS müdahale etmiyor. Şikayet yokuş çıkarken belirginleşiyor.",Fren,C1095,Mercedes C180,157000,Modül değiştirildi ve sistem testi yapıldı.
+"Düşük devirde ABS müdahale etmiyor, beraberinde ABS müdahale etmiyor.",Fren,C1095,Audi A3,79000,Modül kontrol edilip değiştirildi.
+Araç motor ısındıktan sonra ABS müdahale etmiyor ve ABS müdahale etmiyor.,Fren,C1095,Volkswagen Golf,96000,Hidrolik pompa kalibre edildi ve sistem testi yapıldı.
+Müşteri rölantide ABS müdahale etmiyor ve ABS müdahale etmiyor olduğunu belirtti.,Fren,C1095,Ford Focus,81000,Modül temizlendi; hidrolik pompa kontrol edilip değiştirildi.
+Araç soğuk havada ilk çalıştırmada ABS müdahale etmiyor ve ABS müdahale etmiyor.,Fren,C1095,Skoda Octavia,132000,Hidrolik pompa onarıldı; modül değiştirildi.
+"Rölantide ABS/ESP geçici kapalı, beraberinde ABS/ESP geçici kapalı.",Fren,C0561,Honda Civic,153000,Başka DTC mevcut onarıldı ve sistem testi yapıldı.
+"Soğuk havada ilk çalıştırmada ABS/ESP geçici kapalı, beraberinde ABS/ESP geçici kapalı.",Fren,C0561,Opel Astra,138000,Düşük voltaj değiştirildi; başka DTC mevcut kontrol edilip değiştirildi.
+ABS/ESP geçici kapalı ve ABS/ESP geçici kapalı şikayeti mevcut.,Fren,C0561,Hyundai i20,99000,Başka DTC mevcut değiştirildi; düşük voltaj onarıldı.
+"Fren yaparken ABS/ESP geçici kapalı, beraberinde ABS/ESP geçici kapalı.",Fren,C0561,BMW 320i,84000,"Arıza Düşük voltaj kaynaklıydı, temizlendi. Sonrasında başka DTC mevcut kontrol edildi."
+"Rampada kalkışta ABS/ESP geçici kapalı, beraberinde ABS/ESP geçici kapalı.",Fren,C0561,Audi A3,177000,Başka DTC mevcut temizlendi; düşük voltaj onarıldı.
+Uzun yol sürüşünde ABS/ESP geçici kapalı; ayrıca ABS/ESP geçici kapalı.,Fren,C0561,Ford Focus,146000,Düşük voltaj kontrol edilip değiştirildi; başka DTC mevcut yenilendi.
+Fren yaparken ABS/ESP geçici kapalı; ayrıca ABS/ESP geçici kapalı.,Fren,C0561,Volkswagen Passat,136000,"Arıza Düşük voltaj kaynaklıydı, kalibre edildi. Sonrasında başka DTC mevcut kontrol edildi."
+Araç soğuk havada ilk çalıştırmada ABS/ESP geçici kapalı ve ABS/ESP geçici kapalı.,Fren,C0561,Volkswagen Passat,149000,Başka DTC mevcut kalibre edildi.
+Rölantide ABS/ESP geçici kapalı; ayrıca ABS/ESP geçici kapalı.,Fren,C0561,Renault Megane,119000,"Arıza Başka DTC mevcut kaynaklıydı, kalibre edildi. Sonrasında düşük voltaj kontrol edildi."
+"Hızlanırken direksiyon ağırlaşması, beraberinde ESP uyarısı.",Direksiyon,C1511,Audi A3,71000,Kalibrasyon onarıldı.
+Fren yaparken direksiyon ağırlaşması; ayrıca ESP uyarısı.,Direksiyon,C1511,Peugeot 301,147000,Kalibrasyon kalibre edildi.
+Uzun yol sürüşünde direksiyon ağırlaşması; ayrıca ESP uyarısı.,Direksiyon,C1511,Renault Megane,43000,Kablaj kalibre edildi.
+"Hızlanırken ESP uyarısı, beraberinde direksiyon ağırlaşması.",Direksiyon,C1511,Fiat Egea,67000,Kalibrasyon temizlendi ve sistem testi yapıldı.
+Hızlanırken ESP uyarısı; ayrıca direksiyon ağırlaşması.,Direksiyon,C1511,Renault Clio,116000,Kalibrasyon kontrol edilip değiştirildi ve sistem testi yapıldı.
+Soğuk havada ilk çalıştırmada direksiyon ağırlaşması; ayrıca ESP uyarısı.,Direksiyon,C1511,Ford Focus,126000,"Arıza Kalibrasyon kaynaklıydı, kontrol edilip değiştirildi. Sonrasında kablaj kontrol edildi."
+Araç rölantide ESP uyarısı ve direksiyon ağırlaşması.,Direksiyon,C1511,Dacia Duster,145000,Kalibrasyon kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Direksiyon ağırlaşması, ESP uyarısı. Şikayet hızlanırken belirginleşiyor.",Direksiyon,C1511,Nissan Qashqai,167000,Kablaj kalibre edildi; kalibrasyon onarıldı.
+ESP uyarısı ve direksiyon ağırlaşması şikayeti mevcut.,Direksiyon,C1511,Volkswagen Golf,167000,Kalibrasyon onarıldı ve sistem testi yapıldı.
+Müşteri klima açıkken direksiyonda boşluk/ağırlık ve uyarı olduğunu belirtti.,Direksiyon,C1513,Renault Megane,178000,Tork sensörü onarıldı.
+Direksiyonda boşluk/ağırlık ve uyarı şikayeti mevcut.,Direksiyon,C1513,Dacia Duster,79000,Tork sensörü kalibre edildi; EPS modülü onarıldı.
+"Uyarı, direksiyonda boşluk/ağırlık. Şikayet hızlanırken belirginleşiyor.",Direksiyon,C1513,Mercedes C180,103000,EPS modülü kalibre edildi.
+Araç şehir içi trafikte uyarı ve direksiyonda boşluk/ağırlık.,Direksiyon,C1513,Skoda Octavia,156000,EPS modülü onarıldı ve sistem testi yapıldı.
+"Direksiyonda boşluk/ağırlık, uyarı. Şikayet motor ısındıktan sonra belirginleşiyor.",Direksiyon,C1513,Renault Clio,186000,"Arıza Tork sensörü kaynaklıydı, kalibre edildi. Sonrasında EPS modülü kontrol edildi."
+Müşteri uzun yol sürüşünde direksiyonda boşluk/ağırlık ve uyarı olduğunu belirtti.,Direksiyon,C1513,Renault Clio,98000,EPS modülü kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç hızlanırken uyarı ve direksiyonda boşluk/ağırlık.,Direksiyon,C1513,Hyundai i20,41000,"Arıza EPS modülü kaynaklıydı, kalibre edildi. Sonrasında tork sensörü kontrol edildi."
+Soğuk havada ilk çalıştırmada uyarı; ayrıca direksiyonda boşluk/ağırlık.,Direksiyon,C1513,Renault Symbol,77000,"Arıza EPS modülü kaynaklıydı, kalibre edildi. Sonrasında tork sensörü kontrol edildi."
+Motor ısındıktan sonra direksiyonda boşluk/ağırlık; ayrıca uyarı.,Direksiyon,C1513,Skoda Octavia,90000,EPS modülü değiştirildi ve sistem testi yapıldı.
+"Klima açıkken direksiyon desteği kesiliyor, beraberinde direksiyon desteği kesiliyor.",Direksiyon,C1531,Volkswagen Passat,178000,Güç beslemesi değiştirildi ve sistem testi yapıldı.
+Araç rampada kalkışta direksiyon desteği kesiliyor ve direksiyon desteği kesiliyor.,Direksiyon,C1531,Citroen C3,173000,Modül kontrol edilip değiştirildi; güç beslemesi kalibre edildi.
+Direksiyon desteği kesiliyor ve direksiyon desteği kesiliyor şikayeti mevcut.,Direksiyon,C1531,Volkswagen Golf,87000,Güç beslemesi onarıldı ve sistem testi yapıldı.
+Rampada kalkışta direksiyon desteği kesiliyor; ayrıca direksiyon desteği kesiliyor.,Direksiyon,C1531,Toyota Corolla,164000,Güç beslemesi yenilendi ve sistem testi yapıldı.
+"Motor ısındıktan sonra direksiyon desteği kesiliyor, beraberinde direksiyon desteği kesiliyor.",Direksiyon,C1531,Fiat Doblo,138000,Modül yenilendi; güç beslemesi yenilendi.
+Klima açıkken direksiyon desteği kesiliyor; ayrıca direksiyon desteği kesiliyor.,Direksiyon,C1531,Fiat Doblo,202000,Modül temizlendi.
+"Vites değiştirirken direksiyon desteği kesiliyor, beraberinde direksiyon desteği kesiliyor.",Direksiyon,C1531,Nissan Qashqai,235000,"Arıza Modül kaynaklıydı, onarıldı. Sonrasında güç beslemesi kontrol edildi."
+Araç fren yaparken direksiyon desteği kesiliyor ve direksiyon desteği kesiliyor.,Direksiyon,C1531,Renault Megane,160000,EPS motoru yenilendi.
+Müşteri rölantide direksiyon desteği kesiliyor ve direksiyon desteği kesiliyor olduğunu belirtti.,Direksiyon,C1531,Toyota Corolla,98000,EPS motoru kalibre edildi; güç beslemesi değiştirildi.
+"Hızlanırken arıza lambası, beraberinde direksiyon sertleşiyor.",Direksiyon,C1541,Citroen C3,119000,Besleme kalibre edildi; yazılım kontrol edilip değiştirildi.
+"Arıza lambası, direksiyon sertleşiyor. Şikayet motor ısındıktan sonra belirginleşiyor.",Direksiyon,C1541,Honda Civic,240000,Yazılım kontrol edilip değiştirildi.
+Direksiyon sertleşiyor ve arıza lambası şikayeti mevcut.,Direksiyon,C1541,Peugeot 301,258000,Besleme temizlendi; EPS modülü onarıldı.
+Rölantide direksiyon sertleşiyor; ayrıca arıza lambası.,Direksiyon,C1541,Fiat Doblo,91000,Yazılım temizlendi ve sistem testi yapıldı.
+"Rölantide arıza lambası, beraberinde direksiyon sertleşiyor.",Direksiyon,C1541,Toyota Corolla,61000,Yazılım değiştirildi; besleme yenilendi.
+"Klima açıkken arıza lambası, beraberinde direksiyon sertleşiyor.",Direksiyon,C1541,BMW 320i,189000,Besleme kontrol edilip değiştirildi.
+Araç fren yaparken direksiyon sertleşiyor ve arıza lambası.,Direksiyon,C1541,Fiat Doblo,102000,Yazılım temizlendi.
+Müşteri uzun yol sürüşünde direksiyon sertleşiyor ve arıza lambası olduğunu belirtti.,Direksiyon,C1541,BMW 320i,117000,Besleme değiştirildi.
+Arıza lambası ve direksiyon sertleşiyor şikayeti mevcut.,Direksiyon,C1541,Audi A3,223000,"Arıza EPS modülü kaynaklıydı, onarıldı. Sonrasında besleme kontrol edildi."
+Müşteri motor ısındıktan sonra direksiyon desteği yok ve direksiyon desteği yok olduğunu belirtti.,Direksiyon,C1A00,Citroen C3,250000,"Arıza Besleme kaynaklıydı, kalibre edildi. Sonrasında modül kontrol edildi."
+"Direksiyon desteği yok, direksiyon desteği yok. Şikayet vites değiştirirken belirginleşiyor.",Direksiyon,C1A00,Renault Clio,138000,Sensör değiştirildi.
+"Fren yaparken direksiyon desteği yok, beraberinde direksiyon desteği yok.",Direksiyon,C1A00,Renault Megane,224000,Modül kontrol edilip değiştirildi; aşırı sıcaklık onarıldı.
+Hızlanırken direksiyon desteği yok; ayrıca direksiyon desteği yok.,Direksiyon,C1A00,Citroen C3,244000,Aşırı sıcaklık kontrol edilip değiştirildi.
+Araç rölantide direksiyon desteği yok ve direksiyon desteği yok.,Direksiyon,C1A00,Skoda Octavia,248000,Besleme değiştirildi.
+Müşteri rölantide direksiyon desteği yok ve direksiyon desteği yok olduğunu belirtti.,Direksiyon,C1A00,Citroen C3,78000,Sensör onarıldı ve sistem testi yapıldı.
+"Direksiyon desteği yok, direksiyon desteği yok. Şikayet klima açıkken belirginleşiyor.",Direksiyon,C1A00,Honda Civic,143000,Modül kalibre edildi.
+Direksiyon desteği yok ve direksiyon desteği yok şikayeti mevcut.,Direksiyon,C1A00,Audi A3,77000,Modül temizlendi.
+Müşteri hızlanırken direksiyon desteği yok ve direksiyon desteği yok olduğunu belirtti.,Direksiyon,C1A00,BMW 320i,219000,Modül onarıldı ve sistem testi yapıldı.
+Araç klima açıkken ESP/şerit takip uyarısı ve ESP/şerit takip uyarısı.,Direksiyon,U0428,Renault Symbol,81000,Veri yolu kalibre edildi ve sistem testi yapıldı.
+Klima açıkken ESP/şerit takip uyarısı; ayrıca ESP/şerit takip uyarısı.,Direksiyon,U0428,BMW 320i,138000,Veri yolu değiştirildi.
+"Düşük devirde ESP/şerit takip uyarısı, beraberinde ESP/şerit takip uyarısı.",Direksiyon,U0428,Dacia Duster,181000,Veri yolu kontrol edilip değiştirildi; açı sensörü kalibrasyonu kontrol edilip değiştirildi.
+Müşteri rampada kalkışta ESP/şerit takip uyarısı ve ESP/şerit takip uyarısı olduğunu belirtti.,Direksiyon,U0428,Opel Astra,148000,Veri yolu yenilendi; açı sensörü kalibrasyonu kalibre edildi.
+Yokuş çıkarken ESP/şerit takip uyarısı; ayrıca ESP/şerit takip uyarısı.,Direksiyon,U0428,Volkswagen Passat,88000,Veri yolu temizlendi.
+Müşteri hızlanırken ESP/şerit takip uyarısı ve ESP/şerit takip uyarısı olduğunu belirtti.,Direksiyon,U0428,Volkswagen Passat,92000,"Arıza Açı sensörü kalibrasyonu kaynaklıydı, yenilendi. Sonrasında veri yolu kontrol edildi."
+Araç düşük devirde ESP/şerit takip uyarısı ve ESP/şerit takip uyarısı.,Direksiyon,U0428,Opel Astra,123000,"Arıza Açı sensörü kalibrasyonu kaynaklıydı, kalibre edildi. Sonrasında veri yolu kontrol edildi."
+ESP/şerit takip uyarısı ve ESP/şerit takip uyarısı şikayeti mevcut.,Direksiyon,U0428,Nissan Qashqai,80000,Açı sensörü kalibrasyonu yenilendi ve sistem testi yapıldı.
+Uzun yol sürüşünde ESP/şerit takip uyarısı; ayrıca ESP/şerit takip uyarısı.,Direksiyon,U0428,Hyundai i20,154000,Açı sensörü kalibrasyonu kontrol edilip değiştirildi; veri yolu kontrol edilip değiştirildi.
+"Düzgün gitmeyen direksiyon merkezi, düzgün gitmeyen direksiyon merkezi. Şikayet uzun yol sürüşünde belirginleşiyor.",Direksiyon,C0545,Skoda Octavia,78000,Mekanik boşluk kalibre edildi ve sistem testi yapıldı.
+Düzgün gitmeyen direksiyon merkezi ve düzgün gitmeyen direksiyon merkezi şikayeti mevcut.,Direksiyon,C0545,Audi A3,31000,Mekanik boşluk temizlendi; sensör kalibrasyonu kontrol edilip değiştirildi.
+Araç klima açıkken düzgün gitmeyen direksiyon merkezi ve düzgün gitmeyen direksiyon merkezi.,Direksiyon,C0545,Fiat Egea,137000,Sensör kalibrasyonu kalibre edildi ve sistem testi yapıldı.
+"Soğuk havada ilk çalıştırmada düzgün gitmeyen direksiyon merkezi, beraberinde düzgün gitmeyen direksiyon merkezi.",Direksiyon,C0545,Toyota Corolla,91000,"Arıza Mekanik boşluk kaynaklıydı, onarıldı. Sonrasında sensör kalibrasyonu kontrol edildi."
+Yokuş çıkarken düzgün gitmeyen direksiyon merkezi; ayrıca düzgün gitmeyen direksiyon merkezi.,Direksiyon,C0545,Skoda Octavia,86000,"Arıza Sensör kalibrasyonu kaynaklıydı, kalibre edildi. Sonrasında mekanik boşluk kontrol edildi."
+Klima açıkken düzgün gitmeyen direksiyon merkezi; ayrıca düzgün gitmeyen direksiyon merkezi.,Direksiyon,C0545,Audi A3,110000,Sensör kalibrasyonu yenilendi ve sistem testi yapıldı.
+"Düşük devirde düzgün gitmeyen direksiyon merkezi, beraberinde düzgün gitmeyen direksiyon merkezi.",Direksiyon,C0545,Volkswagen Golf,116000,Mekanik boşluk yenilendi.
+Araç şehir içi trafikte düzgün gitmeyen direksiyon merkezi ve düzgün gitmeyen direksiyon merkezi.,Direksiyon,C0545,Toyota Corolla,68000,Sensör kalibrasyonu kalibre edildi; mekanik boşluk temizlendi.
+"Düzgün gitmeyen direksiyon merkezi, düzgün gitmeyen direksiyon merkezi. Şikayet motor ısındıktan sonra belirginleşiyor.",Direksiyon,C0545,Skoda Octavia,136000,"Arıza Sensör kalibrasyonu kaynaklıydı, değiştirildi. Sonrasında mekanik boşluk kontrol edildi."
+Sert/yumuşak sürüş ayarı çalışmıyor ve sert/yumuşak sürüş ayarı çalışmıyor şikayeti mevcut.,Süspansiyon,C0510,Toyota Corolla,109000,Adaptif süspansiyon modülü temizlendi ve sistem testi yapıldı.
+Araç klima açıkken sert/yumuşak sürüş ayarı çalışmıyor ve sert/yumuşak sürüş ayarı çalışmıyor.,Süspansiyon,C0510,Fiat Doblo,106000,Kablaj temizlendi ve sistem testi yapıldı.
+"Sert/yumuşak sürüş ayarı çalışmıyor, sert/yumuşak sürüş ayarı çalışmıyor. Şikayet vites değiştirirken belirginleşiyor.",Süspansiyon,C0510,Audi A3,42000,Adaptif süspansiyon modülü yenilendi; kablaj değiştirildi.
+Yokuş çıkarken sert/yumuşak sürüş ayarı çalışmıyor; ayrıca sert/yumuşak sürüş ayarı çalışmıyor.,Süspansiyon,C0510,Volkswagen Golf,89000,Adaptif süspansiyon modülü kontrol edilip değiştirildi.
+Müşteri motor ısındıktan sonra sert/yumuşak sürüş ayarı çalışmıyor ve sert/yumuşak sürüş ayarı çalışmıyor olduğunu belirtti.,Süspansiyon,C0510,Volkswagen Passat,166000,Kablaj kalibre edildi; adaptif süspansiyon modülü yenilendi.
+"Sert/yumuşak sürüş ayarı çalışmıyor, sert/yumuşak sürüş ayarı çalışmıyor. Şikayet klima açıkken belirginleşiyor.",Süspansiyon,C0510,Renault Megane,104000,Adaptif süspansiyon modülü yenilendi; kablaj kontrol edilip değiştirildi.
+Araç fren yaparken sert/yumuşak sürüş ayarı çalışmıyor ve sert/yumuşak sürüş ayarı çalışmıyor.,Süspansiyon,C0510,Nissan Qashqai,78000,"Arıza Adaptif süspansiyon modülü kaynaklıydı, yenilendi. Sonrasında kablaj kontrol edildi."
+"Motor ısındıktan sonra sert/yumuşak sürüş ayarı çalışmıyor, beraberinde sert/yumuşak sürüş ayarı çalışmıyor.",Süspansiyon,C0510,Nissan Qashqai,45000,Kablaj onarıldı; adaptif süspansiyon modülü kalibre edildi.
+Rölantide sert/yumuşak sürüş ayarı çalışmıyor; ayrıca sert/yumuşak sürüş ayarı çalışmıyor.,Süspansiyon,C0510,Honda Civic,198000,"Arıza Adaptif süspansiyon modülü kaynaklıydı, yenilendi. Sonrasında kablaj kontrol edildi."
+"Düşük devirde uyarı, beraberinde araç bir köşeden çöküyor.",Süspansiyon,C1561,Fiat Egea,100000,Hava körüğü kaçağı değiştirildi; röle değiştirildi.
+"Rölantide araç bir köşeden çöküyor, beraberinde uyarı.",Süspansiyon,C1561,Volkswagen Passat,87000,Hava körüğü kaçağı değiştirildi.
+Araç bir köşeden çöküyor ve uyarı şikayeti mevcut.,Süspansiyon,C1561,Honda Civic,177000,Hava körüğü kaçağı kontrol edilip değiştirildi.
+"Uyarı, araç bir köşeden çöküyor. Şikayet vites değiştirirken belirginleşiyor.",Süspansiyon,C1561,Peugeot 301,194000,Röle yenilendi ve sistem testi yapıldı.
+Müşteri hızlanırken uyarı ve araç bir köşeden çöküyor olduğunu belirtti.,Süspansiyon,C1561,Audi A3,183000,Hava körüğü kaçağı değiştirildi; röle kontrol edilip değiştirildi.
+Araç fren yaparken araç bir köşeden çöküyor ve uyarı.,Süspansiyon,C1561,Dacia Duster,94000,Röle temizlendi ve sistem testi yapıldı.
+"Klima açıkken araç bir köşeden çöküyor, beraberinde uyarı.",Süspansiyon,C1561,Toyota Corolla,108000,"Arıza Röle kaynaklıydı, kalibre edildi. Sonrasında hava körüğü kaçağı kontrol edildi."
+"Motor ısındıktan sonra uyarı, beraberinde araç bir köşeden çöküyor.",Süspansiyon,C1561,Citroen C3,166000,Kompresör temizlendi ve sistem testi yapıldı.
+Rampada kalkışta uyarı; ayrıca araç bir köşeden çöküyor.,Süspansiyon,C1561,Volkswagen Passat,100000,Hava körüğü kaçağı yenilendi.
+Müşteri motor ısındıktan sonra far seviyesi/sürüş yüksekliği hatası ve far seviyesi/sürüş yüksekliği hatası olduğunu belirtti.,Süspansiyon,C1413,Citroen C3,100000,Kablaj onarıldı; seviye sensörü kontrol edilip değiştirildi.
+Araç soğuk havada ilk çalıştırmada far seviyesi/sürüş yüksekliği hatası ve far seviyesi/sürüş yüksekliği hatası.,Süspansiyon,C1413,Volkswagen Golf,82000,Kablaj değiştirildi.
+Müşteri şehir içi trafikte far seviyesi/sürüş yüksekliği hatası ve far seviyesi/sürüş yüksekliği hatası olduğunu belirtti.,Süspansiyon,C1413,Fiat Egea,100000,Seviye sensörü kalibre edildi ve sistem testi yapıldı.
+Müşteri fren yaparken far seviyesi/sürüş yüksekliği hatası ve far seviyesi/sürüş yüksekliği hatası olduğunu belirtti.,Süspansiyon,C1413,Audi A3,28000,Seviye sensörü değiştirildi ve sistem testi yapıldı.
+"Klima açıkken far seviyesi/sürüş yüksekliği hatası, beraberinde far seviyesi/sürüş yüksekliği hatası.",Süspansiyon,C1413,BMW 320i,46000,Seviye sensörü kontrol edilip değiştirildi; kablaj değiştirildi.
+Uzun yol sürüşünde far seviyesi/sürüş yüksekliği hatası; ayrıca far seviyesi/sürüş yüksekliği hatası.,Süspansiyon,C1413,Renault Megane,41000,Seviye sensörü temizlendi ve sistem testi yapıldı.
+"Far seviyesi/sürüş yüksekliği hatası, far seviyesi/sürüş yüksekliği hatası. Şikayet motor ısındıktan sonra belirginleşiyor.",Süspansiyon,C1413,Nissan Qashqai,46000,Kablaj değiştirildi.
+Far seviyesi/sürüş yüksekliği hatası ve far seviyesi/sürüş yüksekliği hatası şikayeti mevcut.,Süspansiyon,C1413,Citroen C3,140000,"Arıza Kablaj kaynaklıydı, temizlendi. Sonrasında mekanik kol kontrol edildi."
+Düşük devirde far seviyesi/sürüş yüksekliği hatası; ayrıca far seviyesi/sürüş yüksekliği hatası.,Süspansiyon,C1413,Skoda Octavia,73000,"Arıza Kablaj kaynaklıydı, yenilendi. Sonrasında seviye sensörü kontrol edildi."
+Araç fren yaparken tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi.,Süspansiyon,C1521,Citroen C3,29000,Kablo kalibre edildi.
+"Fren yaparken tek tarafta sert/zıplama hissi, beraberinde tek tarafta sert/zıplama hissi.",Süspansiyon,C1521,Toyota Corolla,111000,Kablo yenilendi ve sistem testi yapıldı.
+Tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi şikayeti mevcut.,Süspansiyon,C1521,Skoda Octavia,138000,Elektronik amortisör valfi temizlendi.
+Rampada kalkışta tek tarafta sert/zıplama hissi; ayrıca tek tarafta sert/zıplama hissi.,Süspansiyon,C1521,Mercedes C180,74000,"Arıza Kablo kaynaklıydı, yenilendi. Sonrasında elektronik amortisör valfi kontrol edildi."
+"Tek tarafta sert/zıplama hissi, tek tarafta sert/zıplama hissi. Şikayet hızlanırken belirginleşiyor.",Süspansiyon,C1521,Mercedes C180,30000,"Arıza Elektronik amortisör valfi kaynaklıydı, temizlendi. Sonrasında kablo kontrol edildi."
+Müşteri düşük devirde tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1521,Ford Focus,118000,Elektronik amortisör valfi yenilendi; kablo kontrol edilip değiştirildi.
+Müşteri şehir içi trafikte tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1521,Opel Astra,50000,"Arıza Elektronik amortisör valfi kaynaklıydı, yenilendi. Sonrasında kablo kontrol edildi."
+Araç hızlanırken tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi.,Süspansiyon,C1521,Renault Symbol,100000,Elektronik amortisör valfi temizlendi ve sistem testi yapıldı.
+"Tek tarafta sert/zıplama hissi, tek tarafta sert/zıplama hissi. Şikayet uzun yol sürüşünde belirginleşiyor.",Süspansiyon,C1521,Nissan Qashqai,134000,Kablo kalibre edildi; elektronik amortisör valfi temizlendi.
+Motor ısındıktan sonra tek tarafta sert/zıplama hissi; ayrıca tek tarafta sert/zıplama hissi.,Süspansiyon,C1522,Nissan Qashqai,37000,Elektronik amortisör valfi kalibre edildi ve sistem testi yapıldı.
+Müşteri fren yaparken tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1522,Dacia Duster,133000,Elektronik amortisör valfi kontrol edilip değiştirildi.
+Müşteri vites değiştirirken tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1522,Renault Megane,22000,Elektronik amortisör valfi temizlendi.
+Müşteri düşük devirde tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1522,Ford Focus,92000,"Arıza Kablo kaynaklıydı, onarıldı. Sonrasında elektronik amortisör valfi kontrol edildi."
+Müşteri uzun yol sürüşünde tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi olduğunu belirtti.,Süspansiyon,C1522,Ford Focus,85000,Kablo kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Tek tarafta sert/zıplama hissi, tek tarafta sert/zıplama hissi. Şikayet uzun yol sürüşünde belirginleşiyor.",Süspansiyon,C1522,Toyota Corolla,79000,Elektronik amortisör valfi değiştirildi; kablo kontrol edilip değiştirildi.
+Yokuş çıkarken tek tarafta sert/zıplama hissi; ayrıca tek tarafta sert/zıplama hissi.,Süspansiyon,C1522,Citroen C3,77000,Kablo kontrol edilip değiştirildi; elektronik amortisör valfi yenilendi.
+Araç vites değiştirirken tek tarafta sert/zıplama hissi ve tek tarafta sert/zıplama hissi.,Süspansiyon,C1522,Ford Focus,75000,"Arıza Kablo kaynaklıydı, onarıldı. Sonrasında elektronik amortisör valfi kontrol edildi."
+"Yokuş çıkarken tek tarafta sert/zıplama hissi, beraberinde tek tarafta sert/zıplama hissi.",Süspansiyon,C1522,Nissan Qashqai,26000,Kablo değiştirildi; elektronik amortisör valfi yenilendi.
+"Sürüş yüksekliği dengesiz, sürüş yüksekliği dengesiz. Şikayet yokuş çıkarken belirginleşiyor.",Süspansiyon,C1531,Volkswagen Passat,158000,"Arıza Hidrolik kaçak kaynaklıydı, temizlendi. Sonrasında basınç sensörü kontrol edildi."
+Müşteri fren yaparken sürüş yüksekliği dengesiz ve sürüş yüksekliği dengesiz olduğunu belirtti.,Süspansiyon,C1531,Peugeot 301,45000,"Arıza Hidrolik kaçak kaynaklıydı, kontrol edilip değiştirildi. Sonrasında basınç sensörü kontrol edildi."
+"Şehir içi trafikte sürüş yüksekliği dengesiz, beraberinde sürüş yüksekliği dengesiz.",Süspansiyon,C1531,Nissan Qashqai,181000,"Arıza Basınç sensörü kaynaklıydı, temizlendi. Sonrasında hidrolik kaçak kontrol edildi."
+"Sürüş yüksekliği dengesiz, sürüş yüksekliği dengesiz. Şikayet fren yaparken belirginleşiyor.",Süspansiyon,C1531,Skoda Octavia,61000,Hidrolik kaçak kontrol edilip değiştirildi ve sistem testi yapıldı.
+Sürüş yüksekliği dengesiz ve sürüş yüksekliği dengesiz şikayeti mevcut.,Süspansiyon,C1531,Mercedes C180,151000,Hidrolik kaçak yenilendi.
+Müşteri şehir içi trafikte sürüş yüksekliği dengesiz ve sürüş yüksekliği dengesiz olduğunu belirtti.,Süspansiyon,C1531,Mercedes C180,116000,"Arıza Hidrolik kaçak kaynaklıydı, onarıldı. Sonrasında basınç sensörü kontrol edildi."
+"Rampada kalkışta sürüş yüksekliği dengesiz, beraberinde sürüş yüksekliği dengesiz.",Süspansiyon,C1531,Fiat Doblo,158000,Hidrolik kaçak değiştirildi; basınç sensörü yenilendi.
+Rampada kalkışta sürüş yüksekliği dengesiz; ayrıca sürüş yüksekliği dengesiz.,Süspansiyon,C1531,Toyota Corolla,61000,Basınç sensörü değiştirildi ve sistem testi yapıldı.
+"Sürüş yüksekliği dengesiz, sürüş yüksekliği dengesiz. Şikayet hızlanırken belirginleşiyor.",Süspansiyon,C1531,Citroen C3,54000,Basınç sensörü değiştirildi.
+"Klima soğutmuyor, kompresör devreye girmiyor. Şikayet klima açıkken belirginleşiyor.",Klima,P0532,BMW 320i,50000,Basınç sensörü kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç soğuk havada ilk çalıştırmada klima soğutmuyor ve kompresör devreye girmiyor.,Klima,P0532,Peugeot 301,133000,Gaz eksik kalibre edildi ve sistem testi yapıldı.
+"Rampada kalkışta kompresör devreye girmiyor, beraberinde klima soğutmuyor.",Klima,P0532,Ford Focus,97000,Kablaj kalibre edildi ve sistem testi yapıldı.
+"Vites değiştirirken kompresör devreye girmiyor, beraberinde klima soğutmuyor.",Klima,P0532,Hyundai i20,125000,"Arıza Basınç sensörü kaynaklıydı, temizlendi. Sonrasında gaz eksik kontrol edildi."
+Araç yokuş çıkarken kompresör devreye girmiyor ve klima soğutmuyor.,Klima,P0532,Renault Megane,89000,"Arıza Basınç sensörü kaynaklıydı, onarıldı. Sonrasında gaz eksik kontrol edildi."
+Müşteri vites değiştirirken klima soğutmuyor ve kompresör devreye girmiyor olduğunu belirtti.,Klima,P0532,Renault Megane,120000,Gaz eksik değiştirildi; kablaj kalibre edildi.
+"Motor ısındıktan sonra kompresör devreye girmiyor, beraberinde klima soğutmuyor.",Klima,P0532,Honda Civic,72000,Basınç sensörü onarıldı ve sistem testi yapıldı.
+Kompresör devreye girmiyor ve klima soğutmuyor şikayeti mevcut.,Klima,P0532,Hyundai i20,88000,"Arıza Kablaj kaynaklıydı, kontrol edilip değiştirildi. Sonrasında gaz eksik kontrol edildi."
+Araç şehir içi trafikte kompresör devreye girmiyor ve klima soğutmuyor.,Klima,P0532,Ford Focus,38000,Gaz eksik kalibre edildi ve sistem testi yapıldı.
+Klima kesik çalışıyor ve klima kesik çalışıyor şikayeti mevcut.,Klima,P0533,Audi A3,84000,Basınç sensörü yenilendi.
+Araç fren yaparken klima kesik çalışıyor ve klima kesik çalışıyor.,Klima,P0533,Ford Focus,33000,Aşırı dolum kontrol edilip değiştirildi; fan onarıldı.
+Araç rampada kalkışta klima kesik çalışıyor ve klima kesik çalışıyor.,Klima,P0533,Hyundai i20,32000,Basınç sensörü yenilendi ve sistem testi yapıldı.
+Müşteri motor ısındıktan sonra klima kesik çalışıyor ve klima kesik çalışıyor olduğunu belirtti.,Klima,P0533,Renault Symbol,69000,"Arıza Aşırı dolum kaynaklıydı, değiştirildi. Sonrasında basınç sensörü kontrol edildi."
+Müşteri soğuk havada ilk çalıştırmada klima kesik çalışıyor ve klima kesik çalışıyor olduğunu belirtti.,Klima,P0533,Dacia Duster,29000,Fan yenilendi; aşırı dolum temizlendi.
+Araç motor ısındıktan sonra klima kesik çalışıyor ve klima kesik çalışıyor.,Klima,P0533,Volkswagen Passat,121000,Fan onarıldı ve sistem testi yapıldı.
+"Klima kesik çalışıyor, klima kesik çalışıyor. Şikayet şehir içi trafikte belirginleşiyor.",Klima,P0533,Volkswagen Passat,88000,Fan onarıldı ve sistem testi yapıldı.
+Müşteri yokuş çıkarken klima kesik çalışıyor ve klima kesik çalışıyor olduğunu belirtti.,Klima,P0533,Ford Focus,102000,Fan temizlendi.
+Müşteri klima açıkken klima kesik çalışıyor ve klima kesik çalışıyor olduğunu belirtti.,Klima,P0533,Opel Astra,67000,Basınç sensörü yenilendi.
+Müşteri motor ısındıktan sonra klima kompresörü çalışmıyor ve klima kompresörü çalışmıyor olduğunu belirtti.,Klima,P0645,Renault Megane,42000,Kablo yenilendi ve sistem testi yapıldı.
+"Soğuk havada ilk çalıştırmada klima kompresörü çalışmıyor, beraberinde klima kompresörü çalışmıyor.",Klima,P0645,Renault Symbol,110000,"Arıza Sigorta kaynaklıydı, değiştirildi. Sonrasında kompresör kavrama rölesi kontrol edildi."
+"Klima kompresörü çalışmıyor, klima kompresörü çalışmıyor. Şikayet rölantide belirginleşiyor.",Klima,P0645,Fiat Egea,110000,Sigorta değiştirildi.
+Klima açıkken klima kompresörü çalışmıyor; ayrıca klima kompresörü çalışmıyor.,Klima,P0645,Citroen C3,124000,Kompresör kavrama rölesi yenilendi ve sistem testi yapıldı.
+Klima kompresörü çalışmıyor ve klima kompresörü çalışmıyor şikayeti mevcut.,Klima,P0645,Peugeot 301,126000,Kablo kontrol edilip değiştirildi.
+Müşteri rölantide klima kompresörü çalışmıyor ve klima kompresörü çalışmıyor olduğunu belirtti.,Klima,P0645,Renault Clio,84000,"Arıza Sigorta kaynaklıydı, kalibre edildi. Sonrasında kablo kontrol edildi."
+Vites değiştirirken klima kompresörü çalışmıyor; ayrıca klima kompresörü çalışmıyor.,Klima,P0645,Nissan Qashqai,44000,"Arıza Sigorta kaynaklıydı, kontrol edilip değiştirildi. Sonrasında kablo kontrol edildi."
+"Yokuş çıkarken klima kompresörü çalışmıyor, beraberinde klima kompresörü çalışmıyor.",Klima,P0645,Citroen C3,41000,Kompresör kavrama rölesi temizlendi ve sistem testi yapıldı.
+Müşteri fren yaparken klima kompresörü çalışmıyor ve klima kompresörü çalışmıyor olduğunu belirtti.,Klima,P0645,Skoda Octavia,20000,Sigorta değiştirildi; kablo kalibre edildi.
+Tıkırtı ve üfleme sıcaklığı ayarlanamıyor şikayeti mevcut.,Klima,B1041,Fiat Egea,106000,Kalibrasyon kalibre edildi; dişli kontrol edilip değiştirildi.
+Müşteri düşük devirde tıkırtı ve üfleme sıcaklığı ayarlanamıyor olduğunu belirtti.,Klima,B1041,Mercedes C180,74000,Kalibrasyon değiştirildi.
+Rölantide üfleme sıcaklığı ayarlanamıyor; ayrıca tıkırtı.,Klima,B1041,Renault Clio,46000,Karışım kapı motoru değiştirildi; dişli değiştirildi.
+"Fren yaparken tıkırtı, beraberinde üfleme sıcaklığı ayarlanamıyor.",Klima,B1041,Nissan Qashqai,54000,Karışım kapı motoru kalibre edildi; dişli kontrol edilip değiştirildi.
+Üfleme sıcaklığı ayarlanamıyor ve tıkırtı şikayeti mevcut.,Klima,B1041,Renault Symbol,137000,Karışım kapı motoru temizlendi.
+Araç rampada kalkışta tıkırtı ve üfleme sıcaklığı ayarlanamıyor.,Klima,B1041,Audi A3,55000,Kalibrasyon temizlendi.
+Şehir içi trafikte üfleme sıcaklığı ayarlanamıyor; ayrıca tıkırtı.,Klima,B1041,Fiat Doblo,106000,Karışım kapı motoru kontrol edilip değiştirildi ve sistem testi yapıldı.
+Rölantide tıkırtı; ayrıca üfleme sıcaklığı ayarlanamıyor.,Klima,B1041,Citroen C3,73000,Kalibrasyon kalibre edildi; dişli kalibre edildi.
+"Uzun yol sürüşünde tıkırtı, beraberinde üfleme sıcaklığı ayarlanamıyor.",Klima,B1041,Mercedes C180,131000,Dişli kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Motor ısındıktan sonra klima düzensiz, beraberinde uyarı.",Klima,B1242,Toyota Corolla,67000,Konnektör değiştirildi ve sistem testi yapıldı.
+Araç düşük devirde klima düzensiz ve uyarı.,Klima,B1242,Fiat Doblo,38000,"Arıza Konnektör kaynaklıydı, yenilendi. Sonrasında basınç sensörü kontrol edildi."
+Müşteri rampada kalkışta uyarı ve klima düzensiz olduğunu belirtti.,Klima,B1242,Citroen C3,87000,Basınç sensörü onarıldı.
+Müşteri yokuş çıkarken klima düzensiz ve uyarı olduğunu belirtti.,Klima,B1242,Nissan Qashqai,53000,"Arıza Basınç sensörü kaynaklıydı, değiştirildi. Sonrasında konnektör kontrol edildi."
+Araç rampada kalkışta uyarı ve klima düzensiz.,Klima,B1242,Mercedes C180,124000,Konnektör kontrol edilip değiştirildi ve sistem testi yapıldı.
+Klima düzensiz ve uyarı şikayeti mevcut.,Klima,B1242,Nissan Qashqai,70000,"Arıza Basınç sensörü kaynaklıydı, temizlendi. Sonrasında konnektör kontrol edildi."
+Uyarı ve klima düzensiz şikayeti mevcut.,Klima,B1242,Audi A3,21000,"Arıza Konnektör kaynaklıydı, kalibre edildi. Sonrasında basınç sensörü kontrol edildi."
+"Uzun yol sürüşünde uyarı, beraberinde klima düzensiz.",Klima,B1242,Hyundai i20,40000,Basınç sensörü kalibre edildi ve sistem testi yapıldı.
+Müşteri motor ısındıktan sonra klima düzensiz ve uyarı olduğunu belirtti.,Klima,B1242,Dacia Duster,39000,Basınç sensörü onarıldı.
+Araç yokuş çıkarken panel tepki vermiyor ve ekran sorunu.,Klima,B2730,Dacia Duster,86000,Besleme onarıldı; kontrol paneli kalibre edildi.
+Panel tepki vermiyor ve ekran sorunu şikayeti mevcut.,Klima,B2730,Nissan Qashqai,46000,Bus değiştirildi; kontrol paneli temizlendi.
+"Klima açıkken ekran sorunu, beraberinde panel tepki vermiyor.",Klima,B2730,Fiat Egea,35000,Bus temizlendi ve sistem testi yapıldı.
+"Uzun yol sürüşünde panel tepki vermiyor, beraberinde ekran sorunu.",Klima,B2730,Renault Megane,121000,"Arıza Besleme kaynaklıydı, kalibre edildi. Sonrasında kontrol paneli kontrol edildi."
+Soğuk havada ilk çalıştırmada panel tepki vermiyor; ayrıca ekran sorunu.,Klima,B2730,Opel Astra,110000,Besleme değiştirildi.
+Düşük devirde panel tepki vermiyor; ayrıca ekran sorunu.,Klima,B2730,BMW 320i,22000,"Arıza Besleme kaynaklıydı, onarıldı. Sonrasında kontrol paneli kontrol edildi."
+"Fren yaparken panel tepki vermiyor, beraberinde ekran sorunu.",Klima,B2730,Toyota Corolla,92000,Besleme onarıldı.
+Araç rölantide panel tepki vermiyor ve ekran sorunu.,Klima,B2730,BMW 320i,46000,Bus onarıldı.
+Araç hızlanırken ekran sorunu ve panel tepki vermiyor.,Klima,B2730,BMW 320i,134000,Bus onarıldı; besleme kalibre edildi.
+Araç rampada kalkışta klima/sensör düzensiz ve klima/sensör düzensiz.,Klima,P0698,Mercedes C180,84000,Referans voltaj kalibre edildi; kısa devre onarıldı.
+Klima/sensör düzensiz ve klima/sensör düzensiz şikayeti mevcut.,Klima,P0698,Renault Megane,25000,"Arıza Referans voltaj kaynaklıydı, onarıldı. Sonrasında kısa devre kontrol edildi."
+Rampada kalkışta klima/sensör düzensiz; ayrıca klima/sensör düzensiz.,Klima,P0698,Renault Megane,65000,"Arıza Kısa devre kaynaklıydı, yenilendi. Sonrasında referans voltaj kontrol edildi."
+Araç yokuş çıkarken klima/sensör düzensiz ve klima/sensör düzensiz.,Klima,P0698,Toyota Corolla,135000,"Arıza Kısa devre kaynaklıydı, yenilendi. Sonrasında referans voltaj kontrol edildi."
+"Klima/sensör düzensiz, klima/sensör düzensiz. Şikayet uzun yol sürüşünde belirginleşiyor.",Klima,P0698,Volkswagen Golf,32000,Kısa devre yenilendi ve sistem testi yapıldı.
+"Klima/sensör düzensiz, klima/sensör düzensiz. Şikayet rölantide belirginleşiyor.",Klima,P0698,BMW 320i,139000,Kısa devre yenilendi; referans voltaj kontrol edilip değiştirildi.
+"Rölantide klima/sensör düzensiz, beraberinde klima/sensör düzensiz.",Klima,P0698,Citroen C3,110000,"Arıza Referans voltaj kaynaklıydı, kontrol edilip değiştirildi. Sonrasında kısa devre kontrol edildi."
+Fren yaparken klima/sensör düzensiz; ayrıca klima/sensör düzensiz.,Klima,P0698,Honda Civic,139000,"Arıza Referans voltaj kaynaklıydı, değiştirildi. Sonrasında kısa devre kontrol edildi."
+Hızlanırken klima/sensör düzensiz; ayrıca klima/sensör düzensiz.,Klima,P0698,Mercedes C180,130000,"Arıza Referans voltaj kaynaklıydı, onarıldı. Sonrasında kısa devre kontrol edildi."
+Aydınlatma sönük ve uyarılar şikayeti mevcut.,Elektrik,P0562,Toyota Corolla,80000,Alternatör yenilendi; kablo direnci değiştirildi.
+"Düşük devirde uyarılar, beraberinde aydınlatma sönük.",Elektrik,P0562,Audi A3,101000,Kablo direnci kontrol edilip değiştirildi; alternatör değiştirildi.
+"Aydınlatma sönük, marş zayıf. Şikayet rampada kalkışta belirginleşiyor.",Elektrik,P0562,Volkswagen Golf,172000,"Arıza Kablo direnci kaynaklıydı, yenilendi. Sonrasında akü kontrol edildi."
+Rölantide aydınlatma sönük; ayrıca uyarılar.,Elektrik,P0562,Opel Astra,99000,Alternatör temizlendi.
+Araç şehir içi trafikte marş zayıf ve uyarılar.,Elektrik,P0562,Ford Focus,155000,"Arıza Kablo direnci kaynaklıydı, onarıldı. Sonrasında akü kontrol edildi."
+"Soğuk havada ilk çalıştırmada aydınlatma sönük, beraberinde uyarılar.",Elektrik,P0562,Dacia Duster,122000,Akü onarıldı.
+"Fren yaparken marş zayıf, beraberinde uyarılar.",Elektrik,P0562,Dacia Duster,50000,Kablo direnci yenilendi.
+Müşteri yokuş çıkarken aydınlatma sönük ve uyarılar olduğunu belirtti.,Elektrik,P0562,Skoda Octavia,84000,Akü kontrol edilip değiştirildi.
+"Marş zayıf, aydınlatma sönük. Şikayet klima açıkken belirginleşiyor.",Elektrik,P0562,Fiat Egea,171000,Alternatör onarıldı; kablo direnci onarıldı.
+Soğuk havada ilk çalıştırmada uyarı; ayrıca ampuller atıyor.,Elektrik,P0563,Skoda Octavia,195000,Voltaj regülatörü temizlendi.
+Araç hızlanırken ampuller atıyor ve uyarı.,Elektrik,P0563,Skoda Octavia,135000,Voltaj regülatörü onarıldı; alternatör kalibre edildi.
+Müşteri rölantide uyarı ve ampuller atıyor olduğunu belirtti.,Elektrik,P0563,Nissan Qashqai,79000,Voltaj regülatörü kontrol edilip değiştirildi; alternatör değiştirildi.
+Uyarı ve ampuller atıyor şikayeti mevcut.,Elektrik,P0563,Skoda Octavia,116000,Voltaj regülatörü yenilendi; alternatör değiştirildi.
+"Uyarı, ampuller atıyor. Şikayet vites değiştirirken belirginleşiyor.",Elektrik,P0563,Renault Symbol,182000,Voltaj regülatörü yenilendi; alternatör kalibre edildi.
+"Uyarı, ampuller atıyor. Şikayet motor ısındıktan sonra belirginleşiyor.",Elektrik,P0563,Fiat Egea,198000,"Arıza Voltaj regülatörü kaynaklıydı, kalibre edildi. Sonrasında alternatör kontrol edildi."
+Rölantide ampuller atıyor; ayrıca uyarı.,Elektrik,P0563,Renault Clio,131000,Voltaj regülatörü kontrol edilip değiştirildi.
+Araç hızlanırken uyarı ve ampuller atıyor.,Elektrik,P0563,Volkswagen Passat,149000,"Arıza Voltaj regülatörü kaynaklıydı, kalibre edildi. Sonrasında alternatör kontrol edildi."
+"Rampada kalkışta ampuller atıyor, beraberinde uyarı.",Elektrik,P0563,Peugeot 301,49000,"Arıza Voltaj regülatörü kaynaklıydı, temizlendi. Sonrasında alternatör kontrol edildi."
+Araç fren yaparken akü şarj uyarısı ve voltaj dengesiz.,Elektrik,P0620,BMW 320i,163000,"Arıza Alternatör kaynaklıydı, temizlendi. Sonrasında kontrol kablosu kontrol edildi."
+Rampada kalkışta voltaj dengesiz; ayrıca akü şarj uyarısı.,Elektrik,P0620,Audi A3,55000,Alternatör kontrol edilip değiştirildi ve sistem testi yapıldı.
+Müşteri düşük devirde voltaj dengesiz ve akü şarj uyarısı olduğunu belirtti.,Elektrik,P0620,Toyota Corolla,178000,Kontrol kablosu kalibre edildi; regülatör kalibre edildi.
+Vites değiştirirken voltaj dengesiz; ayrıca akü şarj uyarısı.,Elektrik,P0620,Audi A3,101000,Kontrol kablosu değiştirildi; regülatör değiştirildi.
+Araç klima açıkken akü şarj uyarısı ve voltaj dengesiz.,Elektrik,P0620,Opel Astra,149000,"Arıza Regülatör kaynaklıydı, temizlendi. Sonrasında alternatör kontrol edildi."
+Klima açıkken akü şarj uyarısı; ayrıca voltaj dengesiz.,Elektrik,P0620,BMW 320i,107000,"Arıza Alternatör kaynaklıydı, kalibre edildi. Sonrasında regülatör kontrol edildi."
+Voltaj dengesiz ve akü şarj uyarısı şikayeti mevcut.,Elektrik,P0620,Mercedes C180,129000,Regülatör yenilendi; alternatör temizlendi.
+Araç vites değiştirirken voltaj dengesiz ve akü şarj uyarısı.,Elektrik,P0620,Volkswagen Golf,166000,"Arıza Alternatör kaynaklıydı, onarıldı. Sonrasında regülatör kontrol edildi."
+Akü şarj uyarısı ve voltaj dengesiz şikayeti mevcut.,Elektrik,P0620,Mercedes C180,186000,Kontrol kablosu kalibre edildi; alternatör kontrol edilip değiştirildi.
+Hızlanırken çalışmama; ayrıca çoklu arıza.,Elektrik,P0606,Toyota Corolla,68000,Besleme kalibre edildi; ECM donanım/yazılım kalibre edildi.
+Araç düşük devirde çalışmama ve çoklu arıza.,Elektrik,P0606,BMW 320i,245000,"Arıza Besleme kaynaklıydı, onarıldı. Sonrasında ECM donanım/yazılım kontrol edildi."
+"Çalışmama, çoklu arıza. Şikayet uzun yol sürüşünde belirginleşiyor.",Elektrik,P0606,BMW 320i,117000,Besleme temizlendi.
+"Vites değiştirirken çoklu arıza, beraberinde çalışmama.",Elektrik,P0606,Renault Megane,187000,"Arıza ECM donanım/yazılım kaynaklıydı, onarıldı. Sonrasında besleme kontrol edildi."
+Araç rölantide çalışmama ve çoklu arıza.,Elektrik,P0606,Fiat Doblo,237000,ECM donanım/yazılım onarıldı.
+Araç yokuş çıkarken çoklu arıza ve çalışmama.,Elektrik,P0606,Audi A3,83000,Besleme değiştirildi.
+Müşteri düşük devirde çalışmama ve çoklu arıza olduğunu belirtti.,Elektrik,P0606,Opel Astra,144000,"Arıza ECM donanım/yazılım kaynaklıydı, temizlendi. Sonrasında besleme kontrol edildi."
+Araç klima açıkken çalışmama ve çoklu arıza.,Elektrik,P0606,Toyota Corolla,99000,ECM donanım/yazılım değiştirildi.
+Müşteri fren yaparken çoklu arıza ve çalışmama olduğunu belirtti.,Elektrik,P0606,Citroen C3,143000,"Arıza Besleme kaynaklıydı, kalibre edildi. Sonrasında ECM donanım/yazılım kontrol edildi."
+"Yokuş çıkarken motor çalışmıyor, beraberinde çoklu uyarı.",Elektrik,U0100,Mercedes C180,202000,ECM beslemesi değiştirildi; CAN bus onarıldı.
+Araç motor ısındıktan sonra motor çalışmıyor ve çoklu uyarı.,Elektrik,U0100,Fiat Egea,172000,ECM beslemesi kalibre edildi ve sistem testi yapıldı.
+Çoklu uyarı ve motor çalışmıyor şikayeti mevcut.,Elektrik,U0100,Citroen C3,81000,ECM beslemesi kontrol edilip değiştirildi.
+Motor çalışmıyor ve çoklu uyarı şikayeti mevcut.,Elektrik,U0100,Skoda Octavia,183000,CAN bus kalibre edildi; konnektör temizlendi.
+"Çoklu uyarı, motor çalışmıyor. Şikayet vites değiştirirken belirginleşiyor.",Elektrik,U0100,Renault Megane,77000,"Arıza ECM beslemesi kaynaklıydı, onarıldı. Sonrasında CAN bus kontrol edildi."
+"Uzun yol sürüşünde motor çalışmıyor, beraberinde çoklu uyarı.",Elektrik,U0100,Nissan Qashqai,93000,Konnektör kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Yokuş çıkarken çoklu uyarı, beraberinde motor çalışmıyor.",Elektrik,U0100,Skoda Octavia,165000,Konnektör kalibre edildi; ECM beslemesi yenilendi.
+"Rampada kalkışta çoklu uyarı, beraberinde motor çalışmıyor.",Elektrik,U0100,Honda Civic,174000,Konnektör yenilendi; ECM beslemesi kontrol edilip değiştirildi.
+"Hızlanırken motor çalışmıyor, beraberinde çoklu uyarı.",Elektrik,U0100,Audi A3,181000,ECM beslemesi yenilendi ve sistem testi yapıldı.
+Araç motor ısındıktan sonra ABS/ESP/hız göstergesi uyarısı ve ABS/ESP/hız göstergesi uyarısı.,Elektrik,U0121,Audi A3,69000,ABS modülü beslemesi kontrol edilip değiştirildi ve sistem testi yapıldı.
+Araç soğuk havada ilk çalıştırmada ABS/ESP/hız göstergesi uyarısı ve ABS/ESP/hız göstergesi uyarısı.,Elektrik,U0121,Opel Astra,76000,CAN bus onarıldı; ABS modülü beslemesi kalibre edildi.
+"ABS/ESP/hız göstergesi uyarısı, ABS/ESP/hız göstergesi uyarısı. Şikayet yokuş çıkarken belirginleşiyor.",Elektrik,U0121,Audi A3,192000,ABS modülü beslemesi kontrol edilip değiştirildi; CAN bus temizlendi.
+"Yokuş çıkarken ABS/ESP/hız göstergesi uyarısı, beraberinde ABS/ESP/hız göstergesi uyarısı.",Elektrik,U0121,BMW 320i,154000,ABS modülü beslemesi kalibre edildi.
+Motor ısındıktan sonra ABS/ESP/hız göstergesi uyarısı; ayrıca ABS/ESP/hız göstergesi uyarısı.,Elektrik,U0121,BMW 320i,56000,ABS modülü beslemesi kontrol edilip değiştirildi.
+Araç uzun yol sürüşünde ABS/ESP/hız göstergesi uyarısı ve ABS/ESP/hız göstergesi uyarısı.,Elektrik,U0121,BMW 320i,48000,CAN bus kontrol edilip değiştirildi ve sistem testi yapıldı.
+"ABS/ESP/hız göstergesi uyarısı, ABS/ESP/hız göstergesi uyarısı. Şikayet rampada kalkışta belirginleşiyor.",Elektrik,U0121,Dacia Duster,140000,ABS modülü beslemesi onarıldı; CAN bus yenilendi.
+"Şehir içi trafikte ABS/ESP/hız göstergesi uyarısı, beraberinde ABS/ESP/hız göstergesi uyarısı.",Elektrik,U0121,Dacia Duster,134000,"Arıza ABS modülü beslemesi kaynaklıydı, kontrol edilip değiştirildi. Sonrasında CAN bus kontrol edildi."
+Araç rölantide ABS/ESP/hız göstergesi uyarısı ve ABS/ESP/hız göstergesi uyarısı.,Elektrik,U0121,Fiat Egea,44000,CAN bus yenilendi ve sistem testi yapıldı.
+Gösterge ölü ve uyarılar şikayeti mevcut.,Elektrik,U0155,Audi A3,152000,Besleme kalibre edildi ve sistem testi yapıldı.
+Uzun yol sürüşünde uyarılar; ayrıca gösterge ölü.,Elektrik,U0155,Ford Focus,151000,Besleme kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Fren yaparken uyarılar, beraberinde gösterge ölü.",Elektrik,U0155,Peugeot 301,49000,"Arıza Pano modülü kaynaklıydı, değiştirildi. Sonrasında CAN bus kontrol edildi."
+Uyarılar ve gösterge ölü şikayeti mevcut.,Elektrik,U0155,Fiat Doblo,113000,CAN bus yenilendi.
+Araç düşük devirde gösterge ölü ve uyarılar.,Elektrik,U0155,Mercedes C180,180000,Pano modülü kalibre edildi ve sistem testi yapıldı.
+Müşteri uzun yol sürüşünde uyarılar ve gösterge ölü olduğunu belirtti.,Elektrik,U0155,BMW 320i,84000,"Arıza Pano modülü kaynaklıydı, değiştirildi. Sonrasında CAN bus kontrol edildi."
+Araç düşük devirde uyarılar ve gösterge ölü.,Elektrik,U0155,BMW 320i,47000,CAN bus yenilendi.
+Yokuş çıkarken gösterge ölü; ayrıca uyarılar.,Elektrik,U0155,Audi A3,114000,CAN bus kontrol edilip değiştirildi.
+"Gösterge ölü, uyarılar. Şikayet klima açıkken belirginleşiyor.",Elektrik,U0155,Peugeot 301,86000,CAN bus yenilendi ve sistem testi yapıldı.
+Müşteri soğuk havada ilk çalıştırmada birden çok modül iletişimi yok ve birden çok modül iletişimi yok olduğunu belirtti.,Elektrik,U0073,Fiat Egea,98000,Besleme onarıldı ve sistem testi yapıldı.
+Birden çok modül iletişimi yok ve birden çok modül iletişimi yok şikayeti mevcut.,Elektrik,U0073,Skoda Octavia,250000,Besleme kalibre edildi; CAN hat kısa/açık kontrol edilip değiştirildi.
+Araç uzun yol sürüşünde birden çok modül iletişimi yok ve birden çok modül iletişimi yok.,Elektrik,U0073,Toyota Corolla,258000,CAN hat kısa/açık onarıldı; besleme onarıldı.
+Müşteri vites değiştirirken birden çok modül iletişimi yok ve birden çok modül iletişimi yok olduğunu belirtti.,Elektrik,U0073,Renault Symbol,256000,Besleme kontrol edilip değiştirildi ve sistem testi yapıldı.
+"Birden çok modül iletişimi yok, birden çok modül iletişimi yok. Şikayet motor ısındıktan sonra belirginleşiyor.",Elektrik,U0073,Toyota Corolla,98000,Besleme temizlendi.
+"Uzun yol sürüşünde birden çok modül iletişimi yok, beraberinde birden çok modül iletişimi yok.",Elektrik,U0073,Renault Clio,86000,Besleme kalibre edildi ve sistem testi yapıldı.
+Müşteri yokuş çıkarken birden çok modül iletişimi yok ve birden çok modül iletişimi yok olduğunu belirtti.,Elektrik,U0073,Toyota Corolla,130000,CAN hat kısa/açık onarıldı ve sistem testi yapıldı.
+Rampada kalkışta birden çok modül iletişimi yok; ayrıca birden çok modül iletişimi yok.,Elektrik,U0073,Nissan Qashqai,111000,Besleme temizlendi; modül kalibre edildi.
+Araç soğuk havada ilk çalıştırmada birden çok modül iletişimi yok ve birden çok modül iletişimi yok.,Elektrik,U0073,Renault Megane,168000,CAN hat kısa/açık temizlendi ve sistem testi yapıldı.
+Araç şehir içi trafikte uyarılar ve start-stop çalışmıyor.,Elektrik,B1318,Renault Megane,64000,Akü yıpranmış kontrol edilip değiştirildi.
+Start-stop çalışmıyor ve uyarılar şikayeti mevcut.,Elektrik,B1318,Nissan Qashqai,88000,"Arıza Akü yıpranmış kaynaklıydı, temizlendi. Sonrasında şarj sistemi kontrol edildi."
+"Start-stop çalışmıyor, uyarılar. Şikayet yokuş çıkarken belirginleşiyor.",Elektrik,B1318,Mercedes C180,107000,"Arıza Akü yıpranmış kaynaklıydı, değiştirildi. Sonrasında şarj sistemi kontrol edildi."
+Müşteri soğuk havada ilk çalıştırmada uyarılar ve start-stop çalışmıyor olduğunu belirtti.,Elektrik,B1318,Toyota Corolla,87000,Şarj sistemi yenilendi ve sistem testi yapıldı.
+"Uyarılar, start-stop çalışmıyor. Şikayet klima açıkken belirginleşiyor.",Elektrik,B1318,Volkswagen Passat,78000,Şarj sistemi onarıldı.
+Araç soğuk havada ilk çalıştırmada uyarılar ve start-stop çalışmıyor.,Elektrik,B1318,Fiat Egea,190000,Şarj sistemi onarıldı.
+"Start-stop çalışmıyor, uyarılar. Şikayet klima açıkken belirginleşiyor.",Elektrik,B1318,Toyota Corolla,80000,Şarj sistemi kalibre edildi.
+"Uyarılar, start-stop çalışmıyor. Şikayet motor ısındıktan sonra belirginleşiyor.",Elektrik,B1318,Fiat Egea,182000,Akü yıpranmış kontrol edilip değiştirildi ve sistem testi yapıldı.
+Uyarılar ve start-stop çalışmıyor şikayeti mevcut.,Elektrik,B1318,Fiat Egea,136000,Şarj sistemi temizlendi ve sistem testi yapıldı.
+Araç fren yaparken röle tıkırtısı ve klima çalışmıyor.,Elektrik,P0645,Dacia Duster,107000,Röle değiştirildi ve sistem testi yapıldı.
+Klima çalışmıyor ve röle tıkırtısı şikayeti mevcut.,Elektrik,P0645,Skoda Octavia,116000,Röle yenilendi.
+Araç motor ısındıktan sonra röle tıkırtısı ve klima çalışmıyor.,Elektrik,P0645,Citroen C3,104000,Sürücü devre değiştirildi ve sistem testi yapıldı.
+Hızlanırken röle tıkırtısı; ayrıca klima çalışmıyor.,Elektrik,P0645,Fiat Doblo,80000,Kablo değiştirildi; röle değiştirildi.
+Araç klima açıkken röle tıkırtısı ve klima çalışmıyor.,Elektrik,P0645,Renault Symbol,139000,Kablo kontrol edilip değiştirildi; röle kontrol edilip değiştirildi.
+Röle tıkırtısı ve klima çalışmıyor şikayeti mevcut.,Elektrik,P0645,Renault Clio,139000,Sürücü devre kalibre edildi ve sistem testi yapıldı.
+"Röle tıkırtısı, klima çalışmıyor. Şikayet hızlanırken belirginleşiyor.",Elektrik,P0645,Audi A3,125000,Kablo yenilendi.
+Araç uzun yol sürüşünde klima çalışmıyor ve röle tıkırtısı.,Elektrik,P0645,Nissan Qashqai,92000,Röle değiştirildi; sürücü devre kalibre edildi.
+Araç hızlanırken röle tıkırtısı ve klima çalışmıyor.,Elektrik,P0645,Toyota Corolla,39000,"Arıza Sürücü devre kaynaklıydı, kalibre edildi. Sonrasında röle kontrol edildi."

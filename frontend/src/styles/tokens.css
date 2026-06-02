@@ -1,0 +1,148 @@
+/* ===========================================================================
+   AutoDiag — Tasarım Belirteçleri (design tokens) + temel stiller
+   Teknik/ölçü-aleti estetiği: nötr grafit zemin, tek ölçülü mavi vurgu,
+   anlamsal renkler yalnızca durum bildirimi için. Sade, yoğun, okunaklı.
+   ======================================================================== */
+
+:root {
+  /* Yüzeyler & metin */
+  --bg: #eef0f3;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;
+  --surface-sunken: #f1f3f6;
+  --ink: #14171c;
+  --ink-2: #3c424c;
+  --muted: #6a7280;
+  --muted-2: #9aa1ab;
+
+  /* Çizgiler */
+  --hairline: #e3e6eb;
+  --hairline-strong: #d2d7de;
+
+  /* Vurgu (eylem) */
+  --accent: #1f4ed8;
+  --accent-hover: #1a44bd;
+  --accent-soft: #eaf0fe;
+  --accent-ink: #ffffff;
+
+  /* Anlamsal */
+  --ok: #15803d;
+  --ok-soft: #e7f5ec;
+  --warn: #b45309;
+  --warn-soft: #fbf0e2;
+  --danger: #b42318;
+  --danger-soft: #fbeae8;
+
+  /* Tipografi */
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas,
+    monospace;
+
+  /* Yarıçap */
+  --r-sm: 6px;
+  --r: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  /* Gölge */
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.04);
+  --shadow-2: 0 6px 16px rgba(16, 24, 40, 0.1), 0 2px 6px rgba(16, 24, 40, 0.06);
+  --shadow-pop: 0 12px 32px rgba(16, 24, 40, 0.16);
+
+  /* Düzen */
+  --maxw: 1160px;
+  --header-h: 60px;
+
+  /* Hareket */
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* --------------------------------------------------------- sıfırlama (reset) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Tutarlı odak halkası (klavye erişilebilirliği) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+/* İnce, nötr kaydırma çubuğu */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--hairline-strong) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--hairline-strong);
+  border-radius: var(--r-pill);
+  border: 3px solid var(--bg);
+}
+
+/* Ortak yardımcı: küçük, harf-aralıklı bölüm etiketi (teknik his) */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* "azaltılmış hareket" tercihine saygı */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

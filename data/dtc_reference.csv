@@ -1,0 +1,74 @@
+dtc_code,category,title_tr,symptoms_tr,causes_tr,severity
+P0300,Motor,Rastgele/çoklu silindir ateşleme kaçağı,Motorda titreme; gaz tepkisinde düşüş; arıza lambası,Buji; ateşleme bobini; enjektör; düşük kompresyon,Yüksek
+P0301,Motor,1. silindir ateşleme kaçağı,Rölantide tekleme; 1. silindirde sarsıntı,1. silindir bujisi/bobini; enjektör arızası,Orta
+P0302,Motor,2. silindir ateşleme kaçağı,Rölantide tekleme; 2. silindirde sarsıntı,2. silindir bujisi/bobini; enjektör arızası,Orta
+P0303,Motor,3. silindir ateşleme kaçağı,Rölantide tekleme; 3. silindirde sarsıntı,3. silindir bujisi/bobini; enjektör arızası,Orta
+P0304,Motor,4. silindir ateşleme kaçağı,Rölantide tekleme; 4. silindirde sarsıntı,4. silindir bujisi/bobini; enjektör arızası,Orta
+P0171,Motor,Yakıt sistemi fazla fakir (Bank 1),Güç kaybı; rölantide stop; emiş hava kaçağı,Hava kaçağı; MAF kirli; yakıt basıncı düşük; enjektör tıkalı,Orta
+P0172,Motor,Yakıt sistemi fazla zengin (Bank 1),Siyah egzoz dumanı; yakıt kokusu; yüksek tüketim,Enjektör sızdırması; MAF arızalı; yakıt basıncı yüksek,Orta
+P0101,Motor,Hava kütle (MAF) sensörü aralık/performans,Düzensiz rölanti; ivmelenmede tutukluk,MAF sensörü kirli/arızalı; emiş kaçağı,Orta
+P0106,Motor,Emme manifold basınç (MAP) sensörü performans,Güç kaybı; düzensiz çalışma,MAP sensörü; vakum hortumu kaçağı,Orta
+P0128,Motor,Soğutma sıvısı termostat sıcaklığı düşük,Motor geç ısınıyor; kalorifer geç ısıtıyor,Termostat açık kalmış; soğutma sıvısı sıcaklık sensörü,Düşük
+P0217,Motor,Motor aşırı ısınma durumu,Hararet; buhar; güç kesintisi,Soğutma sıvısı eksik; su pompası; termostat; fan arızası,Kritik
+P0016,Motor,Krank-eksantrik mili korelasyon (Bank 1),Zor çalışma; güç kaybı; tıkırtı,Triger zinciri esnemiş; VVT; krank/eksantrik sensörü,Yüksek
+P0401,Egzoz,EGR akışı yetersiz,Vuruntu; rölantide titreme; NOx artışı,EGR valfi tıkalı; EGR borusu kurum; vakum sorunu,Orta
+P0402,Egzoz,EGR akışı aşırı,Rölantide stop; düzensiz çalışma,EGR valfi açık takılı; DPFE sensörü,Orta
+P0420,Egzoz,Katalitik konvertör verimi düşük (Bank 1),Arıza lambası; emisyon yüksek,Katalizör yıpranmış; O2 sensörü; egzoz kaçağı,Orta
+P0430,Egzoz,Katalitik konvertör verimi düşük (Bank 2),Arıza lambası; emisyon yüksek,Katalizör yıpranmış; O2 sensörü; egzoz kaçağı,Orta
+P0134,Egzoz,O2 sensörü sinyal yok (Bank 1 Sensör 1),Yüksek tüketim; düzensiz çalışma,Oksijen sensörü arızalı; kablo kopuk; egzoz kaçağı,Orta
+P0136,Egzoz,O2 sensörü devresi (Bank 1 Sensör 2),Arıza lambası; emisyon testi başarısız,Arka O2 sensörü; ısıtıcı devresi,Düşük
+P0141,Egzoz,O2 sensörü ısıtıcı devresi (Bank 1 Sensör 2),Soğukta gecikmeli kapalı çevrim,O2 sensörü ısıtıcı; sigorta; kablo,Düşük
+P0455,Egzoz,EVAP sistemi büyük kaçak,Yakıt kokusu; arıza lambası,Yakıt kapağı gevşek; EVAP hortumu; purge valfi,Düşük
+P0442,Egzoz,EVAP sistemi küçük kaçak,Arıza lambası; emisyon,EVAP hortum çatlağı; yakıt kapağı contası,Düşük
+P0411,Egzoz,İkincil hava enjeksiyon sistemi akışı,Soğukta arıza lambası,Hava pompası; valf; hortum tıkanıklığı,Düşük
+P0700,Şanzıman,Şanzıman kontrol sistemi arızası (genel),Arıza lambası; vites geçiş sorunları,TCM hatası; alt sistem DTC; sensör/solenoid,Yüksek
+P0715,Şanzıman,Giriş/tork konvertör hız sensörü devresi,Düzensiz vites; hız göstergesi sapması,Giriş hız sensörü; kablo; TCM,Orta
+P0720,Şanzıman,Çıkış hız sensörü devresi,Vites geçişlerinde gecikme; hız hatası,Çıkış hız sensörü; kablo bağlantısı,Orta
+P0730,Şanzıman,Yanlış vites oranı,Vites kayması; ani devir yükselmesi,Şanzıman mekanik aşınma; solenoid; düşük yağ,Yüksek
+P0741,Şanzıman,Tork konvertör kavrama (lock-up) performans,Titreşim; yüksek devir; ısınma,Lock-up solenoidi; tork konvertör; düşük yağ,Orta
+P0750,Şanzıman,Vites geçiş solenoidi A,Sert/gecikmeli vites; viteste kalma,A solenoidi arızalı; hidrolik basınç; kablo,Orta
+P0755,Şanzıman,Vites geçiş solenoidi B,Sert/gecikmeli vites; viteste kalma,B solenoidi arızalı; hidrolik basınç; kablo,Orta
+P0868,Şanzıman,Şanzıman sıvı basıncı düşük,Vites kayması; geç kavrama,Yağ seviyesi düşük; pompa; iç kaçak; filtre tıkalı,Yüksek
+P0218,Şanzıman,Şanzıman aşırı ısınma,Şanzıman hararet uyarısı; güç kaybı,Düşük/eski yağ; soğutucu tıkalı; ağır kullanım,Yüksek
+P0894,Şanzıman,Şanzıman kavrama elemanı kayması,Devir yükseliyor hız artmıyor; koku,Kavrama balataları aşınmış; düşük basınç,Yüksek
+P0894,Şanzıman,Şanzıman kavrama kayması (tekrar),Hızlanmada zorlanma; sarsıntı,Kavrama paketi; valf gövdesi,Yüksek
+C0035,Fren,Sol ön tekerlek hız sensörü devresi,ABS lambası; ABS devre dışı; hız sapması,Tekerlek hız sensörü; kablo; tonjant halkası,Orta
+C0040,Fren,Sağ ön tekerlek hız sensörü devresi,ABS lambası; ESP uyarısı,Tekerlek hız sensörü; konnektör; ABS halkası,Orta
+C0045,Fren,Sol arka tekerlek hız sensörü devresi,ABS/ESP lambası,Hız sensörü; kablaj; rotor halkası,Orta
+C0050,Fren,Sağ arka tekerlek hız sensörü devresi,ABS/ESP lambası,Hız sensörü; kablaj; rotor halkası,Orta
+C0110,Fren,ABS pompa motoru devresi,ABS çalışmıyor; pedal sertliği,ABS pompa motoru; röle; modül,Yüksek
+C0121,Fren,ABS valf rölesi devresi,ABS arıza lambası,Valf rölesi; ABS modülü; besleme,Yüksek
+C0200,Fren,ABS tekerlek hız sinyali genel,ABS/ESP devre dışı,Sensör grubu; modül; kablaj,Orta
+C0265,Fren,EBCM motor devresi/sürücü,ABS lambası; fren destek kaybı,EBCM; pompa motoru sürücü,Yüksek
+C1095,Fren,ABS hidrolik pompa arızası,ABS müdahale etmiyor,Hidrolik pompa; modül,Yüksek
+C0561,Fren,Sistem devre dışı,ABS/ESP geçici kapalı,Düşük voltaj; başka DTC mevcut,Orta
+C1511,Direksiyon,Direksiyon açı sensörü devresi,Direksiyon ağırlaşması; ESP uyarısı,Açı sensörü; kalibrasyon; kablaj,Orta
+C1513,Direksiyon,Elektrikli direksiyon tork sensörü,Direksiyonda boşluk/ağırlık; uyarı,Tork sensörü; EPS modülü,Orta
+C1531,Direksiyon,EPS motor devresi,Direksiyon desteği kesiliyor,EPS motoru; güç beslemesi; modül,Yüksek
+C1541,Direksiyon,Direksiyon kontrol modülü arızası,Direksiyon sertleşiyor; arıza lambası,EPS modülü; yazılım; besleme,Yüksek
+C1A00,Direksiyon,EPS genel sistem arızası,Direksiyon desteği yok,Modül; sensör; besleme; aşırı sıcaklık,Yüksek
+U0428,Direksiyon,Direksiyon açı verisi geçersiz,ESP/şerit takip uyarısı,Veri yolu; açı sensörü kalibrasyonu,Orta
+C0545,Direksiyon,Direksiyon açı sensörü performans,Düzgün gitmeyen direksiyon merkezi,Sensör kalibrasyonu; mekanik boşluk,Düşük
+C0510,Süspansiyon,Süspansiyon kontrol modülü arızası,Sert/yumuşak sürüş ayarı çalışmıyor,Adaptif süspansiyon modülü; kablaj,Orta
+C1561,Süspansiyon,Hava süspansiyon kompresörü devresi,Araç bir köşeden çöküyor; uyarı,Kompresör; hava körüğü kaçağı; röle,Orta
+C1413,Süspansiyon,Seviye sensörü devresi,Far seviyesi/sürüş yüksekliği hatası,Seviye sensörü; mekanik kol; kablaj,Düşük
+C1521,Süspansiyon,Amortisör aktüatörü (sol ön),Tek tarafta sert/zıplama hissi,Elektronik amortisör valfi; kablo,Düşük
+C1522,Süspansiyon,Amortisör aktüatörü (sağ ön),Tek tarafta sert/zıplama hissi,Elektronik amortisör valfi; kablo,Düşük
+C1531,Süspansiyon,Süspansiyon basınç sensörü,Sürüş yüksekliği dengesiz,Basınç sensörü; hidrolik kaçak,Orta
+P0532,Klima,Klima basınç sensörü sinyal düşük,Klima soğutmuyor; kompresör devreye girmiyor,Basınç sensörü; gaz eksik; kablaj,Düşük
+P0533,Klima,Klima basınç sensörü sinyal yüksek,Klima kesik çalışıyor,Basınç sensörü; aşırı dolum; fan,Düşük
+P0645,Klima,A/C kompresör kavrama röle devresi,Klima kompresörü çalışmıyor,Kompresör kavrama rölesi; kablo; sigorta,Düşük
+B1041,Klima,Hava karışım kapı aktüatörü,Üfleme sıcaklığı ayarlanamıyor; tıkırtı,Karışım kapı motoru; dişli; kalibrasyon,Düşük
+B1242,Klima,Klima basınç sensörü arızası,Klima düzensiz; uyarı,Basınç sensörü; konnektör,Düşük
+B2730,Klima,Klima kontrol paneli arızası,Panel tepki vermiyor; ekran sorunu,Kontrol paneli; besleme; bus,Düşük
+P0698,Klima,Sensör referans voltajı (klima devresi),Klima/sensör düzensiz,Referans voltaj; kısa devre,Düşük
+P0562,Elektrik,Sistem voltajı düşük,Marş zayıf; aydınlatma sönük; uyarılar,Alternatör; akü; kablo direnci,Orta
+P0563,Elektrik,Sistem voltajı yüksek,Ampuller atıyor; uyarı,Voltaj regülatörü; alternatör,Orta
+P0620,Elektrik,Alternatör kontrol devresi,Akü şarj uyarısı; voltaj dengesiz,Alternatör; regülatör; kontrol kablosu,Orta
+P0606,Elektrik,ECM/PCM işlemci arızası,Çoklu arıza; çalışmama,ECM donanım/yazılım; besleme,Yüksek
+U0100,Elektrik,ECM/PCM ile iletişim kaybı,Motor çalışmıyor; çoklu uyarı,CAN bus; ECM beslemesi; konnektör,Yüksek
+U0121,Elektrik,ABS modülü ile iletişim kaybı,ABS/ESP/hız göstergesi uyarısı,CAN bus; ABS modülü beslemesi,Orta
+U0155,Elektrik,Gösterge paneli ile iletişim kaybı,Gösterge ölü; uyarılar,Pano modülü; CAN bus; besleme,Orta
+U0073,Elektrik,Kontrol modülü iletişim bus kapalı,Birden çok modül iletişimi yok,CAN hat kısa/açık; modül; besleme,Yüksek
+B1318,Elektrik,Akü voltajı düşük,Start-stop çalışmıyor; uyarılar,Akü yıpranmış; şarj sistemi,Orta
+P0645,Elektrik,A/C kompresör röle devresi (elektrik),Röle tıkırtısı; klima çalışmıyor,Röle; sürücü devre; kablo,Düşük

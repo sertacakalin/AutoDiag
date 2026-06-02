@@ -1,0 +1,153 @@
+description,category,dtc_code,vehicle_model,mileage_km,solution
+Hızlanırken motor titriyor ve gaz tepkisi azaldı,Motor,P0300,Renault Megane,142000,Bujiler ve ateşleme bobini değiştirildi
+"Gaz verince araç sarsılıyor, ivmelenmede güç kaybı var",Motor,P0300,Fiat Egea,98000,Buji ve buji kabloları yenilendi
+İvmelenirken motorda titreşim ve tekleme hissediliyor,Motor,P0301,Volkswagen Passat,121000,1. silindir bobini değiştirildi
+"Rölantide motor tekliyor, çalışırken zaman zaman sarsıntı oluyor",Motor,P0302,Ford Focus,87000,2. silindir bujisi ve enjektörü temizlendi
+"Sabahları araç zor çalışıyor, marsa uzun basmak gerekiyor",Motor,,Toyota Corolla,156000,Yakıt pompası ve filtresi değiştirildi
+"Soğukta motor geç ateşliyor, ilk çalıştırma uzun sürüyor",Motor,,Opel Astra,134000,Kızdırma bujileri yenilendi
+Araç stop ettikten sonra tekrar zor çalışıyor,Motor,P0171,Hyundai i20,76000,"Hava akış sensörü temizlendi, fakir karışım düzeldi"
+"Motor arıza lambası yandı, yakıt tüketimi arttı",Motor,P0171,Renault Clio,103000,"MAF sensörü değiştirildi, vakum kaçağı giderildi"
+Egzozdan siyah duman geliyor ve yakıt sarfiyatı yükseldi,Motor,P0172,Peugeot 308,91000,"Enjektörler temizlendi, lambda sensörü değiştirildi"
+"Rölanti devri dengesiz, motor düzensiz çalışıyor",Motor,P0505,Skoda Octavia,112000,Rölanti kontrol valfi (gaz kelebeği) temizlendi
+"Motor hararet yapıyor, sıcaklık göstergesi kırmızıya çıkıyor",Motor,P0217,Fiat Doblo,167000,Termostat ve devirdaim pompası değiştirildi
+"Trafikte beklerken hararet yükseliyor, fan geç devreye giriyor",Motor,,Dacia Duster,88000,Radyatör fan müşürü değiştirildi
+Soğutma suyu eksiliyor ve motor ısınıyor,Motor,,Honda Civic,129000,"Radyatör peteğindeki sızıntı giderildi, hortum değişti"
+"Motordan tıkırtı sesi geliyor, özellikle soğukken belirgin",Motor,,BMW 320i,145000,Hidrolik supap kaldırıcıları değiştirildi
+"Yağ uyarı lambası yanıp sönüyor, motordan metalik ses var",Motor,P06DD,Mercedes C180,158000,Yağ pompası ve yağ basınç sensörü yenilendi
+"Motor yağı çabuk eksiliyor, egzozdan mavi duman çıkıyor",Motor,,Volkswagen Golf,178000,Supap keçeleri ve segmanlar yenilendi
+"Triger sesi geliyor, motordan ritmik takırtı duyuluyor",Motor,,Citroen C3,119000,Triger kayışı ve gergi rulmanı değiştirildi
+"Turbo gücünü kaybetti, hızlanma çok zayıf",Motor,P0234,Nissan Qashqai,132000,Turbo aktüatörü ve kaçak yapan intercooler hortumu değişti
+Çalışınca motordan ıslık gibi emme sesi geliyor,Motor,P0299,Renault Megane,96000,"Turbo düşük basınç hatası, hava kaçağı onarıldı"
+Fren yaparken direksiyon ve pedal titriyor,Fren,,Ford Focus,92000,"Ön fren diskleri torna edildi, balatalar değişti"
+Yüksek hızda fren basınca araçta titreşim oluyor,Fren,,Toyota Corolla,108000,Eğrilmiş ön diskler değiştirildi
+Frene basınca volan zıplıyor ve sarsıntı geliyor,Fren,,Opel Astra,124000,Ön disk ve balata takımı yenilendi
+"Fren yaparken ciyaklama, metalik gıcırtı sesi geliyor",Fren,,Fiat Egea,67000,Aşınmış ön balatalar değiştirildi
+Yavaşlarken arka frenden gıcırtı duyuluyor,Fren,,Hyundai i20,84000,"Arka balatalar değişti, kampana temizlendi"
+"Fren pedalı sertleşti, basmak için çok kuvvet gerekiyor",Fren,,Renault Clio,113000,Fren servo (hidrovac) ve vakum hortumu değiştirildi
+Fren pedalı yumuşadı ve dibe kadar gidiyor,Fren,,Peugeot 308,139000,"Fren hidroliği yenilendi, hava alındı, ana merkez değişti"
+"Fren pedalında boşluk var, fren tutması gecikiyor",Fren,,Dacia Duster,101000,"Fren hattı havası alındı, kaliper bakımı yapıldı"
+ABS uyarı lambası yandı ve fren mesafesi uzadı,Fren,C0035,Volkswagen Passat,147000,Sol ön ABS tekerlek hız sensörü değiştirildi
+Gösterge panelinde ABS ve fren ikazı birlikte yanıyor,Fren,C0040,Skoda Octavia,122000,Sağ ön ABS sensörü ve kablosu yenilendi
+Frene basınca araç bir tarafa çekiyor,Fren,,Honda Civic,95000,Sıkışan ön kaliper revize edildi
+"El freni çekmiyor, yokuşta araç kayıyor",Fren,,Citroen C3,131000,El freni teli ayarlandı ve arka balatalar değişti
+Frenler ısınıyor ve yanık kokusu geliyor,Fren,,Fiat Doblo,152000,Sıkışan kaliper pistonu değiştirildi
+"Yokuş inerken fren tutmuyor, performans düşük",Fren,,Nissan Qashqai,118000,Fren diskleri ve balataları komple yenilendi
+"Fren lambası sürekli yanıyor, hidrolik seviyesi düşük",Fren,,BMW 320i,87000,"Fren hidroliği kaçağı giderildi, seviye tamamlandı"
+Bozuk yolda ön taraftan takırtı sesi geliyor,Süspansiyon,,Renault Megane,134000,Ön rotbaşları ve z rot kollar değiştirildi
+Engebeli yolda ön düzenden tıkırtı ve gürültü var,Süspansiyon,,Fiat Egea,109000,Salıncak burçları ve rotil değişti
+Hız kasisinden geçerken alttan kütleme sesi geliyor,Süspansiyon,,Ford Focus,121000,Amortisör takozları ve rotbaşı yenilendi
+"Araç yolda sağa sola yalpalıyor, sürüş konforu bozuldu",Süspansiyon,,Opel Astra,143000,Dört amortisör birden değiştirildi
+Viraja girince araç fazla yatıyor ve sallanıyor,Süspansiyon,,Toyota Corolla,156000,Ön ve arka denge çubuğu burçları değişti
+"Direksiyon boşta geziyor, yolda araç dengesiz",Süspansiyon,,Hyundai i20,88000,"Rotbaşı ve rotil değişti, rot ayarı yapıldı"
+Lastikler düzensiz ve tek taraftan aşınıyor,Süspansiyon,,Volkswagen Golf,97000,"Ön düzen ayarı (rot balans) yapıldı, salıncak değişti"
+"Direksiyon titriyor, belli hızda volan oynuyor",Süspansiyon,,Peugeot 308,112000,Tekerlek balans ayarı ve rot balans yapıldı
+"Aracın arkası çökük duruyor, dolu yükte daha da iniyor",Süspansiyon,,Dacia Duster,128000,Arka helezon yaylar değiştirildi
+Yavaş hızda bile araç aşırı zıplıyor,Süspansiyon,,Renault Clio,105000,Ön amortisörler değiştirildi
+Hızlanırken arkadan gıcırtı ve yaylanma sesi geliyor,Süspansiyon,,Skoda Octavia,117000,Arka amortisör ve takozlar yenilendi
+"Yol tutuşu bozuldu, araç çukurlarda sektiriyor",Süspansiyon,,Honda Civic,141000,Amortisör ve denge çubuğu rotili değişti
+Direksiyondan tok darbe sesi geliyor kasislerde,Süspansiyon,,Citroen C3,99000,Kolon rulmanı (strut bearing) değiştirildi
+"Ön tekerden gıcırtı, manevrada belirginleşiyor",Süspansiyon,,Nissan Qashqai,126000,"Salıncak rotili gresi yenilendi, burç değişti"
+Frenle birlikte ön süspansiyon sesi artıyor,Süspansiyon,,Fiat Doblo,137000,Amortisör takozu ve rotbaşı değiştirildi
+"Aracın önü inip kalkıyor, süzülme hissi var",Süspansiyon,,BMW 320i,149000,Ön amortisörler ve yaylar yenilendi
+Otomatik şanzıman vites geçişlerinde sertçe vuruyor,Şanzıman,P0700,Volkswagen Passat,138000,"Şanzıman yağı ve filtresi değişti, yazılım güncellendi"
+Vites değişirken araç zıplıyor ve darbe hissediliyor,Şanzıman,P0700,Mercedes C180,142000,"ATF yağı yenilendi, mekatronik revize edildi"
+"Otomatik vites geç atıyor, geçişler sarsıntılı",Şanzıman,P0730,BMW 320i,127000,"Şanzıman adaptasyonu sıfırlandı, yağ değişti"
+"Manuel viteste debriyaj kaçırıyor, devir yükseliyor güç gitmiyor",Şanzıman,,Fiat Egea,134000,Debriyaj baskı balata seti değiştirildi
+"Vitese takarken zorlanıyor, geri vites zor giriyor",Şanzıman,,Renault Megane,119000,Debriyaj merkezi ve hidrolik hattı yenilendi
+"Debriyaja basınca ses geliyor, pedal ağırlaştı",Şanzıman,,Ford Focus,108000,Debriyaj rulmanı (bilya) değiştirildi
+Şanzımandan yağ sızıyor ve uğultu sesi geliyor,Şanzıman,,Opel Astra,151000,"Şanzıman keçesi değişti, yağ tamamlandı"
+Hızlanırken şanzımandan uğultu artıyor,Şanzıman,,Toyota Corolla,163000,Şanzıman rulmanları yenilendi
+DSG şanzıman düşük hızda titreşim yapıyor,Şanzıman,P17BF,Skoda Octavia,124000,DSG mekatronik ve debriyaj paketi değişti
+"CVT şanzıman yüksek devirde kalıyor, hızlanma gecikiyor",Şanzıman,,Honda Civic,96000,"CVT yağı değişti, kayış kontrol edildi"
+Boşa alınca araç ileri doğru sürünüyor,Şanzıman,,Hyundai i20,88000,Vites mekanizması ayarı yapıldı
+Park konumunda araç yerinde durmuyor,Şanzıman,P0705,Nissan Qashqai,113000,Vites konum sensörü değiştirildi
+Geri viteste güçlü titreşim ve ses var,Şanzıman,,Peugeot 308,129000,Şanzıman takozu ve aktarma mili körüğü değişti
+"Şanzıman arıza lambası yandı, vites kademeleri kayboldu",Şanzıman,P0730,Citroen C3,141000,"Mekatronik ünitesi yenilendi, yazılım yüklendi"
+"Araç çalışmıyor, marş dönmüyor sadece tık sesi geliyor",Elektrik,,Renault Clio,78000,"Akü değiştirildi, kutup başları temizlendi"
+"Sabah akü bitmiş oluyor, sürekli takviye gerekiyor",Elektrik,,Fiat Egea,64000,"Şarj kaçağı bulundu, arıza yapan röle değişti"
+"Akü şarj uyarısı yandı, far ışıkları zayıfladı",Elektrik,P0562,Volkswagen Golf,132000,Alternatör (şarj dinamosu) değiştirildi
+"Gösterge panelinde akü lambası yanıyor, voltaj düşük",Elektrik,P0620,Opel Astra,119000,Alternatör konjektörü (regülatör) yenilendi
+"Sağ ön far çalışmıyor, ampul yanmıyor",Elektrik,,Ford Focus,91000,Far ampulü ve duy soketi değiştirildi
+"Stop lambaları yanmıyor, fren ışığı çalışmıyor",Elektrik,,Hyundai i20,73000,Fren lamba müşürü değiştirildi
+"Sinyaller hızlı yanıp sönüyor, biri çalışmıyor",Elektrik,,Toyota Corolla,102000,Arka sinyal ampulü ve flaşör değişti
+"Sol ön cam açılıp kapanmıyor, motor sesi gelmiyor",Elektrik,,Peugeot 308,114000,Cam kaldırma motoru değiştirildi
+Merkezi kilit bazen çalışıyor bazen çalışmıyor,Elektrik,,Skoda Octavia,126000,Kapı kilit aktüatörü ve kumanda pili değişti
+"Silecekler çalışmıyor, sileceği açınca sigorta atıyor",Elektrik,,Dacia Duster,88000,"Silecek motoru değiştirildi, sigorta yenilendi"
+"Gösterge paneli kapanıp açılıyor, ibreler atıyor",Elektrik,,Renault Megane,137000,Gösterge soketi ve gövde şasi kablosu onarıldı
+Yağ ve sıcaklık göstergeleri yanlış değer veriyor,Elektrik,,Fiat Doblo,144000,Sensör toprak hattı (şasi) yenilendi
+Multimedya ekranı kendi kendine yeniden başlıyor,Elektrik,,Honda Civic,69000,"Yazılım güncellendi, besleme kablosu sıkıldı"
+"Klima ve radyo çalışmıyor, sigorta sürekli atıyor",Elektrik,,Citroen C3,108000,Kısa devre yapan kablo demeti onarıldı
+Geri vitese alınca park sensörü ötmüyor,Elektrik,,Nissan Qashqai,95000,Arka park sensörü ve kablosu değiştirildi
+"Far otomatik açılmıyor, ışık sensörü tepkisiz",Elektrik,,BMW 320i,121000,Yağmur/ışık sensörü değiştirildi
+"Klima açıkken soğutmuyor, sadece ılık hava üflüyor",Klima,,Fiat Egea,84000,"Klima gazı dolduruldu, kaçak yapan o-ring değişti"
+"Klimadan soğuk hava gelmiyor, kompresör devreye girmiyor",Klima,,Renault Clio,97000,Klima kompresörü ve kavraması değiştirildi
+Klima bir süre sonra soğutmayı bırakıyor,Klima,,Ford Focus,111000,"Klima gaz kaçağı bulundu, kondenser değişti"
+Klima açılınca içeriye küf ve rutubet kokusu doluyor,Klima,,Toyota Corolla,128000,"Polen filtresi değişti, evaporatör dezenfekte edildi"
+"Ön cam buğulanıyor, klima nemi alamıyor",Klima,,Opel Astra,134000,"Polen filtresi yenilendi, klima gazı tamamlandı"
+"Klima fanı çalışmıyor, hiçbir kademede hava gelmiyor",Klima,,Hyundai i20,76000,Kalorifer fan motoru ve direnci değiştirildi
+Klima açılınca takırtı sesi geliyor,Klima,,Volkswagen Golf,119000,Kompresör kavrama rulmanı değiştirildi
+"Klima sadece yüksek kademede üflüyor, düşükte çalışmıyor",Klima,,Peugeot 308,103000,Fan rezistansı (kademe direnci) değiştirildi
+"Kalorifer ısıtmıyor, soğuk hava üflüyor",Klima,,Skoda Octavia,142000,"Termostat değişti, kalorifer peteği temizlendi"
+Kalorifer peteğinden antifriz kokusu ve buğu geliyor,Klima,,Dacia Duster,131000,Kalorifer radyatörü (peteği) değiştirildi
+Klima kontrol paneli tuşları çalışmıyor,Klima,,Honda Civic,88000,Klima kontrol ünitesi değiştirildi
+Otomatik klima sıcaklığı ayarı tutmuyor,Klima,,BMW 320i,124000,Kabin sıcaklık sensörü değiştirildi
+Klima çalışırken araçtan yakıt tüketimi çok artıyor,Klima,,Citroen C3,96000,"Kompresör arızası giderildi, kavrama değişti"
+Egzozdan yüksek gürültü ve patlama sesi geliyor,Egzoz,,Fiat Doblo,158000,Delinmiş egzoz susturucusu değiştirildi
+Araç hızlanırken egzoz sesi anormal yükseliyor,Egzoz,,Renault Megane,146000,Egzoz orta kısmı ve flexi boru yenilendi
+"Altdan egzoz çıngırtısı, rölantide titreşim sesi var",Egzoz,,Ford Focus,133000,Egzoz askı lastikleri ve flex boru değişti
+"Motor arıza lambası yandı, katalizör verimi düşük uyarısı",Egzoz,P0420,Volkswagen Passat,152000,Katalitik konvertör değiştirildi
+"Egzoz emisyon arızası, ikinci lambda sensörü hatası",Egzoz,P0430,Toyota Corolla,141000,2. sıra katalizör ve lambda sensörü değişti
+"Lambda sensörü arızası, yakıt karışımı bozuldu",Egzoz,P0136,Opel Astra,127000,Çıkış lambda (oksijen) sensörü değiştirildi
+Egzozdan beyaz duman çıkıyor ve su damlıyor,Egzoz,,Hyundai i20,118000,Silindir kapak contası değiştirildi
+Egzozdan yanık yağ kokusu ve mavi duman geliyor,Egzoz,,BMW 320i,164000,Turbo keçesi ve supap lastikleri yenilendi
+"Dizel araçta DPF dolu uyarısı yandı, güç düştü",Egzoz,P2002,Dacia Duster,137000,DPF (partikül filtresi) temizlendi ve rejenerasyon yapıldı
+"Egzozdan is geliyor, DPF rejenerasyonu tamamlanmıyor",Egzoz,P244B,Peugeot 308,149000,"DPF basınç sensörü değişti, zorlamalı rejenerasyon yapıldı"
+"EGR valfi arızası, motor arıza lambası yandı",Egzoz,P0401,Renault Clio,129000,EGR valfi temizlendi ve değiştirildi
+Egzoz manifoldundan üfleme sesi ve gaz kaçağı var,Egzoz,,Skoda Octavia,121000,Manifold contası değiştirildi
+"Direksiyon ağırlaştı, manevrada zor dönüyor",Direksiyon,,Fiat Egea,112000,"Hidrolik direksiyon yağı değişti, pompa revize edildi"
+Park ederken direksiyon çok sert dönüyor,Direksiyon,,Renault Megane,124000,Elektrikli direksiyon motoru (EPS) değiştirildi
+"Düşük hızda volan zor çevriliyor, güç desteği yok",Direksiyon,C1513,Ford Focus,138000,Direksiyon kutusu ve hidrolik hattı yenilendi
+Direksiyon çevirince vınlama ve uğultu sesi geliyor,Direksiyon,,Opel Astra,119000,Hidrolik direksiyon pompası değiştirildi
+Volanı sonuna kadar kırınca tıkırtı sesi geliyor,Direksiyon,,Toyota Corolla,131000,Aks körüğü ve mafsalı yenilendi
+"Direksiyonda boşluk var, düz giderken oynatmak gerekiyor",Direksiyon,,Hyundai i20,96000,Direksiyon mili rotili ve kutusu ayarlandı
+"Yüksek hızda direksiyon titriyor, eller uyuşuyor",Direksiyon,,Volkswagen Golf,107000,Lastik balansı ve rot ayarı yapıldı
+"Direksiyon ortada durmuyor, araç sürekli sağa çekiyor",Direksiyon,,Peugeot 308,114000,"Rot ayarı yapıldı, rotbaşı değiştirildi"
+"Direksiyon arıza lambası yandı, güç desteği kayboluyor",Direksiyon,C1531,Skoda Octavia,128000,EPS direksiyon torku sensörü değiştirildi
+"Volan kilitleniyor, kontak açılınca açılması gecikiyor",Direksiyon,,Dacia Duster,102000,Direksiyon kilit (ELV) modülü değiştirildi
+"Direksiyon hidrolik yağı sızıyor, seviye düşüyor",Direksiyon,,Honda Civic,141000,Hidrolik hortum ve pompa keçesi yenilendi
+Manevrada direksiyondan titreşim ve sertlik geliyor,Direksiyon,,Citroen C3,117000,Direksiyon kutusu (kremayer) değiştirildi
+Otoparkta direksiyon kırınca ön taraftan ses geliyor,Direksiyon,,Nissan Qashqai,109000,Aks ve direksiyon mafsalı değişti
+"Direksiyon simidinde titreşim, airbag lambası da yanıyor",Direksiyon,,BMW 320i,133000,Direksiyon airbag spiral kablosu (clock spring) değişti
+Fren basınca pedaldan zımpara gibi sürtünme sesi geliyor,Fren,,Renault Megane,116000,Tamamen aşınmış balatalar ve diskler değiştirildi
+Aracı yavaşlatınca ön taraftan metal sürtme sesi var,Fren,,Toyota Corolla,134000,"Ön balatalar bitmiş, disk ve balata değişti"
+Fren pedalı titreşimli ve durma mesafesi arttı,Fren,,Skoda Octavia,128000,Çarpılan ön diskler yenilendi
+"Arka fren tutmuyor, el freni de zayıf çekiyor",Fren,,Dacia Duster,142000,"Arka kampana, balata ve el freni teli değişti"
+Otomatik viteste kalkışta gecikme ve sarsıntı oluyor,Şanzıman,P0700,Mercedes C180,151000,"Şanzıman yağı ve filtresi değişti, adaptasyon yapıldı"
+"Vites geçişlerinde araç ileri atılıyor, darbe geliyor",Şanzıman,P0730,BMW 320i,139000,"Mekatronik ünite revize edildi, ATF yenilendi"
+"Debriyaja basınca araç ileri seğirtiyor, ayırmıyor",Şanzıman,,Volkswagen Golf,122000,Debriyaj merkezi ve yardımcı silindir değişti
+"Yokuşta debriyaj kaçırıyor, yanık balata kokusu var",Şanzıman,,Fiat Egea,131000,Debriyaj seti (baskı-balata-bilya) yenilendi
+Aktarma milinden hızlanırken takırtı geliyor,Şanzıman,,Nissan Qashqai,144000,Aktarma mili haçı (istavroz) ve körük değişti
+Bozuk yolda arkadan gümbürtü ve takırtı duyuluyor,Süspansiyon,,Opel Astra,138000,Arka amortisör ve denge çubuğu burcu değişti
+Direksiyonu kırınca ön tekerden gıcırtı geliyor,Süspansiyon,,Hyundai i20,104000,Rotil ve salıncak burcu yenilendi
+"Araç sürekli sağa yatık duruyor, bir yay çökmüş",Süspansiyon,,Renault Clio,119000,Sağ ön helezon yay değiştirildi
+Marş basınca röleden tıkırtı geliyor ama araç çalışmıyor,Elektrik,,Ford Focus,113000,Marş motoru otomatiği (selenoid) değiştirildi
+Far içi buğulanıyor ve ampuller sık sık yanıyor,Elektrik,,Peugeot 308,97000,"Far kapağı conta değişti, nem giderildi, ampul yenilendi"
+"Korna çalmıyor, direksiyondan basınca ses gelmiyor",Elektrik,,Citroen C3,88000,Korna ve spiral kablo bağlantısı onarıldı
+Direksiyon kendiliğinden bir tarafa kayıyor düz yolda,Direksiyon,,Toyota Corolla,121000,Rot ayarı ve rotbaşı değişimi yapıldı
+Volan çevirince hidrolikten köpürme ve ses geliyor,Direksiyon,,Fiat Doblo,148000,"Hidrolik yağ değişti, hava alındı, hortum yenilendi"
+Elektrikli direksiyon zaman zaman kilitleniyor,Direksiyon,C1531,Volkswagen Golf,126000,"EPS kontrol ünitesi yazılımı güncellendi, sensör değişti"
+Park manevrasında direksiyondan zorlanma ve ses var,Direksiyon,,Hyundai i20,99000,Direksiyon kremayeri ve mafsalı değiştirildi
+"Direksiyon simidi ortalı değil, tekerlekler düz değil",Direksiyon,,Renault Megane,108000,"Ön düzen ayarı yapıldı, rot kolu değişti"
+"Klima gazı kaçıyor, birkaç haftada soğutma bitiyor",Klima,,Opel Astra,117000,"Kondenser değişti, sistem vakumlanıp gaz dolduruldu"
+"Klimadan üfleme zayıf, fan sesi cılız geliyor",Klima,,Skoda Octavia,132000,Kalorifer fan motoru ve polen filtresi değişti
+"Klima çalışırken su damlatıyor, ayak tarafı ıslanıyor",Klima,,Honda Civic,94000,Tıkalı klima tahliye hortumu temizlendi
+Klima kompresörü çalışınca kayış cıyaklıyor,Klima,,Dacia Duster,121000,V kayışı ve gergi rulmanı değiştirildi
+Soğuk havada cam buğusu uzun süre dağılmıyor,Klima,,Citroen C3,105000,"Klima gazı tamamlandı, polen filtresi değişti"
+Klima düğmesi yanıyor ama soğuk hava gelmiyor,Klima,,Nissan Qashqai,113000,Basınç sensörü ve klima gazı yenilendi
+"Egzozdan derin homurtu, hızlanınca ses kabalaşıyor",Egzoz,,Renault Clio,138000,Çürüyen orta egzoz ve susturucu değişti
+Rölantide egzozdan titreşimli vızıltı geliyor,Egzoz,,Hyundai i20,124000,Egzoz askı takozları ve flex boru yenilendi
+"Katalizör tıkalı, araç yüksek devire çıkamıyor",Egzoz,P0420,Ford Focus,147000,Tıkanan katalitik konvertör değiştirildi
+"Lambda sensörü hatası, rölanti dengesiz çalışıyor",Egzoz,P0134,Toyota Corolla,133000,Giriş lambda (oksijen) sensörü değiştirildi
+"Dizelde egzozdan yoğun is, DPF tıkanma uyarısı var",Egzoz,P2002,Peugeot 308,151000,"DPF temizlendi, fark basınç sensörü değişti"
+EGR arızası nedeniyle motor gücü düşük ve duman var,Egzoz,P0401,Volkswagen Passat,142000,EGR valfi ve soğutucusu değiştirildi
+Egzoz manifold contasından üfürme sesi geliyor soğukta,Egzoz,,Fiat Egea,119000,Manifold contası ve cıvataları yenilendi

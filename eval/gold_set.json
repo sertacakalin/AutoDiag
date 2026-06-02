@@ -1,0 +1,181 @@
+{
+  "description": "AutoDiag değerlendirme altın kümesi. Her sorgu için 'relevant_descriptions', data/faults_seed.csv içindeki BİREBİR açıklama metinleridir.",
+  "k": 3,
+  "queries": [
+    {
+      "query": "araba gaz verince sarsılıyor ve hızlanırken titreme var",
+      "relevant_descriptions": [
+        "Hızlanırken motor titriyor ve gaz tepkisi azaldı",
+        "Gaz verince araç sarsılıyor, ivmelenmede güç kaybı var",
+        "İvmelenirken motorda titreşim ve tekleme hissediliyor",
+        "Rölantide motor tekliyor, çalışırken zaman zaman sarsıntı oluyor"
+      ]
+    },
+    {
+      "query": "sabahları motoru çalıştırırken zorlanıyorum marş uzun sürüyor",
+      "relevant_descriptions": [
+        "Sabahları araç zor çalışıyor, marsa uzun basmak gerekiyor",
+        "Soğukta motor geç ateşliyor, ilk çalıştırma uzun sürüyor"
+      ]
+    },
+    {
+      "query": "motor aşırı ısınıyor hararet yapıyor sıcaklık yükseliyor",
+      "relevant_descriptions": [
+        "Motor hararet yapıyor, sıcaklık göstergesi kırmızıya çıkıyor",
+        "Trafikte beklerken hararet yükseliyor, fan geç devreye giriyor",
+        "Soğutma suyu eksiliyor ve motor ısınıyor"
+      ]
+    },
+    {
+      "query": "yakıt tüketimi arttı ve motor arıza ışığı yandı",
+      "relevant_descriptions": [
+        "Motor arıza lambası yandı, yakıt tüketimi arttı",
+        "Egzozdan siyah duman geliyor ve yakıt sarfiyatı yükseldi"
+      ]
+    },
+    {
+      "query": "fren yapınca direksiyon ve pedal titriyor",
+      "relevant_descriptions": [
+        "Fren yaparken direksiyon ve pedal titriyor",
+        "Yüksek hızda fren basınca araçta titreşim oluyor",
+        "Frene basınca volan zıplıyor ve sarsıntı geliyor"
+      ]
+    },
+    {
+      "query": "frenden gıcırtı ve metalik ses geliyor",
+      "relevant_descriptions": [
+        "Fren yaparken ciyaklama, metalik gıcırtı sesi geliyor",
+        "Yavaşlarken arka frenden gıcırtı duyuluyor"
+      ]
+    },
+    {
+      "query": "fren pedalı boşalıyor yere kadar iniyor tutmuyor",
+      "relevant_descriptions": [
+        "Fren pedalı yumuşadı ve dibe kadar gidiyor",
+        "Fren pedalında boşluk var, fren tutması gecikiyor"
+      ]
+    },
+    {
+      "query": "bozuk yolda ön taraftan takırtı ve gürültü geliyor",
+      "relevant_descriptions": [
+        "Bozuk yolda ön taraftan takırtı sesi geliyor",
+        "Engebeli yolda ön düzenden tıkırtı ve gürültü var",
+        "Hız kasisinden geçerken alttan kütleme sesi geliyor"
+      ]
+    },
+    {
+      "query": "araç virajda fazla yatıyor ve yolda yalpalıyor",
+      "relevant_descriptions": [
+        "Araç yolda sağa sola yalpalıyor, sürüş konforu bozuldu",
+        "Viraja girince araç fazla yatıyor ve sallanıyor"
+      ]
+    },
+    {
+      "query": "otomatik vites geçişlerinde sert vuruyor ve sarsıyor",
+      "relevant_descriptions": [
+        "Otomatik şanzıman vites geçişlerinde sertçe vuruyor",
+        "Vites değişirken araç zıplıyor ve darbe hissediliyor",
+        "Otomatik vites geç atıyor, geçişler sarsıntılı"
+      ]
+    },
+    {
+      "query": "debriyaj kaçırıyor devir yükseliyor güç gitmiyor",
+      "relevant_descriptions": [
+        "Manuel viteste debriyaj kaçırıyor, devir yükseliyor güç gitmiyor",
+        "Vitese takarken zorlanıyor, geri vites zor giriyor"
+      ]
+    },
+    {
+      "query": "şanzımandan uğultu geliyor ve yağ sızıyor",
+      "relevant_descriptions": [
+        "Şanzımandan yağ sızıyor ve uğultu sesi geliyor",
+        "Hızlanırken şanzımandan uğultu artıyor"
+      ]
+    },
+    {
+      "query": "araç çalışmıyor marş dönmüyor sadece tık sesi var",
+      "relevant_descriptions": [
+        "Araç çalışmıyor, marş dönmüyor sadece tık sesi geliyor",
+        "Sabah akü bitmiş oluyor, sürekli takviye gerekiyor"
+      ]
+    },
+    {
+      "query": "akü şarj olmuyor şarj uyarı lambası yandı",
+      "relevant_descriptions": [
+        "Akü şarj uyarısı yandı, far ışıkları zayıfladı",
+        "Gösterge panelinde akü lambası yanıyor, voltaj düşük"
+      ]
+    },
+    {
+      "query": "farlardan biri yanmıyor ampul gitmiş",
+      "relevant_descriptions": [
+        "Sağ ön far çalışmıyor, ampul yanmıyor"
+      ]
+    },
+    {
+      "query": "klima soğutmuyor sadece ılık hava üflüyor",
+      "relevant_descriptions": [
+        "Klima açıkken soğutmuyor, sadece ılık hava üflüyor",
+        "Klimadan soğuk hava gelmiyor, kompresör devreye girmiyor",
+        "Klima bir süre sonra soğutmayı bırakıyor"
+      ]
+    },
+    {
+      "query": "klimadan küf ve rutubet kokusu geliyor",
+      "relevant_descriptions": [
+        "Klima açılınca içeriye küf ve rutubet kokusu doluyor",
+        "Ön cam buğulanıyor, klima nemi alamıyor"
+      ]
+    },
+    {
+      "query": "klima fanı çalışmıyor hiç hava gelmiyor",
+      "relevant_descriptions": [
+        "Klima fanı çalışmıyor, hiçbir kademede hava gelmiyor",
+        "Klima sadece yüksek kademede üflüyor, düşükte çalışmıyor"
+      ]
+    },
+    {
+      "query": "katalizör verimi düşük motor arıza lambası yandı",
+      "relevant_descriptions": [
+        "Motor arıza lambası yandı, katalizör verimi düşük uyarısı",
+        "Egzoz emisyon arızası, ikinci lambda sensörü hatası"
+      ]
+    },
+    {
+      "query": "dizel araçta dpf dolu uyarısı yandı güç düştü",
+      "relevant_descriptions": [
+        "Dizel araçta DPF dolu uyarısı yandı, güç düştü",
+        "Egzozdan is geliyor, DPF rejenerasyonu tamamlanmıyor"
+      ]
+    },
+    {
+      "query": "egzozdan yüksek gürültü ve patlama sesi geliyor",
+      "relevant_descriptions": [
+        "Egzozdan yüksek gürültü ve patlama sesi geliyor",
+        "Araç hızlanırken egzoz sesi anormal yükseliyor",
+        "Altdan egzoz çıngırtısı, rölantide titreşim sesi var"
+      ]
+    },
+    {
+      "query": "egzozdan beyaz duman çıkıyor ve su damlıyor",
+      "relevant_descriptions": [
+        "Egzozdan beyaz duman çıkıyor ve su damlıyor"
+      ]
+    },
+    {
+      "query": "direksiyon çok ağırlaştı manevrada zor dönüyor",
+      "relevant_descriptions": [
+        "Direksiyon ağırlaştı, manevrada zor dönüyor",
+        "Park ederken direksiyon çok sert dönüyor",
+        "Düşük hızda volan zor çevriliyor, güç desteği yok"
+      ]
+    },
+    {
+      "query": "direksiyon çevirince uğultu ve vınlama sesi var",
+      "relevant_descriptions": [
+        "Direksiyon çevirince vınlama ve uğultu sesi geliyor",
+        "Volanı sonuna kadar kırınca tıkırtı sesi geliyor"
+      ]
+    }
+  ]
+}

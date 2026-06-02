@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Ortam değişkenleri
+.env
+.env.*
+!.env.example
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.local
+
+# Embedding model önbelleği
+.cache/
+~/.cache/huggingface/
+
+# İşletim sistemi / editör
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Uyarlanmış (fine-tune) embedding modeli — büyük; scriptle yeniden üretilir
+models/
+
+# Üretilen çıktılar
+eval/results.png

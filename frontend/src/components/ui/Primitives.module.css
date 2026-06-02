@@ -1,0 +1,137 @@
+/* DTC kodu rozeti */
+.dtc {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+  background: var(--surface-sunken);
+  border: 1px solid var(--hairline);
+  padding: 1px 7px;
+  border-radius: var(--r-sm);
+  white-space: nowrap;
+}
+
+/* Kategori etiketi */
+.category {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted-2);
+  flex: none;
+}
+
+/* Kategoriye göre ayırt edici (ölçülü) renkler */
+.dot[data-cat="Motor"] {
+  background: #d1453b;
+}
+.dot[data-cat="Şanzıman"] {
+  background: #c2700b;
+}
+.dot[data-cat="Fren"] {
+  background: #b4232f;
+}
+.dot[data-cat="Elektrik"] {
+  background: #1f6fd0;
+}
+.dot[data-cat="Süspansiyon"] {
+  background: #5b6cc4;
+}
+.dot[data-cat="Egzoz"] {
+  background: #6b7280;
+}
+.dot[data-cat="Klima"] {
+  background: #0f9488;
+}
+.dot[data-cat="Direksiyon"] {
+  background: #8a5cc0;
+}
+
+/* Güven rozeti */
+.confidence {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px 3px 7px;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+}
+.confDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+.confidence[data-level="yüksek"] {
+  color: var(--ok);
+  background: var(--ok-soft);
+  border-color: color-mix(in srgb, var(--ok) 22%, transparent);
+}
+.confidence[data-level="orta"] {
+  color: var(--warn);
+  background: var(--warn-soft);
+  border-color: color-mix(in srgb, var(--warn) 22%, transparent);
+}
+.confidence[data-level="düşük"] {
+  color: var(--muted);
+  background: var(--surface-sunken);
+  border-color: var(--hairline);
+}
+
+/* Benzerlik göstergesi */
+.meter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.meterTrack {
+  width: 96px;
+  height: 6px;
+  background: var(--surface-sunken);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.meterFill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  transition: width 0.45s var(--ease);
+}
+.meterFill[data-band="high"] {
+  background: var(--ok);
+}
+.meterFill[data-band="mid"] {
+  background: var(--accent);
+}
+.meterFill[data-band="low"] {
+  background: var(--muted-2);
+}
+.meterValue {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 34px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.meterValue[data-band="high"] {
+  color: var(--ok);
+}
+.meterValue[data-band="mid"] {
+  color: var(--accent);
+}
+.meterValue[data-band="low"] {
+  color: var(--muted);
+}
