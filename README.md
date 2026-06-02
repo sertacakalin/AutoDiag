@@ -186,6 +186,23 @@ skorlama + DTC/kategori bonusu, sorgu genişletme, ve tüm REST uçları.
 
 ---
 
+## Üretim & MLOps
+
+| Bileşen | Açıklama |
+|---------|----------|
+| **Canlı pgvector** | PostgreSQL + pgvector (HNSW) `DbEngine`; `ingestion.py` ile yüklenir |
+| **Docker** | `docker compose up` — db + backend (oto-ingest) + frontend |
+| **CI/CD** | GitHub Actions: ruff + pytest + frontend build (`.github/workflows/ci.yml`) |
+| **Gözlemlenebilirlik** | Prometheus `/metrics` (istek/arama/teşhis, gecikme) + yapısal log |
+| **Deney takibi** | MLflow (sqlite) — `finetune_embedding.py` her eğitimi loglar |
+| **İstatistik rigor** | Bootstrap %95 GA + anlamlılık (`eval/run_significance.py`) |
+| **Hiperparametre arama** | Val/held-out ayrımıyla ağırlık taraması (`eval/run_hparam_search.py`) |
+
+```bash
+curl localhost:8000/metrics                                  # Prometheus
+mlflow ui --backend-store-uri sqlite:///mlflow.db            # deney panosu
+```
+
 ## Proje yapısı
 
 ```

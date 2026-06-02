@@ -40,3 +40,8 @@ data/real/*.png
 # Üretilen çıktılar
 eval/results.png
 data/fault_graph.graphml
+
+# MLflow deney takibi (yerel)
+mlflow.db
+mlruns/
+mlartifacts/

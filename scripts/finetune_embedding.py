@@ -146,9 +146,11 @@ def main() -> None:
     from torch.utils.data import DataLoader
 
     examples = build_examples()
-    print(f"Eğitim çifti: {len(examples)} (kaynak: {DATASET_CSV.name})")
+    triplets = sum(1 for e in examples if len(e.texts) == 3)
+    print(f"Eğitim çifti: {len(examples)} ({triplets} hard-negative üçlü)")
     print(f"Base model: {args.base_model}\n")
 
+    run = _start_mlflow(args, len(examples), triplets)
     model = SentenceTransformer(args.base_model)
     loader = DataLoader(examples, shuffle=True, batch_size=args.batch)
     loss = losses.MultipleNegativesRankingLoss(model)
@@ -166,6 +168,41 @@ def main() -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     model.save(str(out))
     print(f"\nUyarlanmış model kaydedildi: {out}")
+    _end_mlflow(run, out)
+
+
+def _start_mlflow(args, n_examples: int, triplets: int):
+    """MLflow deney takibi başlat (file:./mlruns). Yoksa sessizce atla."""
+    try:
+        import mlflow
+
+        # MLflow 3.x: sqlite backend (file store kullanımdan kalktı).
+        mlflow.set_tracking_uri(f"sqlite:///{ROOT / 'mlflow.db'}")
+        mlflow.set_experiment("autodiag-embedding-finetune")
+        run = mlflow.start_run()
+        mlflow.log_params({
+            "base_model": args.base_model, "epochs": args.epochs,
+            "batch": args.batch, "hard_neg_prob": HARD_NEG_PROB,
+            "max_pos_per_anchor": MAX_POS_PER_ANCHOR, "seed": SEED,
+        })
+        mlflow.log_metrics({"train_examples": n_examples, "hard_neg_triplets": triplets})
+        return run
+    except Exception as exc:
+        print(f"[mlflow] takip atlandı: {exc}")
+        return None
+
+
+def _end_mlflow(run, out) -> None:
+    if run is None:
+        return
+    try:
+        import mlflow
+
+        mlflow.set_tag("output_model", str(out.name))
+        mlflow.end_run()
+        print(f"[mlflow] kaydedildi → {ROOT / 'mlruns'} (mlflow ui ile görüntüle)")
+    except Exception:
+        pass
 
 
 if __name__ == "__main__":
