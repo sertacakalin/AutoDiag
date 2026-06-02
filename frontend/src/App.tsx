@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { ApiError, health, search, sendFeedback } from "./api/client";
 import type { HealthResponse, SearchHit, SearchOptions, SearchResponse } from "./api/types";
 import { AddFaultDrawer } from "./components/AddFaultDrawer";
+import { DiagnosisAssistant } from "./components/DiagnosisAssistant";
 import { EmptyState } from "./components/EmptyState";
 import { ResultList } from "./components/ResultList";
 import { SearchPanel } from "./components/SearchPanel";
@@ -17,6 +18,7 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [toast, setToast] = useState<ToastState | null>(null);
+  const [mode, setMode] = useState<"search" | "assistant">("search");
 
   // Örnek sorgu seçilince paneli tohumlamak için (key ile yeniden bağlanır).
   const [seed, setSeed] = useState<{ query: string; nonce: number }>({
@@ -103,13 +105,34 @@ export function App() {
       </header>
 
       <main className={styles.main}>
-        <SearchPanel
-          key={seed.nonce}
-          categories={categories}
-          loading={loading}
-          onSearch={runSearch}
-          initialQuery={seed.query}
-        />
+        <div className={styles.tabs} role="tablist">
+          <button
+            className={styles.tab}
+            data-active={mode === "search"}
+            onClick={() => setMode("search")}
+          >
+            Vaka Arama
+          </button>
+          <button
+            className={styles.tab}
+            data-active={mode === "assistant"}
+            onClick={() => setMode("assistant")}
+          >
+            Teşhis Asistanı
+          </button>
+        </div>
+
+        {mode === "assistant" && <DiagnosisAssistant />}
+
+        {mode === "search" && (
+          <>
+            <SearchPanel
+              key={seed.nonce}
+              categories={categories}
+              loading={loading}
+              onSearch={runSearch}
+              initialQuery={seed.query}
+            />
 
         <div className={styles.results}>
           {error && (
@@ -165,6 +188,8 @@ export function App() {
 
           {!loading && !error && !response && <EmptyState onPick={pickExample} />}
         </div>
+          </>
+        )}
       </main>
 
       <AddFaultDrawer

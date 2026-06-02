@@ -14,6 +14,7 @@ src/
     SearchPanel       Arıza tanımı + kategori/DTC/sonuç filtreleri (⌘↵)
     ResultList        Sonuç kartları: benzerlik göstergesi, çözüm, geri bildirim
     SuggestionCard    RAG teşhis önerisi (olası neden, adımlar, güven)
+    DiagnosisAssistant GraphRAG + aktif diyalog teşhis (netleştirici soru akışı)
     AddFaultDrawer    Yeni kayıt ekleme (slide-over form)
     EmptyState        Örnek sorgular
     Toast             Bildirim
@@ -52,6 +53,8 @@ VITE_API_URL=http://localhost:8000
 
 ## Notlar
 
+- İki mod: **Vaka Arama** (hibrit retrieval + RAG öneri) ve **Teşhis Asistanı**
+  (GraphRAG + aktif diyalog — sistem netleştirici sorular sorar, yapısal teşhis verir).
 - Arayüz, backend `/health` ucundan kategori listesini ve aktif arama modunu
   (hibrit/sparse) canlı okur — hiçbir liste arayüzde sabit kodlanmamıştır.
 - Mobil uyumlu; klavye erişilebilirliği (odak halkaları, ⌘↵, Esc) gözetildi.

@@ -90,6 +90,39 @@
   border-color: var(--hairline);
 }
 
+/* Önem derecesi rozeti */
+.severity {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 2px 9px;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.severity[data-level="Düşük"] {
+  color: var(--muted);
+  background: var(--surface-sunken);
+  border-color: var(--hairline);
+}
+.severity[data-level="Orta"] {
+  color: var(--warn);
+  background: var(--warn-soft);
+  border-color: color-mix(in srgb, var(--warn) 25%, transparent);
+}
+.severity[data-level="Yüksek"] {
+  color: var(--danger);
+  background: var(--danger-soft);
+  border-color: color-mix(in srgb, var(--danger) 28%, transparent);
+}
+.severity[data-level="Kritik"] {
+  color: #fff;
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
 /* Benzerlik göstergesi */
 .meter {
   display: inline-flex;

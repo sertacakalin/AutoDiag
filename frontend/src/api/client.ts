@@ -2,10 +2,12 @@
 // hataları anlamlı mesajlara çevirmek, JSON tiplemesini garanti etmek.
 
 import type {
+  DiagnoseResponse,
   FaultCreatePayload,
   FaultRead,
   FeedbackPayload,
   HealthResponse,
+  InteractiveDiagnoseResponse,
   SearchOptions,
   SearchResponse,
 } from "./types";
@@ -97,4 +99,25 @@ export function sendFeedback(payload: FeedbackPayload): Promise<{ ok: boolean }>
 /** Servis sağlığı: mod, kayıt sayısı, kategoriler. */
 export function health(): Promise<HealthResponse> {
   return request<HealthResponse>("/health");
+}
+
+/** GraphRAG tek-atış yapısal teşhis (retrieval + bilgi grafiği füzyonu). */
+export function diagnose(query: string, topK = 5): Promise<DiagnoseResponse> {
+  return request<DiagnoseResponse>("/api/diagnose", {
+    method: "POST",
+    body: JSON.stringify({ query, top_k: topK }),
+  });
+}
+
+/** Diyaloglu (aktif) teşhis — durumsuz; biriken yanıtları taşır. */
+export function diagnoseInteractive(
+  query: string,
+  confirmed: string[],
+  denied: string[],
+  topK = 5,
+): Promise<InteractiveDiagnoseResponse> {
+  return request<InteractiveDiagnoseResponse>("/api/diagnose/interactive", {
+    method: "POST",
+    body: JSON.stringify({ query, confirmed, denied, top_k: topK }),
+  });
 }

@@ -34,6 +34,16 @@ export function ConfidenceBadge({ level }: { level: Confidence }) {
   );
 }
 
+/** Arıza önem derecesi rozeti (Düşük / Orta / Yüksek / Kritik). */
+export function SeverityBadge({ level }: { level: string }) {
+  if (!level) return null;
+  return (
+    <span className={styles.severity} data-level={level}>
+      {level}
+    </span>
+  );
+}
+
 /** Benzerlik/alaka göstergesi — yatay ölçek çubuğu + yüzde. */
 export function SimilarityMeter({ value }: { value: number }) {
   const pct = Math.round(Math.max(0, Math.min(1, value)) * 100);

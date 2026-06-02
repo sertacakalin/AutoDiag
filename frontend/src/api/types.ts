@@ -65,3 +65,27 @@ export interface HealthResponse {
   rag: "llm" | "extractive";
   rerank_available?: boolean;
 }
+
+// --- GraphRAG (İ5) + Diyaloglu teşhis (İ6) ---
+
+export interface GraphDiagnosis {
+  dtc_code: string;
+  title: string;
+  category: string;
+  severity: string; // "Düşük" | "Orta" | "Yüksek" | "Kritik"
+  causes: string[];
+}
+
+export interface DiagnoseResponse {
+  query: string;
+  expanded_query: string | null;
+  diagnoses: GraphDiagnosis[];
+  method: string;
+}
+
+export interface InteractiveDiagnoseResponse {
+  status: "question" | "final";
+  question: string | null;
+  symptom: string | null;
+  diagnoses: GraphDiagnosis[];
+}
