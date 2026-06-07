@@ -12,6 +12,12 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential libpq-dev curl && rm -rf /var/lib/apt/lists/*
 
+# CPU-only torch — Linux imajında torch'un transitif olarak çektiği ~4GB'lık
+# NVIDIA CUDA yığınını (cuda-toolkit, nvidia-cublas/cudnn/nccl, triton) engeller.
+# Uygulama CPU'da inference yaptığı için CUDA gereksiz. sentence-transformers
+# torch'u zaten kurulu bulur ve tekrar CUDA çekmez. İmaj ~6GB → ~1.5GB.
+RUN pip install --no-cache-dir torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 

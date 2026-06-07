@@ -10,7 +10,9 @@ services:
       POSTGRES_PASSWORD: autodiag
       POSTGRES_DB: autodiag
     ports:
-      - "5432:5432"
+      # Host 5432 makinede başka bir Postgres tarafından kullanılıyor → 5433'e map.
+      # Backend iç ağdan db:5432 kullanır, bu değişiklikten etkilenmez.
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:

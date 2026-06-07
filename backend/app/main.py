@@ -31,9 +31,11 @@ DTC_REF_CSV = _DATA_DIR / "dtc_reference.csv"
 
 # Tarayıcıdan erişim için izinli kökenler (Vite dev sunucuları).
 ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://localhost:5173",   # vite dev
     "http://127.0.0.1:5173",
-    "http://localhost:4173",
+    "http://localhost:4173",   # vite preview
+    "http://localhost:8080",   # docker frontend (nginx)
+    "http://127.0.0.1:8080",
 ]
 
 
