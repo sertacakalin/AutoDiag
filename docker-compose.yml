@@ -28,14 +28,24 @@ services:
         condition: service_healthy
     environment:
       DATABASE_URL: postgresql+psycopg://autodiag:autodiag@db:5432/autodiag
-      # Varsayılan: base çok dilli model (384d). Türkçe-adapte için:
-      #   models/ dizinini volume bağla + EMBED_DIM=768 + EMBEDDING_MODEL=adapted
-      EMBED_DIM: "384"
+      # Türkçe-adapte model (autodiag-embed-tr-hn, 768d) — argo sorgularda isabetli.
+      EMBED_DIM: "768"
+      EMBEDDING_MODEL: "adapted"
+      # Ücretsiz YEREL LLM (host'taki Ollama, aya-expanse Türkçe güçlü).
+      # host.docker.internal: container'dan host'a erişim (Docker Desktop).
+      OLLAMA_URL: "http://host.docker.internal:11434"
+      OLLAMA_MODEL: "aya-expanse:8b"
+      # HF cache yazılabilir yer (./models read-only bağlı; Dockerfile'daki
+      # /models/.hf yazılamaz → rerank cross-encoder buraya iner).
+      HF_HOME: "/app/.hf"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8000:8000"
     volumes:
       - ./data:/data:ro
-      # - ./models:/app/models:ro   # Türkçe-adapte modeli kullanmak için aç
+      # embedding.py modeli container'da /models'da arar (parents[3]=/) → buraya bağla.
+      - ./models:/models:ro
 
   frontend:
     build:

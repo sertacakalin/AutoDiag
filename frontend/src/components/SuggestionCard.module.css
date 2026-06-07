@@ -21,6 +21,23 @@
   font-size: 13px;
   color: var(--muted);
 }
+.source {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.source[data-kind="llm"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.source[data-kind="extractive"] {
+  background: var(--hairline);
+  color: var(--muted-2);
+}
 
 .cause {
   margin-top: 16px;

@@ -20,6 +20,9 @@ LLM_URL = "https://api.anthropic.com/v1/messages"
 LLM_MAX_TOKENS = 700
 LLM_TIMEOUT = 30.0
 
+# Ollama (yerel, ücretsiz) — ilk çağrı modeli belleğe yükler, geniş timeout.
+OLLAMA_TIMEOUT = 120.0
+
 
 @dataclass
 class RagSuggestion:
@@ -116,14 +119,43 @@ def _call_llm(prompt: str, api_key: str) -> RagSuggestion:
     )
 
 
-def generate_suggestion(query: str, hits: list) -> RagSuggestion:
-    """Teşhis önerisi üret. LLM anahtarı varsa LLM, yoksa/başarısızsa fallback."""
-    api_key = get_settings().LLM_API_KEY
-    if not api_key:
-        return _fallback(hits)
+def _call_ollama(prompt: str, base_url: str, model: str) -> RagSuggestion:
+    """Yerel Ollama'yı çağır (ücretsiz). format=json ile yapılandırılmış yanıt."""
+    resp = httpx.post(
+        f"{base_url.rstrip('/')}/api/generate",
+        json={"model": model, "prompt": prompt, "stream": False, "format": "json"},
+        timeout=OLLAMA_TIMEOUT,
+    )
+    resp.raise_for_status()
+    text = resp.json().get("response", "")
+    data = _extract_json(text)
+    return RagSuggestion(
+        likely_cause=str(data.get("likely_cause", "")).strip() or "Belirsiz",
+        recommended_steps=[str(s) for s in data.get("recommended_steps", [])],
+        confidence=str(data.get("confidence", "orta")).strip() or "orta",
+    )
 
-    try:
-        return _call_llm(_build_prompt(query, hits), api_key)
-    except Exception as exc:  # ağ/parse/anahtar hatası → güvenli fallback
-        print(f"[rag] LLM çağrısı başarısız, fallback'e düşülüyor: {exc}")
-        return _fallback(hits)
+
+def generate_suggestion(query: str, hits: list) -> RagSuggestion:
+    """Teşhis önerisi üret. Öncelik: Ollama (yerel) → Anthropic → extractive fallback."""
+    settings = get_settings()
+    prompt = _build_prompt(query, hits)
+
+    # 1) Ücretsiz yerel LLM (Ollama) — anahtar/internet gerekmez.
+    if settings.OLLAMA_URL:
+        try:
+            return _call_ollama(prompt, settings.OLLAMA_URL, settings.OLLAMA_MODEL)
+        except Exception as exc:  # ağ/parse/model hatası → güvenli fallback
+            print(f"[rag] Ollama çağrısı başarısız, fallback'e düşülüyor: {exc}")
+            return _fallback(hits)
+
+    # 2) Anthropic (anahtar varsa).
+    if settings.LLM_API_KEY:
+        try:
+            return _call_llm(prompt, settings.LLM_API_KEY)
+        except Exception as exc:  # ağ/parse/anahtar hatası → güvenli fallback
+            print(f"[rag] LLM çağrısı başarısız, fallback'e düşülüyor: {exc}")
+            return _fallback(hits)
+
+    # 3) LLM yok → extractive.
+    return _fallback(hits)

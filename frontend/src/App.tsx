@@ -174,6 +174,7 @@ export function App() {
                 <SuggestionCard
                   suggestion={response.rag_suggestion}
                   resultCount={response.results.length}
+                  ragSource={info?.rag}
                 />
               )}
             </div>

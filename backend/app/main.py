@@ -104,7 +104,8 @@ def health() -> HealthResponse:
     from app.services.rerank import is_available
 
     engine: MemoryEngine = app.state.engine
-    rag_source = "llm" if get_settings().LLM_API_KEY else "extractive"
+    _s = get_settings()
+    rag_source = "llm" if (_s.OLLAMA_URL or _s.LLM_API_KEY) else "extractive"
     return HealthResponse(
         mode=engine.mode,
         fault_count=engine.count,

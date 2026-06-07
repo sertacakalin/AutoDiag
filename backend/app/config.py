@@ -30,8 +30,14 @@ class Settings(BaseSettings):
         "postgresql+psycopg://autodiag:autodiag@localhost:5432/autodiag"
     )
 
-    # LLM API anahtarı. Boşsa RAG katmanı extractive fallback'e düşer.
+    # LLM API anahtarı (Anthropic). Boşsa ve OLLAMA_URL de yoksa RAG katmanı
+    # extractive fallback'e düşer.
     LLM_API_KEY: str = ""
+
+    # Ücretsiz YEREL LLM (Ollama). Verilirse Anthropic yerine bu kullanılır;
+    # anahtar/internet gerekmez. Örn: http://host.docker.internal:11434
+    OLLAMA_URL: str = ""
+    OLLAMA_MODEL: str = "aya-expanse:8b"
 
     # Çok dilli (Türkçe destekli) embedding modeli.
     EMBEDDING_MODEL: str = "paraphrase-multilingual-MiniLM-L12-v2"

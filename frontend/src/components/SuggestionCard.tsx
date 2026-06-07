@@ -5,9 +5,10 @@ import styles from "./SuggestionCard.module.css";
 interface Props {
   suggestion: RagSuggestion;
   resultCount: number;
+  ragSource?: "llm" | "extractive";
 }
 
-export function SuggestionCard({ suggestion, resultCount }: Props) {
+export function SuggestionCard({ suggestion, resultCount, ragSource }: Props) {
   return (
     <aside className={styles.card} aria-label="Teşhis önerisi">
       <header className={styles.head}>
@@ -15,6 +16,11 @@ export function SuggestionCard({ suggestion, resultCount }: Props) {
           <span className="eyebrow">Teşhis önerisi</span>
           <p className={styles.subtitle}>
             {resultCount} benzer vakadan sentezlendi
+            {ragSource === "llm" ? (
+              <span className={styles.source} data-kind="llm">🤖 Yapay zeka (yerel)</span>
+            ) : ragSource === "extractive" ? (
+              <span className={styles.source} data-kind="extractive">vakalardan çıkarım</span>
+            ) : null}
           </p>
         </div>
         <ConfidenceBadge level={suggestion.confidence} />
