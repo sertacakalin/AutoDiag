@@ -288,10 +288,13 @@ function UserMenu({ user, onLogout }: { user: User | null; onLogout: () => void 
 }
 
 function ModeBadge({ mode }: { mode: string }) {
-  const hybrid = mode === "hybrid";
+  // "db" = pgvector (dense) + BM25, "hybrid" = bellek-içi dense + BM25,
+  // "sparse" = yalnız BM25. İlk ikisi dense vektör kullanır.
+  const dense = mode === "hybrid" || mode === "db";
+  const label = mode === "db" ? "pgvector · dense + sparse" : dense ? "dense + sparse" : "sparse";
   return (
-    <span className={styles.modeBadge} title={hybrid ? "Dense vektör + BM25" : "Yalnız BM25"}>
-      {hybrid ? "dense + sparse" : "sparse"}
+    <span className={styles.modeBadge} title={dense ? "Dense vektör + BM25" : "Yalnız BM25"}>
+      {label}
     </span>
   );
 }
