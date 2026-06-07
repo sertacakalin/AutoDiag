@@ -156,6 +156,17 @@
   line-height: 1.45;
 }
 
+/* Başarı bildirimi (kayıt sonrası "şimdi giriş yapın") */
+.notice {
+  padding: 11px 13px;
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: var(--r);
+  color: var(--accent);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
 .submit {
   height: 44px;
   margin-top: 2px;

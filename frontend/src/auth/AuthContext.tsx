@@ -123,10 +123,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const register = useCallback(
     async (username: string, password: string, role?: string) => {
-      const res = await apiRegister(username, password, role);
-      persistSession(res.access_token, res.user);
-      setToken(res.access_token);
-      setUser(res.user);
+      // Hesabı oluştur ama OTOMATİK GİRİŞ YAPMA. Kayıt ve giriş bilinçli olarak
+      // ayrı adımlardır; kullanıcı kayıttan sonra kendi bilgileriyle giriş yapar.
+      await apiRegister(username, password, role);
     },
     [],
   );

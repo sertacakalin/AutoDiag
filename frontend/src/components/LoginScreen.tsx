@@ -18,6 +18,7 @@ export function LoginScreen() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   // Erişilebilirlik için kararlı id'ler (label/aria bağlantıları).
@@ -37,6 +38,7 @@ export function LoginScreen() {
     if (next === tab) return;
     setTab(next);
     setError(null);
+    setNotice(null);
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -45,13 +47,19 @@ export function LoginScreen() {
 
     setSubmitting(true);
     setError(null);
+    setNotice(null);
     try {
       if (tab === "login") {
+        // Başarı: AuthContext state'i günceller, App otomatik uygulamaya geçer.
         await login(trimmedUser, password);
       } else {
+        // Kayıt: hesap oluşturulur ama otomatik giriş YAPILMAZ. Giriş sekmesine
+        // geç, parolayı temizle ve kullanıcıdan bilinçli giriş iste.
         await register(trimmedUser, password);
+        setTab("login");
+        setPassword("");
+        setNotice("Hesabınız oluşturuldu. Şimdi giriş yapabilirsiniz.");
       }
-      // Başarı: AuthContext state'i günceller, App otomatik olarak uygulamaya geçer.
     } catch (err) {
       setError(
         err instanceof ApiError
@@ -168,6 +176,12 @@ export function LoginScreen() {
               </span>
             )}
           </div>
+
+          {notice && (
+            <div className={styles.notice} role="status">
+              {notice}
+            </div>
+          )}
 
           {error && (
             <div id={errId} className={styles.error} role="alert">
