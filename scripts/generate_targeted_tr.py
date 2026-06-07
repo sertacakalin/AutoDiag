@@ -114,22 +114,49 @@ def _relevant(text: str, anchors: list[str]) -> bool:
     return any(a in low for a in anchors)
 
 
+# Gevezelik/yorum/soru işaretleri — servis kaydı dilinde olmaması gereken üslup.
+_CHATTY = (
+    "?", "lazım", "sanırım", "acaba", "endişe", "merak", "galiba", "umarım",
+    "bilir misin", "ruhu", "selam", "düşünmeli", "düşünüyorum", "korkar",
+    "tavsiye", "ne yapmalı", "herhalde", "diye düşün", "yardım", "mı düşün",
+    "mu düşün", "derdi", "sorarsan", "bence", "keşke",
+)
+
+
+# 16 şablonun HİÇBİRİNİN konusu olmayan bileşenler — geçerse off-topic kaçaktır.
+_OFF_TOPIC = ("koltuk", "cam ", "camlar", "far ", "farlar", "klima",
+              "radyo", "ayna", "silecek", "kapı kol", "torpido")
+
+
+def _clean_style(text: str) -> bool:
+    """Servis-kaydı üslubu mu? Geveze/soru/yorum/uzun/off-topic ifadeleri eler."""
+    low = text.lower()
+    if len(text) > 130:  # servis notu kısadır
+        return False
+    if any(o in low for o in _OFF_TOPIC):
+        return False
+    return not any(m in low for m in _CHATTY)
+
+
 def ollama_phrasings(hint: str, n: int, retries: int = 2) -> list[str]:
     """Ollama'dan belirti için n adet çeşitli Türkçe ifade üret (JSON dizi)."""
     prompt = (
-        "Sen bir oto sanayi ustasısın. Bir aracın SADECE şu arıza belirtisini, "
-        "FARKLI sürücülerin günlük konuşma diliyle nasıl ANLATACAĞINI yaz.\n\n"
+        "Bir oto servisinin arıza kayıt defterine yazılan kısa belirti notları "
+        "üreteceksin. Müşterinin şikayetini USTANIN deftere yazdığı gibi, KISA ve "
+        "NESNEL bir cümleyle anlat.\n\n"
         f"Belirti: {hint}\n\n"
-        f"{n} ADET farklı, kısa (1-2 cümle), gerçekçi Türkçe ifade üret. "
-        "Argo/günlük dil kullan ('zınk zınk', 'tık tık', 'ön takım' gibi). "
-        "ÇOK ÖNEMLİ: SADECE bu belirti hakkında yaz; BAŞKA bir arıza, sistem "
-        "(motor yağı, klima, far, cam, koltuk vb.) veya alakasız konu EKLEME. "
-        "Tekrar etme, çeşitli olsun.\n\n"
-        'SADECE şu JSON formatında yanıt ver: {"ifadeler": ["...", "...", ...]}'
+        f"{n} ADET farklı, tek cümlelik, gerçekçi Türkçe belirti notu üret. "
+        "Günlük teknik dil kullan ('ön takımdan tıkırtı', 'kasiste takırtı'). "
+        "YASAK: soru sorma (? kullanma), duygu/yorum yazma "
+        "('endişelendirici', 'dikkatli olmalı', 'sanırım', 'acaba', 'merak', "
+        "'galiba', 'umarım' gibi), benzetme/şiir yapma ('ruhu var' gibi), "
+        "kişiye hitap etme ('bilir misin'). SADECE belirti.\n"
+        "BAŞKA bir arıza/sistem (yağ, klima, far, cam, koltuk) EKLEME.\n\n"
+        'SADECE şu JSON: {"ifadeler": ["...", "...", ...]}'
     )
     payload = json.dumps({
         "model": OLLAMA_MODEL, "prompt": prompt,
-        "stream": False, "format": "json", "options": {"temperature": 0.7},
+        "stream": False, "format": "json", "options": {"temperature": 0.5},
     }).encode("utf-8")
     for attempt in range(retries + 1):
         try:
@@ -162,15 +189,17 @@ def main() -> None:
     seen: set[str] = set()
     for i, t in enumerate(TEMPLATES, 1):
         print(f"[{i}/{len(TEMPLATES)}] {t['component']} ({t['category']}) ...", flush=True)
-        # Filtre eleyeceği için fazladan iste (per_template + tampon).
-        raw = ollama_phrasings(t["hint"], args.per_template + 6)
+        # İki filtre (konu + üslup) eleyeceği için fazladan iste.
+        raw = ollama_phrasings(t["hint"], args.per_template + 14)
         kept = 0
         for desc in raw:
             if kept >= args.per_template:
                 break
             key = desc[:80].lower()
-            # Konu dışı (anchor yok) veya çok kısa/yinelenen ifadeleri ele.
-            if len(desc) < 15 or key in seen or not _relevant(desc, t["anchors"]):
+            # Konu dışı (anchor yok), gevezelik/yorum (üslup), kısa/yinelenen ele.
+            if (len(desc) < 15 or key in seen
+                    or not _relevant(desc, t["anchors"])
+                    or not _clean_style(desc)):
                 continue
             seen.add(key)
             rows.append({
