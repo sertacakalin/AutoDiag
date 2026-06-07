@@ -46,6 +46,20 @@ LEXICON: list[tuple[tuple[str, ...], str]] = [
     # Direksiyon
     (("taş gibi", "kaskatı", "direksiyon ağır", "zor dönüy", "ağırlaş"), "direksiyon ağırlaşma sertleşme"),
     (("direksiyon boş", "direksiyon oyn", "boşluk var"), "direksiyon boşluk"),
+    # Ön/arka takım — süspansiyon & direksiyon mekanik bileşenleri (argo şemsiye terim).
+    # "ön takım" sürücü dilinde rotbaşı/rotil/salıncak/amortisör/z rot'u kapsar.
+    (("ön takım", "ön düzen", "ön aksam", "ön taraftan ses", "ön tarafta ses", "öndan ses"),
+     "süspansiyon direksiyon rotbaşı rotil salıncak ön takım takırtı"),
+    (("arka takım", "arka düzen", "arkadan ses"), "arka süspansiyon amortisör salıncak"),
+    (("rotbaş", "rot baş", "rot başı"), "rotbaşı direksiyon aşınma ses"),
+    (("rotil", "rot mafsal"), "rotil süspansiyon boşluk ses"),
+    (("salıncak", "burcu", "burç"), "salıncak burcu süspansiyon ses"),
+    (("z rot", "viraj demir", "denge çubuğu", "stabilizatör", "stabilize"),
+     "z rot denge çubuğu stabilizatör süspansiyon takırtı"),
+    (("takoz", "motor takoz"), "motor takozu titreşim ses"),
+    (("mafsal", "aks kafa", "cv joint", "aks sesi"), "aks mafsal takırtı"),
+    (("rulman", "teker ses", "tekerlek ses", "jant ses", "teker uğul"), "rulman uğultu tekerlek"),
+    (("amortisör", "amortisor", "yaylan", "zıpla"), "amortisör süspansiyon"),
     # Klima
     (("soğutmu", "ılık üfl", "sıcak hava", "üflemi", "serinletmi"), "klima soğutmuyor"),
     # Egzoz / emisyon / uyarı lambası
