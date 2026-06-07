@@ -2,6 +2,15 @@
   min-height: 100%;
 }
 
+/* Açılış oturum doğrulama bekleme ekranı */
+.bootSplash {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 /* ----------------------------------------------------------------- başlık */
 .header {
   position: sticky;
@@ -113,6 +122,64 @@
 .addBtn:hover {
   border-color: var(--accent);
   background: var(--accent-soft);
+}
+
+/* Kullanıcı kimliği + çıkış */
+.userMenu {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.userIdentity {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: var(--r-pill);
+  background: var(--surface-sunken);
+  border: 1px solid var(--hairline);
+}
+.userName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.roleBadge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  padding: 2px 7px;
+  border-radius: var(--r-pill);
+}
+/* admin rolü için ayırt edici (uyarı) tonu */
+.roleBadge[data-role="admin"] {
+  color: var(--warn);
+  background: var(--warn-soft);
+  border-color: color-mix(in srgb, var(--warn) 28%, transparent);
+}
+.logoutBtn {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.logoutBtn:hover {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--danger);
 }
 
 /* ------------------------------------------------------------------ gövde */
@@ -301,6 +368,9 @@
     display: none;
   }
   .status {
+    display: none;
+  }
+  .userName {
     display: none;
   }
 }

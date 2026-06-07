@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { ApiError, health, search, sendFeedback } from "./api/client";
-import type { HealthResponse, SearchHit, SearchOptions, SearchResponse } from "./api/types";
+import { ApiError, health, search, sendFeedback, UnauthorizedError } from "./api/client";
+import type { HealthResponse, SearchHit, SearchOptions, SearchResponse, User } from "./api/types";
+import { useAuth } from "./auth/AuthContext";
 import { AddFaultDrawer } from "./components/AddFaultDrawer";
 import { DiagnosisAssistant } from "./components/DiagnosisAssistant";
 import { EmptyState } from "./components/EmptyState";
+import { LoginScreen } from "./components/LoginScreen";
 import { ResultList } from "./components/ResultList";
 import { SearchPanel } from "./components/SearchPanel";
 import { SuggestionCard } from "./components/SuggestionCard";
@@ -12,6 +14,29 @@ import { Toast, type ToastState } from "./components/Toast";
 import styles from "./App.module.css";
 
 export function App() {
+  const { isAuthenticated, loading: authLoading } = useAuth();
+
+  // Açılış oturum doğrulaması sürerken kısa bir bekleme ekranı göster.
+  if (authLoading) {
+    return (
+      <div className={styles.app}>
+        <div className={styles.bootSplash} role="status" aria-live="polite">
+          Oturum doğrulanıyor…
+        </div>
+      </div>
+    );
+  }
+
+  // Oturum yoksa giriş ekranını göster; mevcut uygulama gizli kalır.
+  if (!isAuthenticated) {
+    return <LoginScreen />;
+  }
+
+  return <Workspace />;
+}
+
+function Workspace() {
+  const { user, logout } = useAuth();
   const [info, setInfo] = useState<HealthResponse | null>(null);
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [loading, setLoading] = useState(false);
@@ -32,19 +57,27 @@ export function App() {
       .catch(() => setInfo(null));
   }, []);
 
-  const runSearch = useCallback(async (query: string, opts: SearchOptions) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await search(query, opts);
-      setResponse(res);
-    } catch (e) {
-      setError(e instanceof ApiError ? e.message : "Beklenmeyen bir hata oluştu.");
-      setResponse(null);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
+  const runSearch = useCallback(
+    async (query: string, opts: SearchOptions) => {
+      setLoading(true);
+      setError(null);
+      try {
+        const res = await search(query, opts);
+        setResponse(res);
+      } catch (e) {
+        // Jeton geçersizleştiyse oturumu kapat ve giriş ekranına dön.
+        if (e instanceof UnauthorizedError) {
+          logout();
+          return;
+        }
+        setError(e instanceof ApiError ? e.message : "Beklenmeyen bir hata oluştu.");
+        setResponse(null);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [logout],
+  );
 
   function pickExample(query: string) {
     setSeed({ query, nonce: seed.nonce + 1 });
@@ -100,6 +133,7 @@ export function App() {
             <button className={styles.addBtn} onClick={() => setDrawerOpen(true)}>
               <span aria-hidden>+</span> Kayıt ekle
             </button>
+            <UserMenu user={user} onLogout={logout} />
           </div>
         </div>
       </header>
@@ -224,6 +258,31 @@ function SystemStatus({ info }: { info: HealthResponse | null }) {
       ) : (
         <span className={styles.statusText}>Çevrimdışı</span>
       )}
+    </div>
+  );
+}
+
+/** Aktif kullanıcı adı + rol rozeti ve çıkış butonu. */
+function UserMenu({ user, onLogout }: { user: User | null; onLogout: () => void }) {
+  if (!user) return null;
+  return (
+    <div className={styles.userMenu}>
+      <span className={styles.userIdentity}>
+        <span className={styles.userName} title={user.username}>
+          {user.username}
+        </span>
+        <span className={styles.roleBadge} data-role={user.role}>
+          {user.role}
+        </span>
+      </span>
+      <button
+        type="button"
+        className={styles.logoutBtn}
+        onClick={onLogout}
+        title="Oturumu kapat"
+      >
+        Çıkış
+      </button>
     </div>
   );
 }

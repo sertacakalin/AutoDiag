@@ -10,10 +10,11 @@ from __future__ import annotations
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import diagnose, faults, feedback, search
+from app.api import auth, diagnose, faults, feedback, search
+from app.api.deps import get_current_user
 from app.config import get_settings
 from app.observability import metrics_endpoint, metrics_middleware, setup_logging
 from app.schemas import HealthResponse
@@ -42,6 +43,16 @@ ALLOWED_ORIGINS = [
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Açılışta motoru kur, geri bildirim deposunu hazırla."""
+    # DB şemasını hazırla (users tablosu yoksa oluşsun). create_all idempotenttir;
+    # DB erişilemezse uygulama yine de demo/bellek modunda ayağa kalkar.
+    try:
+        from app.db import init_db
+
+        init_db()
+        print("[main] init_db tamam — DB tabloları hazır.")
+    except Exception as exc:  # noqa: BLE001 - DB yoksa demo modu sürmeli
+        print(f"[main] UYARI: init_db atlandı (DB erişilemiyor olabilir): {exc}")
+
     # Üretim yolu: DB erişilebilir ve doluysa pgvector DbEngine; değilse MemoryEngine.
     from app.services.db_engine import try_build_db_engine
 
@@ -86,10 +97,16 @@ app.add_middleware(
 )
 
 app.middleware("http")(metrics_middleware)
-app.include_router(search.router)
+
+# Auth uçları PUBLIC (kayıt/giriş için jeton gerekmez).
+app.include_router(auth.router)
+
+# İçerik uçları korumalı: geçerli bir Bearer jetonu gerektirir.
+# faults router'ı kendi içinde uç-bazlı koruma uygular (yazma=admin, okuma=kullanıcı).
+app.include_router(search.router, dependencies=[Depends(get_current_user)])
+app.include_router(feedback.router, dependencies=[Depends(get_current_user)])
+app.include_router(diagnose.router, dependencies=[Depends(get_current_user)])
 app.include_router(faults.router)
-app.include_router(feedback.router)
-app.include_router(diagnose.router)
 
 
 @app.get("/metrics", include_in_schema=False)

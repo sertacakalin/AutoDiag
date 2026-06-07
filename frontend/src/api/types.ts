@@ -2,6 +2,20 @@
 
 export type Confidence = "düşük" | "orta" | "yüksek";
 
+// --- Kimlik doğrulama (İ-auth) ---
+
+export interface User {
+  id: string;
+  username: string;
+  role: string;
+}
+
+export interface AuthResponse {
+  access_token: string;
+  token_type: string;
+  user: User;
+}
+
 export interface SearchHit {
   fault_id: string;
   similarity: number; // 0–1

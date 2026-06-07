@@ -8,7 +8,7 @@ from uuid import uuid4
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile
 
-from app.api.deps import get_engine
+from app.api.deps import get_current_user, get_engine, require_admin
 from app.schemas import FaultCreate, FaultRead
 from app.services.memory_store import FaultRecord, MemoryEngine
 
@@ -29,9 +29,11 @@ def _to_read(record: FaultRecord) -> FaultRead:
 
 @router.post("", response_model=FaultRead, status_code=201)
 def create_fault(
-    payload: FaultCreate, engine: MemoryEngine = Depends(get_engine)
+    payload: FaultCreate,
+    engine: MemoryEngine = Depends(get_engine),
+    _admin=Depends(require_admin),
 ) -> FaultRead:
-    """Yeni bir arıza kaydı ekle (indeksler güncellenir)."""
+    """Yeni bir arıza kaydı ekle (yalnız admin)."""
     record = FaultRecord(
         id=str(uuid4()),
         description=payload.description.strip(),
@@ -47,9 +49,11 @@ def create_fault(
 
 @router.post("/import")
 async def import_csv(
-    file: UploadFile, engine: MemoryEngine = Depends(get_engine)
+    file: UploadFile,
+    engine: MemoryEngine = Depends(get_engine),
+    _admin=Depends(require_admin),
 ) -> dict:
-    """CSV'den toplu kayıt yükle (description, category, solution zorunlu)."""
+    """CSV'den toplu kayıt yükle (yalnız admin; description/category/solution zorunlu)."""
     raw = await file.read()
     try:
         text = raw.decode("utf-8")
@@ -84,8 +88,12 @@ async def import_csv(
 
 
 @router.get("/{fault_id}", response_model=FaultRead)
-def get_fault(fault_id: str, engine: MemoryEngine = Depends(get_engine)) -> FaultRead:
-    """Tek bir arıza kaydını id ile getir."""
+def get_fault(
+    fault_id: str,
+    engine: MemoryEngine = Depends(get_engine),
+    _user=Depends(get_current_user),
+) -> FaultRead:
+    """Tek bir arıza kaydını id ile getir (oturum açmış kullanıcı)."""
     record = engine.get(fault_id)
     if record is None:
         raise HTTPException(status_code=404, detail="Kayıt bulunamadı.")

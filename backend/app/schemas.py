@@ -148,6 +148,39 @@ class InteractiveDiagnoseResponse(BaseModel):
     diagnoses: list[GraphDiagnosis] = Field(default_factory=list)
 
 
+class RegisterRequest(BaseModel):
+    """Yeni kullanıcı kaydı isteği."""
+
+    username: str = Field(min_length=3, max_length=64, description="Benzersiz kullanıcı adı.")
+    password: str = Field(min_length=6, description="En az 6 karakter.")
+    role: str | None = Field(
+        default=None, description="Opsiyonel rol (ilk kullanıcı her zaman admin olur)."
+    )
+
+
+class LoginRequest(BaseModel):
+    """Giriş isteği."""
+
+    username: str = Field(min_length=1)
+    password: str = Field(min_length=1)
+
+
+class UserResponse(BaseModel):
+    """Kullanıcının dışa açık gösterimi (şifre/hash içermez)."""
+
+    id: str
+    username: str
+    role: str
+
+
+class TokenResponse(BaseModel):
+    """Başarılı kimlik doğrulama sonrası erişim jetonu + kullanıcı bilgisi."""
+
+    access_token: str
+    token_type: str = "bearer"
+    user: UserResponse
+
+
 class HealthResponse(BaseModel):
     """Servis sağlık durumu."""
 

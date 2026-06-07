@@ -1,0 +1,194 @@
+/* Ortalanmış kimlik doğrulama ekranı — "saha teşhis konsolu" estetiği. */
+
+.screen {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background:
+    radial-gradient(
+      120% 80% at 50% -10%,
+      var(--accent-soft) 0%,
+      transparent 55%
+    ),
+    var(--bg);
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-top: 2px solid var(--accent);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-2);
+  padding: 28px;
+}
+
+/* Marka başlığı */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 6px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(180deg, #2a5ae0, var(--accent));
+  box-shadow: var(--shadow-1);
+  flex: none;
+}
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.wordmark strong {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.wordmark span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.intro {
+  margin: 14px 0 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Giriş / Kayıt sekmeleri */
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r);
+  margin-bottom: 20px;
+}
+.tab {
+  height: 34px;
+  border: none;
+  border-radius: var(--r-sm);
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: all 0.14s var(--ease);
+}
+.tab[data-active="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-1);
+}
+.tab:hover:not([data-active="true"]) {
+  color: var(--ink-2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.input {
+  height: 42px;
+  padding: 0 13px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--r);
+  background: var(--surface-2);
+  color: var(--ink);
+  font-size: 15px;
+  transition: border-color 0.15s var(--ease), background 0.15s var(--ease);
+}
+.input::placeholder {
+  color: var(--muted-2);
+}
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.input:disabled {
+  background: var(--surface-sunken);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Hata kutusu (App.module.css .error ile uyumlu) */
+.error {
+  padding: 11px 13px;
+  background: var(--danger-soft);
+  border: 1px solid color-mix(in srgb, var(--danger) 25%, transparent);
+  border-radius: var(--r);
+  color: var(--danger);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.submit {
+  height: 44px;
+  margin-top: 2px;
+  padding: 0 24px;
+  border: none;
+  border-radius: var(--r);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: var(--shadow-1);
+  transition: background 0.15s var(--ease), transform 0.05s var(--ease);
+}
+.submit:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+.submit:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.submit:disabled {
+  background: var(--hairline-strong);
+  color: var(--muted);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.footnote {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted-2);
+  text-align: center;
+}

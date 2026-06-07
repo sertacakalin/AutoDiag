@@ -38,6 +38,9 @@ services:
       # HF cache yazılabilir yer (./models read-only bağlı; Dockerfile'daki
       # /models/.hf yazılamaz → rerank cross-encoder buraya iner).
       HF_HOME: "/app/.hf"
+      # JWT imzalama anahtarı. ÜRETİMDE: host ortamında JWT_SECRET tanımla
+      # (export JWT_SECRET=...). Aşağıdaki fallback yalnız yerel geliştirme içindir.
+      JWT_SECRET: "${JWT_SECRET:-autodiag-local-dev-degistir}"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:

@@ -64,6 +64,21 @@ class FaultEmbedding(Base):
     fault: Mapped[Fault] = relationship(back_populates="embedding")
 
 
+class User(Base):
+    """Sisteme erişen kullanıcı (teknisyen veya admin)."""
+
+    __tablename__ = "users"
+
+    id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
+    username: Mapped[str] = mapped_column(
+        String(64), unique=True, index=True, nullable=False
+    )
+    password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
+    # Roller: "teknisyen" | "admin".
+    role: Mapped[str] = mapped_column(String(16), default="teknisyen", nullable=False)
+    created_at: Mapped[datetime] = mapped_column(default=_utcnow)
+
+
 class Feedback(Base):
     """Kullanıcının bir sonucun faydalı olup olmadığına dair geri bildirimi."""
 
