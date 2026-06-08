@@ -105,6 +105,30 @@ TEMPLATES = [
      "hint": "fren yaparken cıyak/gıcırtı, frende titreme, metalik sürtme sesi",
      "solution": "Balatalar bitmiş, disklerde aşınma vardı; balata ve disk değişti.",
      "anchors": ["fren", "cıyak", "gıcırt", "titre", "sürtme", "balata", "disk", "metalik"]},
+    # --- İterasyon 1: Hedefli boşluk doldurma ---
+    # Motor güç kaybı / boğulma (turbo, EGR, enjektör, emme manifoldu sızıntısı)
+    # Gerçek nedenler: EGR valfi kurumlanması (CO/NOx oranını bozarak güç kaybı),
+    # turbo/intercooler sızıntısı (şarj basıncı düşer), enjektör tıkanması (püskürtme
+    # profili bozulur), emme manifoldu contası sızıntısı (yalancı hava → yalın karışım →
+    # güç kaybı). DTC aralığı: P0087-P0093, P0171, P0299, P2015 vb.
+    {"category": "Motor", "component": "motor güç kaybı / boğulma (EGR/turbo/enjektör)",
+     "hint": "şehir içinde gaz pedalına basınca motor güç vermiyor sanki boğuluyor, yokuşta zorlanıyor, "
+             "devir çıkıyor ama hız artmıyor, ivmelenme yavaş, gaz tepkisi azaldı",
+     "solution": "EGR valfi kurum tutmuş, intercooler hortumu gevşemiş; EGR temizlendi, hortum "
+                 "sıkıldı, güç ve ivmelenme normale döndü.",
+     "anchors": ["güç", "boğul", "çekmiyor", "zorlan", "devir", "ivme", "yavaş", "pedal", "motor"]},
+    # Süspansiyon seviye sensörü / xenon far otomatik yükseklik ayarı
+    # Gerçek mekanizma: Xenon/LED-matrix farları otomatik yükseklik ayarı (auto-leveling)
+    # için süspansiyon yükseklik potansiyometre sensöründen (HLLS) sinyal alır. Sensör
+    # veya bağlantı arızasında far yönü sabitlenir ve "far seviyesi ayarlanmıyor" hatası +
+    # C1413 / C1531 benzeri DTC üretilir. VW Passat/Golf xenon, Renault Laguna/Vel Satis
+    # adaptive headlights, Opel Insignia AFL sistemleri bu sensörü kullanır.
+    {"category": "Süspansiyon", "component": "süspansiyon yükseklik sensörü / far-leveling",
+     "hint": "far seviyesi otomatik ayarlanmıyor panelde uyarı çıktı, araç yüklüyken far yukarı "
+             "kalıyor manuel ayar yapmak gerekiyor, sürüş yüksekliği sensörü arıza kodu var",
+     "solution": "Ön sol süspansiyon yükseklik sensörü (seviye potansiyometre) arızalanmıştı; "
+                 "sensör değiştirildi, far otomatik seviyeleme düzeldi.",
+     "anchors": ["far", "seviye", "sensör", "yüksekl", "ayarlanm", "süspansiyon", "leveling", "uyarı"]},
 ]
 
 

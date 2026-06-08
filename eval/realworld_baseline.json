@@ -1,0 +1,54 @@
+{
+  "iteration": 1,
+  "model": "autodiag-embed-tr-v8",
+  "method": "Hibrit+QN (dense 0.7 + bm25 0.3 + query_norm)",
+  "n_queries": 64,
+  "corpus_size": 1514,
+  "category_top1": 1.0,
+  "category_top3": 1.0,
+  "dtc_mrr": 0.4672929810043388,
+  "n_dtc_queries": 43,
+  "per_category": {
+    "Direksiyon": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Egzoz": {
+      "n": 7,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Elektrik": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Fren": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Klima": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Motor": {
+      "n": 9,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Süspansiyon": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    },
+    "Şanzıman": {
+      "n": 8,
+      "top1": 1.0,
+      "top3": 1.0
+    }
+  },
+  "misses": []
+}

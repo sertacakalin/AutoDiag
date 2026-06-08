@@ -30,6 +30,7 @@ MODELS = {
     "MiniLM-base": "paraphrase-multilingual-MiniLM-L12-v2",
     "TR-trmteb-adapte": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr-trmteb"),
     "TR-adapte-HN": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr-hn"),
+    "TR-v4-iter1": os.path.join(ROOT_DIR, "models", "autodiag-embed-tr-v4"),
 }
 
 

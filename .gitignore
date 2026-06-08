@@ -45,3 +45,13 @@ data/fault_graph.graphml
 mlflow.db
 mlruns/
 mlartifacts/
+
+# Veri seti yedekleri (iterasyon snapshot'ları) — lokal kalır
+data/faults_dataset.pre_*.csv
+# Hedefli üretim ara dosyaları (iterasyon) — kürasyonlu targeted_tr.csv dışında
+data/targeted_*iter*.csv
+
+# Sunum materyalleri — repo'ya gerek yok
+*.pptx
+assets/
+scripts/make_presentation.py

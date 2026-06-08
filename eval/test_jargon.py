@@ -27,7 +27,8 @@ QUERIES = [
 
 MODELS = {
     "hn (eski·971)": os.path.join(mc.ROOT_DIR, "models", "autodiag-embed-tr-hn"),
-    "v3 (yeni·1155)": os.path.join(mc.ROOT_DIR, "models", "autodiag-embed-tr-v3"),
+    "v3 (iter0·1155)": os.path.join(mc.ROOT_DIR, "models", "autodiag-embed-tr-v3"),
+    "v4 (iter1)": os.path.join(mc.ROOT_DIR, "models", "autodiag-embed-tr-v4"),
 }
 
 
@@ -38,6 +39,9 @@ def main() -> None:
     bm25 = BM25Okapi([normalize_text(d).split() for d in descs])
 
     for name, ref in MODELS.items():
+        if not os.path.isdir(ref):
+            print(f"\n=== {name} — ATLA (model yok: {ref}) ===")
+            continue
         idx = mc.ModelIndex(SentenceTransformer(ref), descs, bm25)
         print(f"\n=== {name} ===")
         for q, expected in QUERIES:
