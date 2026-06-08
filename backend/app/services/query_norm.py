@@ -66,6 +66,24 @@ LEXICON: list[tuple[tuple[str, ...], str]] = [
     (("muayene", "egzoz test", "emisyon test"), "egzoz emisyon"),
     (("sarı lamba", "motor ışığı", "arıza lamba", "check engine", "ikaz lamba"), "arıza lambası motor uyarı"),
     (("siyah duman", "is atı", "is yapı"), "siyah duman zengin karışım"),
+    # Ham yakıt kokusu → Motor enjeksiyon/zengin karışım (P0172) ayırt edici sinyal
+    # "ham yakıt" + "siyah duman" bileşimi Egzoz değil Motor P0172'dir
+    # NOT: "yanmamış yakıt" Egzoz soğuk-start normal fenomeni olabileceğinden ÇIKARILDI
+    (("ham yakıt", "ham benzin"), "motor enjeksiyon zengin karışım P0172 yakıt sistemi"),
+    # Güç vermiyor + boğuluyor → Motor yakıt basıncı (P0087), Şanzıman değil
+    # "pedala bastıkça boğuluyor" kombinasyonu şanzıman uğultusundan farklı: motor güç kaybı
+    (("güç vermiyor", "motor vermiyor"), "motor güç kaybı yakıt basınç P0087"),
+    # Süspansiyon seviye sensörü / far-leveling
+    # Xenon far otomatik yükseklik ayarı süspansiyon yükseklik sensöründen (potansiyometre/ivmeölçer)
+    # sinyal alır; C1413/C1531 gibi DTC'ler doğrudan süspansiyon elektriksel sensörüne işaret eder.
+    # VW/Renault/Opel xenon veya LED matrix sistemlerinde de geçerli.
+    (("far seviye", "sürüş yüksekl", "seviye sensör", "far otom", "far ayarlan"),
+     "süspansiyon seviye sensörü adaptif far-leveling yükseklik"),
+    # Tek taraflı sertlik / zıplama → adaptif/bağımsız amortisör
+    # "sert" + "tek tarafta" bağlamı Direksiyon-sert kuralından AYRI; bağımsız süspansiyon
+    # arızasına (çökmüş amortisör, hava yastığı kaçağı) işaret eder.
+    (("tek tarafta", "tek taraf çök", "tek taraf sert", "bir köşe zıpl", "tek taraf zıpl"),
+     "adaptif amortisör süspansiyon tek-taraf bağımsız"),
     # Yakıt / tüketim
     (("çok yakı", "yakıt arttı", "sarfiyat", "benzin bitiyor", "fazla yakı"), "yüksek yakıt tüketimi"),
 ]

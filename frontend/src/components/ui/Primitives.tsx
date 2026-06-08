@@ -1,5 +1,4 @@
 // Küçük, tekrar kullanılan görsel parçacıklar.
-import type { Confidence } from "../../api/types";
 import styles from "./Primitives.module.css";
 
 /** DTC arıza kodu — daima monospace, teknik rozet. */
@@ -18,22 +17,6 @@ export function CategoryTag({ name }: { name: string }) {
   );
 }
 
-const CONFIDENCE_LABEL: Record<Confidence, string> = {
-  yüksek: "Yüksek güven",
-  orta: "Orta güven",
-  düşük: "Düşük güven",
-};
-
-/** Teşhis önerisi güven rozeti. */
-export function ConfidenceBadge({ level }: { level: Confidence }) {
-  return (
-    <span className={styles.confidence} data-level={level}>
-      <span className={styles.confDot} aria-hidden />
-      {CONFIDENCE_LABEL[level]}
-    </span>
-  );
-}
-
 /** Arıza önem derecesi rozeti (Düşük / Orta / Yüksek / Kritik). */
 export function SeverityBadge({ level }: { level: string }) {
   if (!level) return null;
@@ -44,22 +27,32 @@ export function SeverityBadge({ level }: { level: string }) {
   );
 }
 
-/** Benzerlik/alaka göstergesi — yatay ölçek çubuğu + yüzde. */
+/**
+ * Benzerlik/alaka göstergesi — yatay ölçek çubuğu + bandlı etiket.
+ *
+ * Ham skor (rerank güveni) sigmoid çıktısı olduğu için tepe noktada doygunlaşır:
+ * çok alakalı iki vaka da 0.99+'a sıkışır ve yuvarlanınca ikisi de "%100" görünür
+ * → "kusursuz eşleşme" yanılgısı. Bunun yerine alakayı bantlara ayırıp sözel
+ * etiket gösteriyoruz; ham yüzde yalnızca tooltip'te (teknisyen için) kalıyor.
+ */
+const SIM_BANDS = [
+  { min: 0.85, band: "high", label: "Çok yüksek alaka" },
+  { min: 0.65, band: "high", label: "Yüksek alaka" },
+  { min: 0.45, band: "mid", label: "Orta alaka" },
+  { min: 0, band: "low", label: "Düşük alaka" },
+] as const;
+
 export function SimilarityMeter({ value }: { value: number }) {
-  const pct = Math.round(Math.max(0, Math.min(1, value)) * 100);
-  // Eşik bandı: yüksek/orta/düşük alaka — çubuğun rengini belirler.
-  const band = pct >= 75 ? "high" : pct >= 50 ? "mid" : "low";
+  const v = Math.max(0, Math.min(1, value));
+  const pct = Math.round(v * 100);
+  const { band, label } = SIM_BANDS.find((b) => v >= b.min) ?? SIM_BANDS[SIM_BANDS.length - 1];
   return (
-    <div className={styles.meter} title={`Alaka: %${pct}`}>
+    <div className={styles.meter} title={`Alaka skoru: %${pct}`}>
       <div className={styles.meterTrack}>
-        <div
-          className={styles.meterFill}
-          data-band={band}
-          style={{ width: `${pct}%` }}
-        />
+        <div className={styles.meterFill} data-band={band} style={{ width: `${pct}%` }} />
       </div>
-      <span className={styles.meterValue} data-band={band}>
-        %{pct}
+      <span className={styles.meterLabel} data-band={band}>
+        {label}
       </span>
     </div>
   );

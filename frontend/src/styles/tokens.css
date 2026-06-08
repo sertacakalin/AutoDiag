@@ -39,11 +39,11 @@
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas,
     monospace;
 
-  /* Yarıçap */
-  --r-sm: 6px;
-  --r: 10px;
-  --r-lg: 14px;
-  --r-pill: 999px;
+  /* Yarıçap — keskin/teknik görünüm için köşeler düz. */
+  --r-sm: 0;
+  --r: 0;
+  --r-lg: 0;
+  --r-pill: 0;
 
   /* Gölge */
   --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.04);

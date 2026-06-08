@@ -78,7 +78,7 @@
   flex: none;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--accent-soft);
   color: var(--accent);
   font-family: var(--font-mono);

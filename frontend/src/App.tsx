@@ -184,17 +184,6 @@ function Workspace() {
                   <span className="eyebrow">
                     {response.results.length} sonuç · “{response.query}”
                   </span>
-                  <div className={styles.badges}>
-                    {response.reranked && (
-                      <span
-                        className={styles.rerankBadge}
-                        title="Cross-encoder ile yeniden sıralandı (iki aşamalı arama)"
-                      >
-                        2 aşamalı · yeniden sıralandı
-                      </span>
-                    )}
-                    <ModeBadge mode={response.mode} />
-                  </div>
                 </div>
                 {response.expanded_query && (
                   <p className={styles.expanded} title="Argo/günlük dil kanonik terimlerle genişletildi">
@@ -208,7 +197,6 @@ function Workspace() {
                 <SuggestionCard
                   suggestion={response.rag_suggestion}
                   resultCount={response.results.length}
-                  ragSource={info?.rag}
                 />
               )}
             </div>
@@ -253,7 +241,11 @@ function SystemStatus({ info }: { info: HealthResponse | null }) {
         <span className={styles.statusText}>
           {info.fault_count} kayıt
           <span className={styles.sep}>·</span>
-          {info.mode === "hybrid" ? "Hibrit arama" : "Anahtar kelime"}
+          {/* "db" (pgvector) ve "hybrid" (bellek-içi) dense+sparse çalışır;
+              yalnız "sparse" gerçek anahtar-kelime modudur. */}
+          {info.mode === "hybrid" || info.mode === "db"
+            ? "Hibrit arama"
+            : "Anahtar kelime"}
         </span>
       ) : (
         <span className={styles.statusText}>Çevrimdışı</span>
@@ -287,17 +279,6 @@ function UserMenu({ user, onLogout }: { user: User | null; onLogout: () => void 
   );
 }
 
-function ModeBadge({ mode }: { mode: string }) {
-  // "db" = pgvector (dense) + BM25, "hybrid" = bellek-içi dense + BM25,
-  // "sparse" = yalnız BM25. İlk ikisi dense vektör kullanır.
-  const dense = mode === "hybrid" || mode === "db";
-  const label = mode === "db" ? "pgvector · dense + sparse" : dense ? "dense + sparse" : "sparse";
-  return (
-    <span className={styles.modeBadge} title={dense ? "Dense vektör + BM25" : "Yalnız BM25"}>
-      {label}
-    </span>
-  );
-}
 
 function ResultsSkeleton() {
   return (
